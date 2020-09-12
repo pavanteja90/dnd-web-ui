@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "projekt-saloon-web"
+    }
+  },
+  "defaultProject": "projekt-saloon-web",
+  "cli": {
+    "analytics": false
+  }
 }
