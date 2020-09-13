@@ -7,7 +7,11 @@
 		"build": "ng build",
 		"test": "ng test",
 		"lint": "ng lint",
-		"e2e": "ng e2e"
+		"e2e": "ng e2e",
+		"website": "ng serve website",
+		"website:prod": "ng build website --prod --optimization --progress",
+		"internal-portal": "ng serve internal-portal",
+		"internal-portal:prod": "ng build internal-portal --prod --optimization --progress"
 	},
 	"private": true,
 	"dependencies": {
