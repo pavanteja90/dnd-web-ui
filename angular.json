@@ -49,6 +49,11 @@
 						"styles": [
 							"src/sites/website/theme/styles.scss"
 						],
+						"stylePreprocessorOptions": {
+							"includePaths": [
+								"src/@projekt/styles"
+							]
+						},
 						"scripts": []
 					},
 					"configurations": {

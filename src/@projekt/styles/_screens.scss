@@ -1,0 +1,118 @@
+$breakpoints: (
+    mobile: 320px,
+    largeMobile: 568px,
+    tablet: 768px,
+    desktop: 992px,
+    largeDesktop: 1200px,
+    largestDesktop: 1920px
+);
+
+@function screen-sizes($breakpoints: $breakpoints) {
+    @return (
+        mobileBreakpoint: map-get($breakpoints, mobile),
+        largeMobileBreakpoint: map-get($breakpoints, largeMobile),
+        tabletBreakpoint: map-get($breakpoints, tablet),
+        desktopBreakpoint: map-get($breakpoints, desktop),
+        largeDesktopBreakpoint: map-get($breakpoints, largeDesktop),
+        largestDesktopBreakpoint: map-get($breakpoints, largestDesktop),
+        widestMobile: map-get($breakpoints, largeMobile) - 1px,
+        widestLargeMobile: map-get($breakpoints, tablet) - 1px,
+        widestTablet: map-get($breakpoints, desktop) - 1px,
+        widestDesktop: map-get($breakpoints, largeDesktop) - 1px,
+        widestLargeDesktop: map-get($breakpoints, largestDesktop) - 1px
+    );
+}
+@mixin screens() {
+    $screen-sizes: screen-sizes();
+    /* Mobile - Portait */
+    @media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
+        .mobile-hidden,
+        .large-mobile-down-hidden,
+        .tablet-down-hidden,
+        .computer-down-hidden,
+        .large-screen-down-hidden,
+        .widescreen-down-hidden {
+            display: none !important;
+        }
+    }
+    /* Large Mobile - Landscape */
+    @media only screen and (min-width: map-get($screen-sizes, largeMobileBreakpoint)) and (max-width: map-get($screen-sizes, tabletBreakpoint) - 1px) {
+        .large-mobile-hidden,
+        .large-mobile-down-hidden,
+        .large-mobile-up-hidden,
+        .tablet-down-hidden,
+        .computer-down-hidden,
+        .large-screen-down-hidden,
+        .widescreen-down-hidden {
+            display: none !important;
+        }
+    }
+    /* Tablet / iPad Portrait */
+    @media only screen and (min-width: map-get($screen-sizes, tabletBreakpoint)) and (max-width: map-get($screen-sizes, desktopBreakpoint)) {
+        .tablet-hidden,
+        .tablet-up-hidden,
+        .tablet-down-hidden,
+        .computer-down-hidden,
+        .large-screen-down-hidden,
+        .widescreen-down-hidden,
+        .large-mobile-up-hidden {
+            display: none !important;
+        }
+    }
+    /* Computer / Desktop / iPad Landscape */
+    @media only screen and (min-width: map-get($screen-sizes, desktopBreakpoint)) and (max-width: map-get($screen-sizes, largeDesktopBreakpoint)) {
+        .computer-hidden,
+        .computer-down-hidden,
+        .computer-up-hidden,
+        .large-screen-down-hidden,
+        .widescreen-down-hidden,
+        .large-mobile-up-hidden,
+        .tablet-up-hidden {
+            display: none !important;
+        }
+    }
+    /* Large Monitor */
+    @media only screen and (min-width: map-get($screen-sizes, largeDesktopBreakpoint)) and (max-width: map-get($screen-sizes, largestDesktopBreakpoint)) {
+        .large-screen-hidden,
+        .large-screen-up-hidden,
+        .large-screen-down-hidden,
+        .widescreen-down-hidden,
+        .large-mobile-up-hidden,
+        .tablet-up-hidden,
+        .computer-up-hidden {
+            display: none !important;
+        }
+    }
+    /* Widescreen Monitor */
+    @media only screen and (min-width: map-get($screen-sizes, largestDesktopBreakpoint)) {
+        .large-mobile-up-hidden,
+        .tablet-up-hidden,
+        .computer-up-hidden,
+        .large-screen-up-hidden,
+        .widescreen-hidden {
+            display: none !important;
+        }
+    }
+    // mobile screen overrides
+    @media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+        .container {
+            margin-left: 0.7em !important;
+            margin-right: 0.7em !important;
+        }
+
+        // .ui.menu .item { // padding-left: 0.3em; // padding-right: 0.3em;
+        // }
+        // .mobile.center {
+        // left: initial !important;
+        // top: 20% !important; // }
+        .mobile-only {
+            display: inline !important;
+        }
+        .ui.huge.label,
+        .ui.massive.label,
+        .ui.large.label,
+        .ui.big.label {
+            font-size: 1rem !important;
+        }
+    }
+}

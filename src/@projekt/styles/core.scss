@@ -1,0 +1,48 @@
+@import "reset";
+@import "~@angular/material/theming";
+@import "grid";
+@import "button";
+@import "container";
+@import "classes";
+@import "colours";
+@import "screens";
+@import "parallax";
+@import "header";
+@import "common";
+@import "palette";
+@import "ui";
+@import "forms";
+@import "palette";
+
+$button: fin-button-config();
+$defaultHeaderFontFamily: '"Roboto", "Open Sans", sans-serif';
+@function theme($primary-colors, $accent-colors) {
+    // Define the palettes for your theme using the Material Design palettes available in palette.scss
+    // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+    // hue. Available color palettes: https://material.io/design/color/
+	$primary: mat-palette($primary-colors);
+    $accent: mat-palette($accent-colors); // The warn palette is optional (defaults to red).
+    $warn-palette: mat-palette($mat-red); // Create the theme object (a Sass map containing all of the palettes).
+    $theme: mat-light-theme($primary, $accent, $warn-palette);
+    @return $theme;
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@mixin fin-core($theme, $typography: mat-typography-config(), $button: $button, $headerFontFamily: $defaultHeaderFontFamily) {
+	@include mat-core($typography);
+	$mat-toggle-size: 40px !default;
+
+    @include angular-material-theme($theme);
+	$screen-sizes: screen-sizes();
+    @include fin-button($button, $screen-sizes);
+    @include screens();
+    @include mat-reset($screen-sizes, $theme);
+    @include grid($screen-sizes);
+    @include container($screen-sizes);
+    @include colours($theme);
+    @include classes($screen-sizes);
+	@include header($headerFontFamily);
+	@include common($screen-sizes);
+}

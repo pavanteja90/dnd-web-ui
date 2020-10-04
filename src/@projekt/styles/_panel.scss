@@ -1,0 +1,106 @@
+@mixin panel-shadow($color) {
+    box-shadow: 0px 2px 1px -1px rgba($color, 0.2),
+        0px 1px 1px 0px rgba($color, 0.14), 0px 1px 3px 0px rgba($color, 0.12);
+}
+@mixin panel-light($colorPalette) {
+    // color: mat-color($colorPalette);
+    border-color: mat-color($colorPalette, lighter);
+    background-color: mat-color($colorPalette, 50);
+    @include panel-shadow(mat-color($colorPalette));
+}
+
+@mixin panels($ui-theme) {
+    $theme: map-get($ui-theme, theme);
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    // $warn: map-get($theme, warn); // $background: map-get($theme, background); // $foreground: map-get($theme, foreground);
+    $primary-background: mat-color($primary, default, 0.5);
+    $primary-color: mat-color($primary);
+    $primary-color-light: mat-color($primary, lighter);
+    $accent-color: mat-color($accent);
+    .mat-card {
+		&.compact {
+			padding: 6px;
+			font-size: 0.9em;
+		}
+        &.primary {
+            color: mat-color($primary);
+            @include panel-light($primary);
+        }
+        &.accent {
+            color: mat-color($accent);
+            @include panel-light($accent);
+		}
+		> .mat-icon {
+			margin-right: 6px;
+			// margin-top: -5px !important;
+		}
+		&.icon {
+			display: flex;
+		}
+	}
+	//phasing out panel, use mat-card instead with coloring
+    .panel {
+        &:not(.no-flex) {
+            display: flex;
+        }
+        padding: 8px;
+        border-radius: 4px;
+        border-width: 0px;
+        border-style: solid;
+        margin: 8px 0;
+        color: rgba(0, 0, 0, 0.74);
+        // line-height: 20px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        > .mat-icon {
+            margin-right: 6px;
+		}
+		&.border {
+			border-width: 1px;
+		}
+		&.no-padding {
+			padding: 0px;
+		}
+        &.light {
+            border-color: rgba(0, 0, 0, 0.2);
+        }
+        &.primary {
+            @include theme-colours($primary);
+        }
+        &.primary-light {
+            @include panel-light($primary);
+        }
+        &.accent {
+            @include theme-colours($accent);
+        }
+        &.accent-light {
+            @include panel-light($accent);
+        }
+        &.accent-border {
+            border-color: $accent-color;
+		}
+		&.success {
+			border-color: green;
+			border-width: 1px;
+			background-color: rgba(192, 206, 192, 0.4);
+		}
+		&.warning, &.warn {
+			border-color: orangered;
+			border-width: 1px;
+			background-color: rgba(218, 196, 188, 0.4);
+
+		}
+		&.error {
+			border-color: red;
+			border-width: 1px;
+			background-color: rgba(255, 0, 0, 0.4);
+
+		}
+		&.info {
+			border-color: mediumblue;
+			border-width: 1px;
+		}
+    }
+}

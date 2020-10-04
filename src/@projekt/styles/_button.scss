@@ -1,0 +1,112 @@
+.mat-flat-button {
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+@function fin-button-config($text-transform: normal, $font-family: Arial, $typography: '', $level: 'body-1', $border-radius: 4px) {
+    @return (text-transform: $text-transform, font-family: $font-family, typography: $typography, level: $level, border-radius: $border-radius);
+}
+
+@mixin fin-button($button-config, $screen-sizes) {
+	$level: map-get($button-config, level);
+
+    .mat-button,
+    .mat-flat-button,
+    .mat-stroked-button,
+    .mat-raised-button,
+    .mat-fab,
+    .mat-mini-fab {
+        min-width: initial !important;
+        text-transform: map-get($button-config, text-transform);
+        font-family: map-get($button-config, font-family);
+        transition: opacity 400ms ease;
+		font-size: mat-font-size($typography, $level);
+		border-radius: map-get($button-config, border-radius) !important;
+        &.large {
+            font-size: 2em;
+            padding: 16px 32px;
+        }
+        &.wide {
+            padding-left: 4em !important;
+            padding-right: 4em !important;
+        }
+        &.high {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        &.low {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        &.wrap {
+            white-space: normal !important;
+            line-height: 20px !important;
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+        }
+
+        &:not([disabled]):hover,
+        .mat-icon-button:not([disabled]):hover {
+            opacity: 0.9;
+            transition: opacity 0.2s ease;
+        }
+        &.rounded {
+            border-radius: 2rem !important;
+        }
+        &.right-rounded {
+            border-top-right-radius: 2rem !important;
+            border-bottom-right-radius: 2rem !important;
+        }
+        &.left-rounded {
+            border-top-left-radius: 2rem !important;
+            border-bottom-left-radius: 2rem !important;
+        }
+        @media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
+            &:not(.no-stack) {
+                width: 100%;
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+            }
+            &.wide {
+                padding-left: 1em !important;
+                padding-right: 1em !important;
+            }
+            // &.high {
+            //     padding-top: 0px;
+            //     padding-bottom: 0px;
+            // }
+        }
+        @media only screen and (min-width: map-get($screen-sizes, mobileBreakpoint)) and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+            &.wide {
+                padding-left: 1em !important;
+                padding-right: 1em !important;
+            }
+            &.high {
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+            &.low {
+                padding-top: 1px;
+                padding-bottom: 1px;
+            }
+        }
+        @media only screen and (min-width: map-get($screen-sizes, largeMobileBreakpoint)) and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+            &.wide {
+                padding-left: 3em !important;
+                padding-right: 3em !important;
+            }
+            &.high {
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            &.low {
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+    .mat-icon-button.large {
+        width: 65px;
+        height: 65px;
+    }
+}

@@ -1,0 +1,30 @@
+@import "./screens";
+
+@mixin common($screen-sizes) {
+	//////////// Applications Module styles  ////////////
+
+	@media only screen and (min-width: map-get($screen-sizes, largeMobileBreakpoint)) {
+		// To align "Can't find it?" button of address with the continue button on the expansion panel
+		address .mat-flat-button {
+			margin: 3px 10px 0 10px !important;
+		}
+	}
+
+	//////////// Forms Module styles  ////////////
+
+	dynamic-list {
+		.single-line {
+			flex-direction: row-reverse !important;
+			button {
+				margin-top: 14px;
+			}
+			@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+				flex-direction: column !important;
+				button {
+					margin-left: auto;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

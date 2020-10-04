@@ -1,0 +1,113 @@
+$font-size: 16px; // Default
+
+@mixin container($screen-sizes: $screen-sizes, $font-size: $font-size) {
+	/* All Sizes */
+	.container {
+		// display: block;
+		max-width: 1400px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		&.half {
+			max-width: 700px !important;
+		}
+		&.left {
+			margin-right: 0% !important;
+		}
+		&.right {
+			margin-left: 0% !important;
+		}
+	}
+
+	$mobileBreakpoint: map-get($screen-sizes, mobileBreakpoint);
+	$largeMobileBreakpoint: map-get($screen-sizes, largeMobileBreakpoint);
+	$tabletBreakpoint: map-get($screen-sizes, tabletBreakpoint);
+	$desktopBreakpoint: map-get($screen-sizes, desktopBreakpoint);
+
+	/* Mobile */
+	@media only screen and (max-width: $largeMobileBreakpoint - 1px) {
+		.container {
+			padding: 0em !important;
+			&.half {
+				// max-width: $mobileBreakpoint !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+		}
+	}
+
+	/* Large Mobile */
+	@media only screen and (min-width: $largeMobileBreakpoint) and (max-width: $tabletBreakpoint - 1px) {
+		.container {
+			width: auto !important;
+			max-width: 95% !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			padding: 1em !important;
+			&.half {
+				width: 100% !important;
+				max-width: $largeMobileBreakpoint !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+		}
+	}
+
+	/* Tablet */
+	@media only screen and (min-width: $tabletBreakpoint) and (max-width: $desktopBreakpoint - 1px) {
+		$tabletWidth: $tabletBreakpoint - 2 * $font-size;
+		.container {
+			width: $tabletWidth;
+			max-width: $tabletWidth !important;
+			&.half {
+				width: 100% !important;
+			}
+		}
+	}
+
+	/* Small Monitor */
+	@media only screen and (min-width: map-get($screen-sizes, desktopBreakpoint)) and (max-width: map-get($screen-sizes, largeDesktopBreakpoint)  - 1px) {
+		$desktopWidth: map-get($screen-sizes, desktopBreakpoint) - 3 * $font-size;
+		.container {
+			width: $desktopWidth;
+			max-width: $desktopWidth !important;
+			&.half {
+				width: $desktopWidth / 2 !important;
+			}
+		}
+	}
+
+	/* Large Monitor */
+	@media only screen and (min-width: map-get($screen-sizes, largeDesktopBreakpoint)) {
+		$largeDesktopWidth: map-get($screen-sizes, largeDesktopBreakpoint) - 4 * $font-size;
+		.container {
+			width: $largeDesktopWidth;
+			max-width: $largeDesktopWidth !important;
+			&.half {
+				width: $largeDesktopWidth / 2 !important;
+			}
+		}
+	}
+
+	/*******************************
+			   Types
+  *******************************/
+
+	/* Text Container */
+	.text.container {
+		// max-width: @textWidth !important;
+	}
+
+	/* Fluid */
+	.fluid.container {
+		width: 100%;
+	}
+
+	/*******************************
+			 Variations
+  *******************************/
+
+	.justified.container {
+		text-align: justify;
+		hyphens: auto;
+	}
+}

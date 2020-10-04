@@ -1,0 +1,98 @@
+@import "desktop-menu";
+@import "panel";
+
+@function ui-theme($theme, $desktop-menu: $default-desktop-menu) {
+	@return (theme: $theme, desktop-menu: $desktop-menu);
+}
+
+@mixin ui($ui-theme) {
+	$theme: map-get($ui-theme, theme);
+	$primary: map-get($theme, primary);
+	$accent: map-get(
+		$theme,
+		accent
+	); // $warn: map-get($theme, warn); // $background: map-get($theme, background); // $foreground: map-get($theme, foreground);
+	$primary-background: mat-color($primary, default, 0.5); // $primary-color: mat-color($primary, default-contrast);
+	$primary-color: mat-color($primary);
+	$primary-color-light: mat-color($primary, lighter);
+	$accent-color: mat-color($accent);
+	@include main-menu(map-get($ui-theme, desktop-menu));
+	@include panels($ui-theme);
+
+	.zoomable {
+		cursor: zoom-in;
+		transition: all 0.2s;
+		width: 50%;
+		&.zoomed {
+			cursor: zoom-out;
+			width: 100% !important;
+			z-index: 10;
+		}
+		@media only screen and (max-width: 568px) {
+			cursor: default;
+			width: 100% !important;
+			z-index: 10;
+		}
+	}
+	.phone-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 378px;
+		background-image: url("/assets/img/phone_template2.png");
+		background-size: 200px 378px;
+		background-repeat: no-repeat;
+	}
+	.parallax {
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: top center;
+		background-size: cover;
+	}
+
+	form-submission-dialog {
+		.success mat-icon {
+			color: green;
+		}
+		.error mat-icon {
+			color: red;
+		}
+	}
+
+	form-submitter-dialog {
+		.success mat-icon {
+			color: green;
+		}
+		.failure mat-icon {
+			color: red;
+		}
+		.declined mat-icon {
+			color: orange;
+		}
+	}
+
+	@media only screen and (max-width: 568px) {
+		.sticky {
+			position: fixed !important;
+			z-index: 25;
+			margin: auto !important;
+			left: 0px;
+			// button {
+			// 	box-shadow: 0 0 4px #000 !important;
+			// }
+		}
+
+		.stick-to-top {
+			top: 10px;
+		}
+
+		.stick-to-bottom {
+			bottom: 10px;
+		}
+	}
+}

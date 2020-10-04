@@ -1,0 +1,30 @@
+
+
+.parallax-true {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    // height: 100vh;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+
+    &-container {
+        perspective: 1px;
+        transform-style: preserve-3d;
+        // height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+
+.parallax {
+	// background-position: top center!important;
+    // background-size: 100% auto!important;
+    // background-repeat: no-repeat!important; // font-size: 1.9vw;
+    // position: absolute!important;
+    // width: 100%!important;
+	// height: 100%!important;
+	// overflow:hidden;
+
+}

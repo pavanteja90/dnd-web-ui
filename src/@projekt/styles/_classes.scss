@@ -1,0 +1,443 @@
+@mixin font-sizes($screen-sizes) {
+	@for $i from 1 to 60 {
+		$num: $i * 2;
+		.font-#{$num} {
+			font-size: #{$num}px !important;
+			&:not(button):not(a) {
+				line-height: #{$num * 1.8}px !important;
+			}
+		}
+		.line-height-#{$num} {
+			line-height: #{$num}px !important;
+		}
+	}
+}
+
+@mixin icon-sizes($screen-sizes) {
+	@for $i from 1 to 10 {
+		.icon-size-#{$i} {
+			font-size: #{$i * 4 + 24}px !important;
+			width: #{$i * 4 + 24}px !important;
+			height: #{$i * 4 + 24}px !important;
+		}
+	}
+}
+
+.w-header-search {
+	width: 100%;
+}
+
+.w-header-search__quick-results {
+	width: 100%;
+}
+
+@mixin paddings-margins($screen-sizes) {
+	@for $i from 0 to 20 {
+		$px: $i * 3;
+		// @if $i == 0 {
+		// 	$px: 0
+		// }
+		.padding-#{$i} {
+			padding: #{$px}px !important;
+			&-horizontal {
+				padding-left: #{$px}px !important;
+				padding-right: #{$px}px !important;
+			}
+			&-vertical {
+				padding-top: #{$px}px !important;
+				padding-bottom: #{$px}px !important;
+			}
+			&-bottom {
+				padding-bottom: #{$px}px !important;
+			}
+			&-top {
+				padding-top: #{$px}px !important;
+			}
+		}
+		.margin-#{$i} {
+			margin: #{$px}px !important;
+			&-horizontal {
+				margin-left: #{$px}px !important;
+				margin-right: #{$px}px !important;
+			}
+			&-vertical {
+				margin-top: #{$px}px !important;
+				margin-bottom: #{$px}px !important;
+			}
+			&-bottom {
+				margin-bottom: #{$px}px !important;
+			}
+			&-top {
+				margin-top: #{$px}px !important;
+			}
+		}
+		@media only screen and (min-width: map-get($screen-sizes, tabletBreakpoint)) {
+			$px: $i * 5;
+			.padding-#{$i} {
+				padding: #{$px}px !important;
+				&-horizontal {
+					padding-left: #{$px}px !important;
+					padding-right: #{$px}px !important;
+				}
+				&-vertical {
+					padding-top: #{$px}px !important;
+					padding-bottom: #{$px}px !important;
+				}
+			}
+			.margin-#{$i} {
+				margin: #{$px}px !important;
+				&-horizontal {
+					margin-left: #{$px}px !important;
+					margin-right: #{$px}px !important;
+				}
+				&-vertical {
+					margin-top: #{$px}px !important;
+					margin-bottom: #{$px}px !important;
+				}
+			}
+		}
+	}
+}
+
+.inline {
+	&.mat-progress-spinner {
+		display: inline !important;
+	}
+	&.mat-progress-spinner svg {
+		position: relative !important;
+	}
+}
+
+@mixin classes($screen-sizes) {
+	main {
+		min-height: 400px;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			min-height: 200px;
+		}
+	}
+	.hidden {
+		display: none !important;
+	}
+	.visible {
+		display: block;
+	}
+	.wrap {
+		white-space: normal !important;
+	}
+	.nowrap,
+	.no-wrap {
+		white-space: nowrap !important;
+	}
+	.flex,
+	.mat-card.flex {
+		display: flex;
+		&.wrap,
+		&.flex-wrap {
+			flex-wrap: wrap;
+		}
+		&-centre,
+		&-center,
+		&.centre,
+		&.center {
+			justify-content: center;
+		}
+		&-right,
+		&.right,
+		.right {
+			margin-left: auto !important;
+			display: flex !important;
+		}
+		&-left,
+		&.left,
+		.left {
+			margin-right: auto !important;
+			display: flex !important;
+		}
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			&:not(.no-flex-column):not(.panel) {
+				flex-direction: column;
+			}
+			&-right,
+			&.right,
+			.right {
+				margin-left: inherit !important;
+			}
+		}
+		&-expand,
+		&-grow,
+		&-grow-2 {
+			flex-grow: 2;
+		}
+		&-grow-1 {
+			flex-grow: 1;
+		}
+	}
+	.flex-row {
+		flex-direction: row;
+	}
+	.flex-column {
+		flex-direction: column;
+	}
+	// .flex-right {
+	//     display: flex !important;
+	//     margin-left: auto !important;
+	// }
+	.block {
+		display: block;
+	}
+	.centre-div,
+	.center-div {
+		display: flex;
+		flex-direction: column;
+	}
+	.margin-centre,
+	.margin-center,
+	.centre-margin,
+	.center-margin {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.drop-shadow {
+		box-shadow: 0px -1px 15px 0 #909090;
+		border-bottom: none;
+	}
+	.box-shadow-top {
+		box-shadow: 0 -1px 0 0 rgba(34, 36, 38, 0.15);
+	}
+	.box-shadow-bottom {
+		box-shadow: 0 1px 0 0 rgba(34, 36, 38, 0.15);
+	}
+	.box-shadow-left {
+		box-shadow: -1px 0 0 0 rgba(34, 36, 38, 0.15);
+	}
+	.box-shadow-right {
+		box-shadow: 1px 0 0 0 rgba(34, 36, 38, 0.15);
+	}
+	.full-height {
+		height: 100%;
+	}
+	.light-border-top-right {
+		border-top: 1px solid #e0e0e0;
+		border-right: 1px solid #e0e0e0;
+		padding: 5px;
+	}
+	.no-padding {
+		padding: 0em !important;
+		.mat-dialog-container {
+			padding: 0em !important;
+		}
+	}
+	.no-radius {
+		border-radius: 0;
+	}
+
+	.padding {
+		padding: 1em !important;
+	}
+	.medium-padding {
+		padding: 2em !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			padding: 1em !important;
+		}
+	}
+	.large-padding {
+		padding: 3em !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			padding: 1em !important;
+		}
+	}
+	.huge-padding {
+		padding-top: 4em !important;
+		padding-bottom: 4em !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			padding: 1em !important;
+		}
+	}
+	.massive-padding,
+	.ultra-padding {
+		padding-top: 5em !important;
+		padding-bottom: 5em !important;
+		padding-left: 1em !important;
+		padding-right: 1em !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			padding: 1em !important;
+		}
+	}
+	.mega-padding {
+		padding-top: 6em !important;
+		padding-bottom: 6em !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			padding: 1em !important;
+		}
+	}
+	.small-margin,
+	.little-margin,
+	.margin {
+		margin: 1em !important;
+	}
+	.medium-margin {
+		margin: 2em !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			margin: 1em !important;
+		}
+	}
+	.large-margin {
+		margin: 3em !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			margin: 1em !important;
+		}
+	}
+	.float-right {
+		float: right;
+	}
+	.full-width {
+		width: 100%;
+	}
+	.align-left,
+	.left {
+		text-align: left !important;
+	}
+	.align-right,
+	.right {
+		text-align: right !important;
+	}
+	.align-centre,
+	.align-center,
+	.center,
+	.centre {
+		text-align: center !important;
+		justify-items: center;
+		&.flex {
+			align-items: center;
+		}
+	}
+	.flex .align-centre {
+		justify-content: center;
+	}
+	img.align-centre,
+	img.centre {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content-centre,
+	.content-center {
+		position: absolute;
+		top: 50%;
+		bottom: auto;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+	.upper {
+		text-transform: uppercase;
+	}
+	.lower {
+		text-transform: lowercase;
+	}
+	.bold {
+		font-weight: bold !important;
+	}
+	.italic {
+		font-style: italic;
+	}
+	.normal,
+	.no-bold,
+	.normal a,
+	.no-bold a {
+		font-weight: normal !important;
+	}
+	.mat-card {
+		&.centre {
+			display: flex !important;
+			flex-direction: column !important;
+			justify-content: space-between;
+			margin: 3px;
+		}
+		&.middle {
+			display: flex !important;
+			align-items: center;
+			justify-content: center;
+			.mat-card-content {
+				display: flex;
+			}
+		}
+	}
+
+	// non-clickable checkbox labels
+	.mat-checkbox-label-cold {
+		line-height: 27px;
+		margin-left: 8px;
+		vertical-align: middle;
+	}
+
+	.mat-step-icon.mat-icon,
+	.mat-icon,
+	mat-icon {
+		&.large,
+		&.large-icon {
+			font-size: 64px;
+			width: 64px;
+			height: 64px;
+		}
+		&.medium,
+		&.medium-icon {
+			font-size: 48px;
+			width: 48px;
+			height: 48px;
+		}
+		&.small,
+		&.small-icon {
+			font-size: 24px;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	// form-field {
+	//     margin-top: 10px;
+	//     margin-bottom: 10px;
+	// }
+
+	mat-dialog-content {
+		height: 100%;
+		max-height: 95vh;
+		&.spread {
+			justify-content: space-between;
+			display: flex;
+			flex-direction: column;
+			mat-dialog-actions {
+				flex-direction: column;
+				margin-bottom: 0;
+			}
+		}
+		//  flex-center">
+	}
+
+	mobile-top-menu {
+		nav {
+			background-color: inherit;
+			position: fixed;
+			width: 100%;
+			z-index: 999;
+		}
+	}
+
+	.mat-typography {
+		table {
+			th > h4 {
+				margin-bottom: 0;
+			}
+			&.compact {
+				// font-size: 0.8em;
+				.mat-cell,
+				.mat-footer-cell {
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+
+	@include font-sizes($screen-sizes);
+	@include icon-sizes($screen-sizes);
+	@include paddings-margins($screen-sizes);
+}

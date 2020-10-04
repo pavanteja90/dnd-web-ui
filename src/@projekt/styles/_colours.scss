@@ -1,0 +1,154 @@
+@mixin opacity-gradations($palette) {
+	// &-50 {
+	// 	background-color: mat-color($palette, 50) !important;
+	// 	// position: relative;
+	// }
+	@for $i from 1 to 9 {
+		$num: $i * 10; //10, 20, 30...
+		&-#{$num} {
+			background-color: rgba(mat-color($palette, 100), $num / 100) !important;
+		}
+		$num: $i * 100; //100, 200, 300...
+		&-#{$num} {
+			background-color: mat-color($palette, $num) !important;
+			// position: relative;
+		}
+	}
+}
+
+@mixin theme-colours($palette) {
+	background-color: mat-color($palette) !important;
+	color: mat-color($palette, default-contrast) !important;
+}
+
+@mixin colours($theme) {
+	$primary: map-get($theme, primary);
+	$accent: map-get($theme, accent);
+	$background: map-get($theme, background); // .mat-primary,
+	.primary-color,
+	.primary-colour,
+	.primary-color a,
+	.primary-colour a {
+		color: mat-color($primary) !important;
+		&-light {
+			color: mat-color($primary, lighter) !important;
+		}
+	}
+	.primary-background {
+		// position: relative;
+		background-color: mat-color($primary) !important;
+		color: mat-color($primary, default-contrast) !important;
+		&-light {
+			background-color: mat-color($primary, lighter) !important;
+		}
+		@include opacity-gradations($primary);
+	}
+	.primary-border {
+		border-color: mat-color($primary);
+	}
+	.accent-color,
+	.accent-colour,
+	.accent-color a,
+	.accent-colour a {
+		color: mat-color($accent) !important;
+		&-light {
+			color: mat-color($accent, lighter) !important;
+		}
+	}
+	.accent-background {
+		// position: relative;
+		background-color: mat-color($accent) !important;
+		color: mat-color($accent, default-contrast) !important;
+		&-light {
+			background-color: mat-color($accent, lighter) !important;
+			color: mat-color($accent, lighter-contrast);
+		}
+		@include opacity-gradations($accent);
+	}
+	.accent-border {
+		border-color: mat-color($accent) !important;
+	}
+	.light-background {
+		// position: relative;
+		background-color: whitesmoke !important;
+	}
+	.light-colour,
+	.light-color {
+		color: whitesmoke !important;
+	}
+	.white-background {
+		background-color: white !important;
+	}
+	.white,
+	.white-colour,
+	.white-color {
+		color: white !important;
+	}
+	.white-border {
+		border-color: white !important;
+	}
+	.mat-background {
+		// position: relative;
+		background-color: mat-color($background, card) !important;
+	}
+	.black-background {
+		background-color: black !important;
+	}
+	h1,
+	h3,
+	h5 {
+		color: mat-color($primary);
+	}
+	h2,
+	h4 {
+		color: mat-color($accent);
+	}
+	a {
+		color: mat-color($accent);
+		transition: all 0.1s ease-out;
+		&:hover {
+			color: mat-color($accent, 700);
+		}
+	}
+
+	body {
+		color: mat-color($primary, darker);
+		.mat-cell,
+		.mat-footer-cell {
+			color: mat-color($accent, darker);
+		}
+	}
+
+	body::-webkit-scrollbar-track,
+	div::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+		background-color: #f5f5f5;
+	}
+
+	body::-webkit-scrollbar,
+	div::-webkit-scrollbar {
+		width: 4px;
+		background-color: #f5f5f5;
+	}
+
+	body::-webkit-scrollbar-thumb,
+	div::-webkit-scrollbar-thumb {
+		background-color: mat-color($accent, lighter);
+		// border: 2px solid #555555;
+	}
+
+	.mat-table thead {
+		background-color: mat-color($primary, 50);
+	}
+
+	.mat-tab-label-active {
+		// background-color: mat-color($accent, 100);
+		.mat-tab-label-content {
+			color: mat-color($accent);
+		}
+	}
+
+	// .mat-tab-label {
+	// 	background-color: mat-color($accent, 50);
+	// }
+}

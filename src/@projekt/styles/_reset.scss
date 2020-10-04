@@ -1,0 +1,429 @@
+html,
+body {
+	font-size: 14px;
+	position: relative;
+	top: 0 !important;
+	left: 0 !important;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	position: relative; // overflow: auto !important;
+}
+
+ul {
+	mat-icon {
+		display: inline;
+		margin-left: -46px !important;
+	}
+	p {
+		display: inline;
+		padding-left: 20px;
+	}
+}
+
+a {
+	transition-timing-function: ease;
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+	-webkit-transition-property: color, border-color, background-color;
+	text-decoration: none;
+	transition-property: color, border-color, background-color;
+}
+
+img {
+	max-width: 100%;
+}
+
+form-filler .mat-button-toggle-group {
+	margin: 0 !important;
+	border-radius: 0 !important;
+	.mat-button-toggle {
+		margin: 0 !important;
+		padding: 0 !important;
+		border-radius: 0 !important;
+		height: 31px;
+		.mat-button-toggle-label-content {
+			line-height: 36px !important;
+		}
+	}
+}
+
+@mixin mat-reset($screen-sizes: $screen-sizes, $theme: $theme) {
+	$primary: map-get($theme, primary);
+
+	// .mat-form-field-prefix,
+	// .mat-form-field-suffix {
+	// 	margin-right: 0.5em;
+	// }
+
+	// .mat-form-field.no-validate,
+	// .mat-form-field.mat-form-field-disabled {
+	// 	.mat-form-field-wrapper {
+	// 		padding-bottom: 0 !important;
+	// 	}
+	// }
+	// .mat-snack-bar-handset {
+	// 	width: initial !important;
+	// }
+
+	@media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
+		root > mat-card {
+			padding-left: 4px !important;
+			padding-right: 4px !important;
+		}
+	}
+
+	.mat-snack-bar-container {
+		// width: 95vw !important;
+		max-width: 1000px !important;
+		background-color: mat-color($primary) !important;
+		color: mat-color($primary, default-contrast) !important;
+		button {
+			color: mat-color($primary, default-contrast) !important;
+			border: 1px solid mat-color($primary, default-contrast) !important;
+		}
+		@media only screen and (max-width: 568px) {
+			.mat-button:not(.no-stack) {
+				padding-top: 0 !important;
+				padding-bottom: 0 !important;
+				margin-top: 10px !important;
+			}
+		}
+		span {
+			word-break: normal;
+		}
+		@media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
+			.mat-simple-snackbar {
+				flex-direction: column;
+			}
+		}
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			margin: 8px !important;
+		}
+	}
+	.mat-icon {
+		vertical-align: middle !important; // line-height: 0.7;
+	}
+	.mat-tooltip-panel {
+		// 	width: 500px !important;
+		.mat-tooltip {
+			font-size: 14px !important;
+			max-width: 80% !important;
+		}
+	}
+	.mat-title {
+		margin-bottom: 0 !important;
+	}
+	.mat-display-1 {
+		margin-bottom: 20px !important;
+	}
+
+	.mat-display-2,
+	.mat-typography .mat-display-2 {
+		margin: 42px 0;
+	}
+
+	.mat-body p,
+	.mat-body-1 p,
+	.mat-typography p {
+		margin: 12px 0;
+	}
+
+	.mat-list-base .mat-list-item .mat-list-item-content {
+		width: 100%;
+	}
+	.mat-list .mat-list-item,
+	.mat-list .mat-list-option,
+	.mat-nav-list .mat-list-item,
+	.mat-nav-list .mat-list-option,
+	.mat-selection-list .mat-list-item,
+	.mat-selection-list .mat-list-option {
+		// height: initial !important;
+		// padding: 10px 0px !important;
+	}
+
+	.mat-form-field {
+		width: 100%;
+	}
+
+	ul {
+		mat-icon {
+			display: inline;
+		}
+		p {
+			display: inline;
+			padding-left: 20px;
+		}
+	}
+
+	.no-padding-dialog .mat-dialog-container {
+		padding: 0px;
+	}
+
+	.mat-list .mat-list-item .mat-line,
+	.mat-nav-list .mat-list-item .mat-line,
+	.mat-selection-list .mat-list-item .mat-line {
+		white-space: normal !important;
+	}
+
+	.mat-toolbar {
+		color: inherit;
+	}
+
+	.mat-radio-group {
+		.mat-radio-button {
+			margin-left: 10px;
+			.mat-radio-label-content {
+				line-height: 2em;
+			}
+			.mat-radio-label {
+				transition: opacity 0.1s ease-out;
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+		.mat-form-field-subscript-wrapper {
+			padding: 0 1em;
+		}
+		> mat-label {
+			padding-left: 10px;
+		}
+	}
+
+	.no-shadow,
+	.mat-elevation-z0 {
+		box-shadow: none !important;
+	}
+
+	form-field {
+		width: 100%;
+		display: block;
+		// margin-bottom: 10px;
+		&:not(.fixed-label) {
+			display: flex;
+			margin-top: 5px;
+		}
+	}
+
+	form-select {
+		width: 100%;
+	}
+
+	mat-label,
+	.mat-form-field-label,
+	.mat-form-field-appearance-legacy .mat-form-field-label {
+		color: rgba(0, 0, 0, 0.6) !important;
+	}
+
+	form-field.fixed-label {
+		mat-label {
+			padding-left: 2px;
+			font-size: 85%;
+			display: block;
+		}
+		.mat-form-field-appearance-outline .mat-form-field-wrapper {
+			margin: 0.1em 0;
+		}
+	}
+
+	.mat-header-cell {
+		font-size: 1.1rem;
+		font-weight: bold;
+		color: mat-color($primary);
+	}
+
+	td.mat-cell,
+	td.mat-footer-cell,
+	th.mat-header-cell {
+		padding-right: 8px !important;
+		// @media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+		//     white-space: nowrap;
+		// }
+	}
+	td.mat-cell:first-of-type,
+	td.mat-footer-cell:first-of-type,
+	th.mat-header-cell:first-of-type {
+		padding-left: 10px !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			padding-left: 0px !important;
+		}
+	}
+
+	.mat-chip-list-wrapper {
+		margin: initial !important;
+	}
+
+	loan-account-detail {
+		.mat-chip-list-wrapper {
+			display: flex !important;
+		}
+	}
+
+	mat-card.mat-card {
+		// padding: 5px !important;
+		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+			// padding: 5px;
+		}
+
+		color: rgba(0, 0, 0, 0.87);
+		vertical-align: top;
+		.mat-card-title {
+			font-size: 22px;
+		}
+		.mat-card-subtitle,
+		.mat-card-content {
+			// font-size: 16px;
+		}
+		.mat-card-footer {
+			// bottom: 0;
+			// position: absolute;
+			margin: 0 !important;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.mat-card-actions {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.mat-card-actions:last-child {
+			display: flex;
+			flex-wrap: wrap;
+			// flex-direction: column;
+			// position: absolute;
+			// bottom: 8px;
+			margin-bottom: 0 !important;
+			// width: 83%;
+			justify-content: center;
+			// margin-left: 0;
+		}
+	}
+
+	.mat-action-row {
+		padding: 16px 0 !important;
+		border-top: none;
+		button.mat-button-base {
+			margin-left: 0px !important;
+		}
+	}
+
+	.mat-form-field-appearance-outline .mat-form-field-suffix {
+		top: 0em;
+	}
+
+	.mat-accordion {
+		.mat-expansion-panel:last-of-type {
+			border-bottom-right-radius: 0 !important;
+			border-bottom-left-radius: 0 !important;
+		}
+
+		.mat-expansion-panel:first-of-type {
+			border-top-right-radius: 0 !important;
+			border-top-left-radius: 0 !important;
+		}
+	}
+
+	.mat-expansion-panel-header {
+		font-size: 16px !important;
+		line-height: 1.5;
+		// padding: 10px 26px!important;
+		// height:auto!important;
+		* {
+			margin: 0 !important;
+		}
+	}
+
+	.mat-expansion-panel-content {
+		line-height: 26px;
+	}
+
+	.mat-list-base .mat-list-item {
+		font-size: 1em;
+	}
+
+	.mat-tab-link {
+		opacity: 1 !important;
+	}
+	.mat-horizontal-content-container {
+		padding: 2px !important;
+	}
+
+	@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+		.mat-horizontal-stepper-header-container {
+			flex-direction: column !important;
+		}
+		.mat-horizontal-stepper-header {
+			justify-content: center !important;
+			width: 100% !important;
+			height: 50px !important;
+		}
+	}
+
+	.mat-radio-label {
+		white-space: normal !important;
+	}
+
+	.mat-checkbox {
+		.mat-checkbox-layout {
+			white-space: normal !important;
+			.mat-checkbox-label {
+				line-height: 22px;
+				text-align: left !important;
+			}
+		}
+
+		&.ng-invalid.ng-dirty {
+			.mat-checkbox-layout {
+				border-color: red !important;
+				color: red !important;
+				.mat-checkbox-frame {
+					border-color: red !important;
+				}
+			}
+		}
+		.mat-checkbox-inner-container {
+			// height: 20px !important;
+			// width: 20px;
+			margin-top: 4px !important; //top aligns checkboxes
+		}
+		&.middle {
+			.mat-checkbox-inner-container {
+				margin-top: auto !important; //middle aligns checkboxes
+			}
+		}
+	}
+	.mat-checkbox-label p {
+		padding-top: 0 !important;
+		margin-top: 0 !important;
+	}
+
+	// removed 4/4/20 - move to custom styles if needed
+	// .mat-button-toggle-group {
+	// margin: 0.25em 0 1.5em;
+	// }
+
+	.mat-button-toggle-group,
+	.mat-button-toggle-standalone {
+		&:not(.no-stack) {
+			@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
+				display: flex !important;
+				flex-direction: column !important;
+				white-space: normal !important;
+			}
+		}
+	}
+
+	.mat-tab-label {
+		font-size: 1.2rem;
+	}
+
+	registration,
+	login {
+		.mat-horizontal-stepper-header-container {
+			display: none !important;
+		}
+	}
+}
