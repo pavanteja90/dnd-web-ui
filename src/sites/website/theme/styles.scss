@@ -525,24 +525,15 @@ footer {
 			background: $accent-colour;
 			transition: 300ms;
 		}
-		&:hover {
-			color: $accent-colour;
-			&::after {
-				width: 100%;
-			}
+		&:hover::after {
+			width: 100%;
 		}
 	}
 }
 
 coming-soon .coming-soon-bg {
 	min-height: 100vh;
-	background-color: #ffffff;
-	background-image: linear-gradient(160deg, #ffffff 0%, #231f20 100%);
-	// background: url("/assets/img/background-3.jpg") no-repeat center center fixed;
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -o-background-size: cover;
-	// background-size: cover;
+	background-color: #231f20;
 	.two.columns {
 		grid-column-gap: 0px !important;
 		.bg-1 {
@@ -569,8 +560,19 @@ coming-soon .coming-soon-bg {
 		}
 	}
 	mat-card.mat-card {
+		h1 {
+			line-height: 2.25;
+			color: #fff;
+		}
 		background: rgba(0, 0, 0, 0.3);
 		top: 15vh;
+	}
+}
+
+a {
+	color: #fff;
+	&:hover {
+		color: $accent-colour;
 	}
 }
 
