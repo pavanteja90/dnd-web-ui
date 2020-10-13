@@ -2,8 +2,8 @@
 @import "core";
 @import "palette";
 
-$headerFontFamily: "Oswald,Helvetica,Arial,Verdana,sans-serif";
-$font-family: "Arial,Verdana,sans-serif";
+$headerFontFamily: 'Roboto, "Open Sans", sans-serif';
+$font-family: 'Roboto, "Open Sans", sans-serif';
 $display-1: mat-typography-level(24px, 58px, 600);
 $headline: mat-typography-level(30px, 47px, 400); //h1
 $title: mat-typography-level(26px, 38px, 500); //h2
@@ -45,7 +45,7 @@ $desktop-menu: main-menu-theme(
 $ui-theme: ui-theme(
 	$theme,
 	// $banner-image: $banner-image,
-		$desktop-menu: $desktop-menu
+	$desktop-menu: $desktop-menu
 );
 @include ui($ui-theme);
 
@@ -95,90 +95,6 @@ h3 {
 .mat-flat-button {
 	padding: 2px 12px;
 	font-size: 14px;
-}
-
-apply {
-	h4 {
-		text-align: left;
-		margin-bottom: 0 !important;
-	}
-
-	.mat-stepper-horizontal {
-		background-color: $light-grey;
-	}
-
-	.mat-card {
-		background-color: $light-grey;
-		margin-top: 24px;
-		margin-bottom: 24px;
-		.mat-card:not(.panel) {
-			//inner cards
-			background-color: white;
-		}
-	}
-
-	application-navigation {
-		display: block;
-		margin-top: 44px;
-
-		.mat-flat-button {
-			padding: 12px 54px;
-			font-size: 18px;
-		}
-	}
-
-	button.large {
-		padding: 12px 54px;
-		font-size: 18px;
-	}
-
-	.fin-additional-dynamic-item {
-		background: linear-gradient(#f5f5f5, #dedada00 20%);
-		padding-top: 12px;
-	}
-
-	.fin-slider-value-label {
-		font-size: 20px;
-		font-family: Oswald, Helvetica, Arial, Verdana, sans-serif;
-		color: $primary-colour;
-		margin-top: 20px;
-	}
-
-	.fin-slider-text-entry {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		.mat-form-field {
-			max-width: 200px;
-			font-size: 20px;
-			font-family: Oswald, Helvetica, Arial, Verdana, sans-serif;
-			color: $primary-colour;
-			.mat-form-field-wrapper {
-				padding-bottom: 0 !important;
-			}
-			.mat-form-field-flex {
-				padding-top: 0 !important;
-			}
-			.mat-form-field-infix {
-				padding: 0 0 10px 0 !important;
-				.mat-input-element {
-					text-align: center;
-				}
-			}
-			.mat-form-field-underline {
-				display: none;
-			}
-			.mat-form-field-prefix {
-				margin-right: 0 !important;
-			}
-		}
-	}
-
-	application-progress mat-progress-bar {
-		margin: 5px 0px !important;
-		padding-bottom: 5px;
-		border-radius: 5px;
-	}
 }
 
 .mat-panel-title {
@@ -315,10 +231,6 @@ desktop-menu {
 
 a {
 	color: $primary-colour;
-	font-weight: bold;
-	&:hover {
-		opacity: 0.8;
-	}
 }
 
 hr {
@@ -343,10 +255,6 @@ ul {
 }
 ul.af_list {
 	color: $grey !important;
-}
-
-.footer-links a {
-	display: block;
 }
 
 .mat-progress-bar.mat-accent .mat-progress-bar-buffer {
@@ -504,94 +412,6 @@ main {
 	margin-top: 40px;
 }
 
-.home {
-	hr {
-		margin-top: 100px;
-		margin-bottom: 100px;
-	}
-	.main-icons {
-		grid-column-gap: 5%;
-		padding-top: 40px;
-		padding-bottom: 40px;
-		justify-items: center;
-		&.top {
-			padding-top: 100px;
-			& > div {
-				max-width: 200px;
-			}
-		}
-		p,
-		a {
-			font-weight: bold;
-			font-size: 26px;
-			line-height: 32px;
-			display: block;
-		}
-		p {
-			margin: 10px 0;
-		}
-		.mat-icon-button {
-			font-size: 52px;
-			line-height: 0;
-			background-color: mat-color($primary);
-			color: white;
-			height: 100px !important;
-			width: 100px !important;
-			.mat-icon {
-				font-size: 60px;
-				width: 60px;
-				height: 30px;
-			}
-		}
-
-		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
-			justify-items: flex-start;
-			max-width: 320px;
-			margin: 20px auto;
-			padding-top: 0px;
-			padding-bottom: 20px;
-			& > div,
-			& > a {
-				display: flex;
-				align-items: center;
-				padding-bottom: 20px;
-			}
-			&.top {
-				margin-bottom: 0;
-				padding-top: 50px;
-				& > div {
-					max-width: 100%;
-					padding-bottom: 20px;
-				}
-			}
-			p,
-			a {
-				margin: 0px 20px;
-				text-align: left;
-				font-size: 20px !important;
-				line-height: 26px;
-			}
-			.mat-icon-button {
-				line-height: 0;
-				font-size: 36px;
-				height: 70px !important;
-				width: 70px !important;
-				.mat-icon {
-					font-size: 40px !important;
-					width: 40px;
-					height: 20px;
-				}
-				i {
-					font-size: 40px !important;
-				}
-			}
-			.apply-button {
-				padding-top: 20px;
-				padding-bottom: 20px;
-			}
-		}
-	}
-}
 .mat-expansion-panel {
 	color: inherit;
 
@@ -624,11 +444,6 @@ main {
 	}
 }
 
-.mobile-top-menu-icon {
-	width: 66px !important;
-	height: 66px !important;
-}
-
 mat-icon[matTooltip] {
 	font-size: 24px;
 	padding-left: 5px;
@@ -638,37 +453,11 @@ mat-icon[matTooltip] {
 	bottom: 0px !important;
 }
 
-.repayment-grid {
-	grid-row-gap: 10px;
-	justify-items: start;
-	grid-template-columns: 70% auto !important;
-	border-bottom: 1px solid white;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	text-align: left;
-}
-
 .loading {
 	opacity: 0.5;
 }
 .disabled {
 	opacity: 0.5;
-}
-loan-details form-field mat-slider + div {
-	color: $primary-colour;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-family: Oswald, Helvetica, Arial, Verdana, sans-serif;
-}
-dynamic-list .addButtonContainer mat-icon {
-	font-size: 16px;
-	height: 18px;
-	width: 18px;
-}
-file-uploader button {
-	width: 100%;
-	margin-top: 3px !important;
-	height: 44px;
 }
 
 mat-select::-webkit-scrollbar,
@@ -696,20 +485,12 @@ button.mat-flat-button.mat-primary {
 	main {
 		padding-top: 78px;
 	}
-	apply div.container {
-		padding: 1em 0em !important;
-		max-width: 100% !important;
-	}
 	mat-expansion-panel.loan-calculator-details {
 		width: 100% !important;
 	}
 	hr {
 		margin-top: 20px !important;
 		margin-bottom: 20px !important;
-	}
-	.apply-button {
-		margin-top: 20px;
-		margin-bottom: 20px;
 	}
 	mobile-top-menu nav {
 		background-color: white;
@@ -720,9 +501,6 @@ button.mat-flat-button.mat-primary {
 }
 
 @media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
-	apply application-navigation .mat-flat-button {
-		padding: 0px;
-	}
 	.mat-flat-button {
 		white-space: normal !important;
 	}
@@ -736,41 +514,38 @@ nav img.logo-image.responsive {
 	cursor: pointer;
 }
 
-form-submitter-dialog {
-	h3 {
-		color: $primary-colour !important;
-	}
-	p {
-		font-size: 14px;
-	}
-}
-
-loan-details,
-security-details {
-	mat-radio-group {
-		.mat-form-field-subscript-wrapper {
-			display: none;
-		}
-	}
-}
-
-borrower-details,
-supporting-information {
-	mat-radio-group {
-		.mat-form-field-subscript-wrapper {
-			position: relative !important;
-		}
-	}
-}
-
 .panel.warning {
 	color: orangered;
 }
 
-form-filler {
-	.filler-buttons button {
-		height: 100%;
+// Component styles
+
+footer {
+	border-top: 2px solid $accent-colour;
+	min-height: 20vh;
+	mat-divider {
+		border-top-color: $accent-colour !important;
+	}
+	a.site-author {
+		color: white;
+		display: inline-block;
+		&::after {
+			content: "";
+			width: 0px;
+			height: 2px;
+			display: block;
+			background: $accent-colour;
+			transition: 300ms;
+		}
+		&:hover{
+			color: $accent-colour;
+			&::after {
+				width: 100%;
+			}
+		}
 	}
 }
 
-// }
+coming-soon .container {
+	min-height: 60vh;
+}
