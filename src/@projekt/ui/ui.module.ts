@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { MaterialModule } from '../styles';
 import { DesktopMenuComponent, MobileMenuComponent } from './components';
 
 @NgModule({
@@ -6,7 +7,9 @@ import { DesktopMenuComponent, MobileMenuComponent } from './components';
 		DesktopMenuComponent,
 		MobileMenuComponent
 	],
-	imports: [],
+	imports: [
+		MaterialModule
+	],
 	exports: [
 		DesktopMenuComponent,
 		MobileMenuComponent

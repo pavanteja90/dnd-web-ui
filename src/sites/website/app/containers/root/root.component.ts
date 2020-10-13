@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class RootComponent {
 	title = 'Website';
+	opened: boolean;
 }

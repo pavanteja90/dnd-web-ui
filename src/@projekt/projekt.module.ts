@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { MaterialModule } from './styles/material.module';
 import { UiModule } from './ui';
 import { FieldsModule } from './projekt-fields';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ConfigService } from './services';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [],
@@ -13,13 +15,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 		ReactiveFormsModule,
 		MaterialModule,
 		UiModule,
-		FieldsModule
+		FieldsModule,
+		HttpClientModule
 	],
 	exports: [
 		MaterialModule,
 		UiModule,
 		FieldsModule
 	],
-	providers: [],
+	providers: [
+		ConfigService,
+		{ provide: APP_INITIALIZER, useFactory: ConfigService.init, deps: [ConfigService, HttpClient], multi: true }
+	],
 })
 export class CoreModule { }

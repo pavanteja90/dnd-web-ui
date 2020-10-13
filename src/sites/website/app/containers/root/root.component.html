@@ -1,4 +1,9 @@
-<mat-card class="margin-15 center">
-	<h1>Coming soon!</h1>
-</mat-card>
-<router-outlet></router-outlet>
+<desktop-menu></desktop-menu>
+<mat-sidenav-container>
+	<mat-sidenav mode="side" [(opened)]="opened">
+		Side nav content
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<router-outlet></router-outlet>
+	</mat-sidenav-content>
+</mat-sidenav-container>
