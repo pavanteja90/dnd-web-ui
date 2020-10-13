@@ -510,7 +510,6 @@ body {
 
 footer {
 	border-top: 2px solid $accent-colour;
-	min-height: 20vh;
 	mat-divider {
 		border-top-color: $accent-colour !important;
 	}
@@ -561,11 +560,10 @@ coming-soon .coming-soon-bg {
 	}
 	mat-card.mat-card {
 		h1 {
-			line-height: 2.25;
+			line-height: 2.25 em;
 			color: #fff;
 		}
 		background: rgba(0, 0, 0, 0.3);
-		top: 15vh;
 	}
 }
 
