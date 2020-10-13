@@ -2,8 +2,8 @@
 @import "core";
 @import "palette";
 
-$headerFontFamily: 'Roboto, "Open Sans", sans-serif';
-$font-family: 'Roboto, "Open Sans", sans-serif';
+$headerFontFamily: "Roboto", "sans-serif";
+$font-family: "Roboto", "sans-serif";
 $display-1: mat-typography-level(24px, 58px, 600);
 $headline: mat-typography-level(30px, 47px, 400); //h1
 $title: mat-typography-level(26px, 38px, 500); //h2
@@ -49,10 +49,6 @@ $ui-theme: ui-theme(
 );
 @include ui($ui-theme);
 
-.h1 {
-	text-transform: uppercase;
-}
-
 // @include custom-styles($theme);
 
 // @mixin custom-styles($theme) {
@@ -84,12 +80,6 @@ $accent-colour: mat-color($accent);
 		margin-block-start: 1em;
 		margin-block-end: 1em;
 	}
-}
-
-h1,
-h2,
-h3 {
-	text-transform: uppercase;
 }
 
 .mat-flat-button {
@@ -402,12 +392,6 @@ mat-label {
 	color: $primary-colour;
 }
 
-.apply-button {
-	margin-top: 60px;
-	padding-bottom: 100px;
-	line-height: 20px !important;
-}
-
 main {
 	margin-top: 40px;
 }
@@ -520,6 +504,10 @@ nav img.logo-image.responsive {
 
 // Component styles
 
+body {
+	font-family: $font-family !important;
+}
+
 footer {
 	border-top: 2px solid $accent-colour;
 	min-height: 20vh;
@@ -537,7 +525,7 @@ footer {
 			background: $accent-colour;
 			transition: 300ms;
 		}
-		&:hover{
+		&:hover {
 			color: $accent-colour;
 			&::after {
 				width: 100%;
@@ -546,6 +534,46 @@ footer {
 	}
 }
 
-coming-soon .container {
-	min-height: 60vh;
+coming-soon .coming-soon-bg {
+	min-height: 100vh;
+	background-color: #ffffff;
+	background-image: linear-gradient(160deg, #ffffff 0%, #231f20 100%);
+	// background: url("/assets/img/background-3.jpg") no-repeat center center fixed;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
+	.two.columns {
+		grid-column-gap: 0px !important;
+		.bg-1 {
+			background-color: $accent-colour;
+			div.coming-soon-text {
+				display: flex;
+				margin: auto;
+				flex-direction: column-reverse;
+				height: 100%;
+				h1 {
+					margin-left: 20px;
+					border-left: 4px solid $primary-colour;
+					background-color: rgba(0, 0, 0, 0.3);
+				}
+			}
+		}
+		.bg-2 {
+			background-color: #ef9a2f;
+			display: flex;
+			flex-direction: row-reverse;
+			img {
+				max-height: 30vh;
+			}
+		}
+	}
+	mat-card.mat-card {
+		background: rgba(0, 0, 0, 0.3);
+		top: 15vh;
+	}
+}
+
+.whitesmoke {
+	color: whitesmoke !important;
 }
