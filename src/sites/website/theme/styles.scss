@@ -194,31 +194,6 @@ desktop-menu {
 	padding-bottom: 2.7em !important;
 }
 
-.mat-ink-bar {
-	background-color: white !important;
-}
-.identification-container {
-	margin: 0 auto;
-	width: 85%;
-	color: white !important;
-	border-radius: 10px;
-	padding: 10px;
-}
-
-.small-container-centering {
-	height: 10em;
-	position: relative;
-	.sub-scc {
-		line-height: 1.5;
-		margin: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, -50%);
-	}
-}
-
 a {
 	color: $primary-colour;
 }
@@ -242,9 +217,6 @@ ul {
 		padding-left: 0.7em;
 		// padding-bottom: 15px;
 	}
-}
-ul.af_list {
-	color: $grey !important;
 }
 
 .mat-progress-bar.mat-accent .mat-progress-bar-buffer {
@@ -482,6 +454,14 @@ button.mat-flat-button.mat-primary {
 			cursor: pointer;
 		}
 	}
+	coming-soon .coming-soon-bg .two.columns {
+		.bg-1 {
+			border-radius: 0px !important;
+		}
+		.bg-2 {
+			border-radius: 0px 0px 20px 20px !important;
+		}
+	}
 }
 
 @media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
@@ -531,11 +511,12 @@ footer {
 }
 
 coming-soon .coming-soon-bg {
-	min-height: 100vh;
-	background-color: #231f20;
+	background: linear-gradient(to bottom, #dc8e2e 0%,#231f20 100%);;
 	.two.columns {
 		grid-column-gap: 0px !important;
+		margin: 0px 50px;
 		.bg-1 {
+			z-index: 100;
 			background-color: $accent-colour;
 			div.coming-soon-text {
 				display: flex;
@@ -548,15 +529,25 @@ coming-soon .coming-soon-bg {
 					background-color: rgba(0, 0, 0, 0.3);
 				}
 			}
+			border-radius: 0px 0px 0px 20px;
 		}
 		.bg-2 {
+			z-index: 100;
+			position: relative;
 			background-color: #ef9a2f;
 			display: flex;
 			flex-direction: row-reverse;
 			img {
 				max-height: 30vh;
+				padding-right: 30px;
 			}
+			border-radius: 0px 0px 20px 0px;
 		}
+	}
+	mat-card.bg-card {
+		border-radius: 20px;
+		top: -50px;
+		z-index: 0;
 	}
 	mat-card.mat-card {
 		h1 {
@@ -569,9 +560,6 @@ coming-soon .coming-soon-bg {
 
 a {
 	color: #fff;
-	&:hover {
-		color: $accent-colour;
-	}
 }
 
 .underline {
