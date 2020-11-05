@@ -7,5 +7,6 @@ export class Config {
 		description: string;
 		logo: string;
 		locale: string;
-	}
+	};
+	custom: any;
 }

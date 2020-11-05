@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ProjektDateComponent, ProjektFieldComponent, ProjektNumberComponent, ProjektSelectComponent, ProjektTextComponent } from './components';
+import { NumberOnlyDirective } from './directives';
 
 @NgModule({
 	declarations: [
@@ -8,7 +9,8 @@ import { ProjektDateComponent, ProjektFieldComponent, ProjektNumberComponent, Pr
 		ProjektDateComponent,
 		ProjektNumberComponent,
 		ProjektSelectComponent,
-		ProjektTextComponent
+		ProjektTextComponent,
+		NumberOnlyDirective
 	],
 	imports: [
 		BrowserModule
