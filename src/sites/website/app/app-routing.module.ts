@@ -13,6 +13,11 @@ const routes: Routes = [
 		path: 'coming-soon',
 		canActivate: [MetaGuard],
 		component: ComingSoonComponent,
+		data: {
+			meta: {
+				title: "Coming Soon"
+			}
+		}
 	}, {
 		path: '**',
 		redirectTo: 'coming-soon'

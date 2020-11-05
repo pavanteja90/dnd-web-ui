@@ -548,6 +548,10 @@ coming-soon .coming-soon-bg {
 		border-radius: 20px;
 		top: -50px;
 		z-index: 0;
+		.iframe-holder iframe {
+			border: 2px solid $accent-colour;
+			border-radius: 25px;		
+		}
 	}
 	mat-card.mat-card {
 		h1 {
