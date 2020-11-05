@@ -550,7 +550,8 @@ coming-soon .coming-soon-bg {
 		z-index: 0;
 		.iframe-holder iframe {
 			border: 2px solid $accent-colour;
-			border-radius: 25px;		
+			border-radius: 25px;
+			min-height: 350px;	
 		}
 	}
 	mat-card.mat-card {
