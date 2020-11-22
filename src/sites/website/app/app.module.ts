@@ -6,19 +6,30 @@ import { ComingSoonComponent, FooterComponent, RootComponent } from './container
 import { ConfigService, CoreModule } from "@projekt/core";
 
 import { MetaModule, MetaLoader } from '@ngx-meta/core';
+import { AboutUsComponent, CareersComponent, ContactUsComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
+import { appConfig } from './app-config';
 
 @NgModule({
 	declarations: [
+		// Containers
 		RootComponent,
 		ComingSoonComponent,
-		FooterComponent
+		FooterComponent,
+		// Components
+		AboutUsComponent,
+		CareersComponent,
+		ContactUsComponent,
+		OfferedServicesComponent,
+		ProductsComponent,
+		PromosComponent,
+		StoreMenuComponent
 	],
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,
 		AppRoutingModule,
-		CoreModule,
-		MetaModule.forRoot({ provide: MetaLoader, useFactory: ConfigService.metaFactory, deps: [ConfigService] })
+		MetaModule.forRoot({ provide: MetaLoader, useFactory: ConfigService.metaFactory, deps: [ConfigService] }),
+		CoreModule.forRoot(appConfig)
 	],
 	providers: [],
 	bootstrap: [RootComponent]

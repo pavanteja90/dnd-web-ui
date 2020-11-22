@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment';
 import { Config } from '../models';
 import { catchError, map } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { UtilService } from './util.service';
 
 
 @Injectable()
@@ -25,8 +26,8 @@ export class ConfigService {
 		});
 	}
 
-	static init(configService: ConfigService, http: HttpClient) {
-		let production = environment.production;
+	static init(http: HttpClient, configService: ConfigService, appConfig: Config) {
+		configService.config = appConfig;
 		return (): Promise<any> => {
 			return new Promise<void>((resolve, reject) => {
 				console.log("Config service initialised");
@@ -34,7 +35,7 @@ export class ConfigService {
 				const configPath = `./assets/config/config.json`;
 				http.get(configPath).pipe(
 					map((config: Config) => {
-						configService.config = config;
+						configService.config = { ...UtilService.deepMerge(configService.config, config) };
 						resolve();
 					}),
 					catchError(() => {

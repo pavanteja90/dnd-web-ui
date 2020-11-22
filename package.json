@@ -11,7 +11,8 @@
 		"website": "ng serve website",
 		"website:prod": "ng build website --prod --optimization --progress",
 		"internal-portal": "ng serve internal-portal",
-		"internal-portal:prod": "ng build internal-portal --prod --optimization --progress"
+		"internal-portal:prod": "ng build internal-portal --prod --optimization --progress",
+		"server": "cd src/server && npm start"
 	},
 	"private": true,
 	"dependencies": {
@@ -27,6 +28,13 @@
 		"@angular/router": "~10.1.1",
 		"@nguniversal/express-engine": "^11.0.0",
 		"@ngx-meta/core": "^9.0.0",
+		"body-parser": "^1.19.0",
+		"concurrently": "^5.3.0",
+		"cors": "^2.8.5",
+		"crypto-js": "^4.0.0",
+		"date-fns": "^2.16.1",
+		"express": "^4.17.1",
+		"nodemailer": "^6.4.16",
 		"rxjs": "~6.6.0",
 		"tslib": "^2.0.0",
 		"zone.js": "~0.10.2"
