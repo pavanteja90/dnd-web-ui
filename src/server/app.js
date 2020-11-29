@@ -9,6 +9,10 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
 //enable cors
 app.use(function (req, res, next) {
   const whiteListedOrigin = 'http://localhost:4200' || 'http://localhost:4201' || 'https://dianandapper.com';
