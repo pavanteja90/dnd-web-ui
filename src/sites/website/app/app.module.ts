@@ -6,7 +6,7 @@ import { ComingSoonComponent, FooterComponent, RootComponent } from './container
 import { ConfigService, CoreModule } from "@projekt/core";
 
 import { MetaModule, MetaLoader } from '@ngx-meta/core';
-import { AboutUsComponent, CareersComponent, ContactUsComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
+import { AboutUsComponent, CareersComponent, ContactUsComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StartupDialogComponent, StoreMenuComponent } from './components';
 import { appConfig } from './app-config';
 
 @NgModule({
@@ -22,6 +22,7 @@ import { appConfig } from './app-config';
 		OfferedServicesComponent,
 		ProductsComponent,
 		PromosComponent,
+		StartupDialogComponent,
 		StoreMenuComponent
 	],
 	imports: [

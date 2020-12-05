@@ -4,7 +4,7 @@ import { MaterialModule } from './styles/material.module';
 import { UiModule } from './ui';
 import { FieldsModule } from './projekt-fields';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ConfigService, UtilService } from './services';
+import { ApiService, ConfigService, UtilService } from './services';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Config } from './models';
 
@@ -30,6 +30,7 @@ export class CoreModule {
 		return {
 			ngModule: CoreModule,
 			providers: [
+				ApiService,
 				UtilService,
 				ConfigService,
 				{
@@ -38,6 +39,6 @@ export class CoreModule {
 				},
 				{ provide: APP_INITIALIZER, useFactory: ConfigService.init, deps: [HttpClient, ConfigService, Config], multi: true }
 			]
-		}
+		};
 	}
 }
