@@ -20,6 +20,9 @@ import { Config } from './models';
 		HttpClientModule
 	],
 	exports: [
+		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule,
 		MaterialModule,
 		UiModule,
 		FieldsModule

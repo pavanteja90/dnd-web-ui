@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ProjektDateComponent, ProjektFieldComponent, ProjektNumberComponent, ProjektSelectComponent, ProjektTextComponent } from './components';
 import { NumberOnlyDirective } from './directives';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MaterialModule } from '../styles';
 
 @NgModule({
 	declarations: [
@@ -13,7 +16,10 @@ import { NumberOnlyDirective } from './directives';
 		NumberOnlyDirective
 	],
 	imports: [
-		BrowserModule
+		BrowserModule,
+		MatInputModule,
+		MatFormFieldModule,
+		MaterialModule
 	],
 	exports: [
 		ProjektFieldComponent,
