@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from "@angular/core";
 import { MetaLoader, MetaStaticLoader, PageTitlePositioning } from '@ngx-meta/core';
-import { environment } from 'src/environments/environment';
 import { Config } from '../models';
 import { catchError, map } from 'rxjs/operators';
 import { of } from 'rxjs';
