@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MetaGuard } from '@ngx-meta/core';
+import { AboutUsComponent, CareersComponent, ContactUsComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
 import { ComingSoonComponent } from './containers';
 
 const routes: Routes = [
@@ -19,13 +20,76 @@ const routes: Routes = [
 			}
 		}
 	}, {
+		path: 'about-us',
+		canActivate: [MetaGuard],
+		component: AboutUsComponent,
+		data: {
+			meta: {
+				title: "About us"
+			}
+		}
+	}, {
+		path: 'careers',
+		canActivate: [MetaGuard],
+		component: CareersComponent,
+		data: {
+			meta: {
+				title: "Careers"
+			}
+		}
+	}, {
+		path: 'contact-us',
+		canActivate: [MetaGuard],
+		component: ContactUsComponent,
+		data: {
+			meta: {
+				title: "Contact us"
+			}
+		}
+	}, {
+		path: 'services',
+		canActivate: [MetaGuard],
+		component: OfferedServicesComponent,
+		data: {
+			meta: {
+				title: "Services"
+			}
+		}
+	}, {
+		path: 'products',
+		canActivate: [MetaGuard],
+		component: ProductsComponent,
+		data: {
+			meta: {
+				title: "Products"
+			}
+		}
+	}, {
+		path: 'promos',
+		canActivate: [MetaGuard],
+		component: PromosComponent,
+		data: {
+			meta: {
+				title: "Promotions"
+			}
+		}
+	}, {
+		path: 'menu',
+		canActivate: [MetaGuard],
+		component: StoreMenuComponent,
+		data: {
+			meta: {
+				title: "Menu"
+			}
+		}
+	}, {
 		path: '**',
 		redirectTo: 'coming-soon'
 	}
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
 	exports: [RouterModule]
 })
 export class AppRoutingModule { }

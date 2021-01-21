@@ -3,24 +3,43 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { ComingSoonComponent, FooterComponent, RootComponent } from './containers';
-import { ConfigService, CoreModule } from "@projekt/core";
+import { ConfigService, CoreModule, MaterialModule } from "@projekt/core";
 
 import { MetaModule, MetaLoader } from '@ngx-meta/core';
+import { AboutUsComponent, CareersComponent, ContactUsComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StartupDialogComponent, StoreMenuComponent } from './components';
+import { appConfig } from './app-config';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 @NgModule({
 	declarations: [
+		// Containers
 		RootComponent,
 		ComingSoonComponent,
-		FooterComponent
+		FooterComponent,
+		// Components
+		AboutUsComponent,
+		CareersComponent,
+		ContactUsComponent,
+		OfferedServicesComponent,
+		ProductsComponent,
+		PromosComponent,
+		StartupDialogComponent,
+		StoreMenuComponent
 	],
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,
-		AppRoutingModule,		
-		CoreModule,
-		MetaModule.forRoot({ provide: MetaLoader, useFactory: ConfigService.metaFactory, deps: [ConfigService] })
+		FormsModule,
+		ReactiveFormsModule,
+		AppRoutingModule,
+		MetaModule.forRoot({ provide: MetaLoader, useFactory: ConfigService.metaFactory, deps: [ConfigService] }),
+		CoreModule.forRoot(appConfig)
 	],
-	providers: [],
+	providers: [
+		{ provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'standard' } }
+	],
 	bootstrap: [RootComponent]
 })
 export class AppModule { }
