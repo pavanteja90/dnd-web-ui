@@ -149,8 +149,6 @@ $accent-colour: mat-color($accent);
 }
 
 desktop-menu {
-	// border-top: 10px solid $primary-colour;
-	border-bottom: 1px rgba(0, 0, 0, 0.15) solid;
 	.mat-tab-links {
 		.mat-tab-link {
 			font-size: 22px;
@@ -462,6 +460,28 @@ button.mat-flat-button.mat-primary {
 			border-radius: 0px 0px 20px 20px !important;
 		}
 	}
+
+	desktop-menu {
+		display: none !important;
+	}
+
+	mobile-menu,
+	button.menu-button {
+		display: inline-block !important;
+	}
+}
+
+desktop-menu {
+	display: block;
+}
+
+mobile-menu {
+	display: none;
+	width: 100%;
+}
+
+button.menu-button {
+	display: none;
 }
 
 @media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
@@ -578,6 +598,7 @@ a {
 html,
 body {
 	height: 100%;
+	margin: 0;
 }
 body {
 	margin: 0;

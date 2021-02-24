@@ -1,13 +1,25 @@
-<mat-toolbar color="primary">
-	<!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened = !opened">
-		<mat-icon>menu</mat-icon>
-	</button> -->
-	<a href="/"><img src="assets/img/logo.png" height="44px" alt="logo"></a>
-	<span class="example-spacer"></span>
-	<!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-		<mat-icon>favorite</mat-icon>
-	</button>
-	<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-		<mat-icon>share</mat-icon>
-	</button> -->
-</mat-toolbar>
+<section style="display: flex; flex-direction: row-reverse">
+	<ul class="navigation-items">
+		<li>
+			<a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+		</li>
+		<li>
+			<a routerLink="/menu" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Menu</a>
+		</li>
+		<li>
+			<a routerLink="/contact-us" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact us</a>
+		</li>
+		<li>
+			<a routerLink="/about-us" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About us</a>
+		</li>
+		<li>
+			<a routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Services</a>
+		</li>
+		<li>
+			<a routerLink="/products" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Products</a>
+		</li>
+		<li>
+			<a routerLink="/promos" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Promotions</a>
+		</li>
+	</ul>
+</section>

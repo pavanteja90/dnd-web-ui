@@ -1,10 +1,19 @@
-<!-- <desktop-menu></desktop-menu> -->
 <mat-sidenav-container>
-	<mat-sidenav mode="side" [(opened)]="opened">
-		Side nav content
+	<mat-sidenav #sidenav role="navigation">
+		<mobile-menu (sidenavClose)="sidenav.close()"></mobile-menu>
 	</mat-sidenav>
 	<mat-sidenav-content>
-		<router-outlet></router-outlet>
+		<mat-toolbar color="primary">
+			<section>
+				<!-- Show this button only for mobile layout -->
+				<button class="menu-button" mat-icon-button aria-label="Menu" (click)="sidenav.toggle()">
+					<mat-icon>menu</mat-icon>
+				</button>
+				<a href="/" rel="noopener"><img src="assets/img/just-logo.png" height="50px" alt="logo" style="vertical-align: top;"></a>
+			</section>
+			<desktop-menu (sidenavToggle)="sidenav.toggle()"></desktop-menu>
+		</mat-toolbar>
+		<router-outlet style="min-height: 100vh;"></router-outlet>
 		<footer></footer>
 	</mat-sidenav-content>
 </mat-sidenav-container>
