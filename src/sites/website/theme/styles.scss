@@ -608,3 +608,18 @@ body {
 .mat-input-element {
 	padding-bottom: 5px !important ;
 }
+
+store-menu {
+	.mat-tab-label[aria-selected="true"] {
+		opacity: 1;
+		.mat-tab-label-content {
+			color: #141e30;
+			font-weight: 600;
+			transform: scale(1.15);
+			transition: 300ms ease-in-out;
+		}
+	}
+	mat-ink-bar {
+		background: linear-gradient(to right, #141e30, #243b55);
+	}
+}

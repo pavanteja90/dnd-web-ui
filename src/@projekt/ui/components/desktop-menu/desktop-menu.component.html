@@ -1,25 +1,23 @@
 <section style="display: flex; flex-direction: row-reverse">
 	<ul class="navigation-items">
-		<li>
-			<a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-		</li>
-		<li>
-			<a routerLink="/menu" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Menu</a>
-		</li>
-		<li>
-			<a routerLink="/contact-us" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact us</a>
-		</li>
-		<li>
-			<a routerLink="/about-us" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About us</a>
-		</li>
-		<li>
-			<a routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Services</a>
-		</li>
-		<li>
-			<a routerLink="/products" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Products</a>
-		</li>
-		<li>
-			<a routerLink="/promos" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Promotions</a>
-		</li>
+		<ng-container *ngFor="let link of links; let i=index">
+			<li>
+				<ng-template [ngIf]="link.children && link.children.length" [ngIfElse]="singleNavItem">
+					<section>
+						<a [matMenuTriggerFor]="menu" [class.active]="isActive(link.routerLink)">Services</a>
+						<mat-menu #menu="matMenu">
+							<ng-container *ngFor="let childLink of link.children">
+								<button mat-menu-item [routerLink]="childLink.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+									<mat-icon *ngIf="childLink.icon">{{childLink.icon}}</mat-icon>{{childLink.label}}
+								</button>
+							</ng-container>
+						</mat-menu>
+					</section>
+				</ng-template>
+				<ng-template #singleNavItem>
+					<a [routerLink]="link.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{link.label}}</a>
+				</ng-template>
+			</li>
+		</ng-container>
 	</ul>
 </section>

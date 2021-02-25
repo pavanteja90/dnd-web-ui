@@ -56,6 +56,24 @@ const routes: Routes = [
 			}
 		}
 	}, {
+		path: 'services/male',
+		canActivate: [MetaGuard],
+		component: OfferedServicesComponent,
+		data: {
+			meta: {
+				title: "Services"
+			}
+		}
+	}, {
+		path: 'services/female',
+		canActivate: [MetaGuard],
+		component: OfferedServicesComponent,
+		data: {
+			meta: {
+				title: "Services"
+			}
+		}
+	}, {
 		path: 'products',
 		canActivate: [MetaGuard],
 		component: ProductsComponent,

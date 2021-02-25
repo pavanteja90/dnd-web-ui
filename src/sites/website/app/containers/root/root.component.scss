@@ -5,3 +5,14 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
 mat-sidenav {
 	width: 300px;
 }
+
+mat-toolbar {
+	transition: 300ms ease-in-out;
+	height: 80px;
+}
+
+.navbar-shrink {
+	transition: 300ms ease-in-out;
+	height: 60px !important;
+	opacity: 0.9;
+}

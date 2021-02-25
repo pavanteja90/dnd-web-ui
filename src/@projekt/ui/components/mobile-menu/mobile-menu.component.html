@@ -1,23 +1,24 @@
 <mat-nav-list>
-	<a mat-list-item routerLink="/home" (click)="onSidenavClose()">
-		<mat-icon>home</mat-icon><span class="nav-caption">Home</span>
-	</a>
-	<a mat-list-item routerLink="/menu" (click)="onSidenavClose()">
-		<mat-icon>home</mat-icon><span class="nav-caption">Menu</span>
-	</a>
-	<a mat-list-item routerLink="/contact-us" (click)="onSidenavClose()">
-		<mat-icon>home</mat-icon><span class="nav-caption">Contact us</span>
-	</a>
-	<a mat-list-item routerLink="/about-us" (click)="onSidenavClose()">
-		<mat-icon>home</mat-icon><span class="nav-caption">About us</span>
-	</a>
-	<a mat-list-item routerLink="/services" (click)="onSidenavClose()">
-		<mat-icon>home</mat-icon><span class="nav-caption">Services</span>
-	</a>
-	<a mat-list-item routerLink="/products" (click)="onSidenavClose()">
-		<mat-icon>home</mat-icon><span class="nav-caption">Products</span>
-	</a>
-	<a mat-list-item routerLink="/promotions" (click)="onSidenavClose()">
-		<mat-icon>home</mat-icon><span class="nav-caption">Promotions</span>
-	</a>
+	<ng-container *ngFor="let link of links">
+		<ng-template [ngIf]="link.children && link.children.length > 0" [ngIfElse]="singleNavItem">
+			<mat-expansion-panel style="box-shadow: none;">
+				<mat-expansion-panel-header style="padding: 0px 16px;">
+					<mat-panel-title>
+						<mat-icon *ngIf="link.icon">{{link.icon}}</mat-icon>
+						<a matline class="nav-caption">{{link.label}}</a>
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+				<ng-container *ngFor="let childLink of link.children">
+					<a mat-list-item [routerLink]="childLink.routerLink" (click)="onSidenavClose()">
+						<mat-icon *ngIf="childLink.icon">{{childLink.icon}}</mat-icon><span class="nav-caption">{{childLink.label}}</span>
+					</a>
+				</ng-container>
+			</mat-expansion-panel>
+		</ng-template>
+		<ng-template #singleNavItem>
+			<a mat-list-item [routerLink]="link.routerLink" (click)="onSidenavClose()">
+				<mat-icon *ngIf="link.icon">{{link.icon}}</mat-icon><span class="nav-caption">{{link.label}}</span>
+			</a>
+		</ng-template>
+	</ng-container>
 </mat-nav-list>
