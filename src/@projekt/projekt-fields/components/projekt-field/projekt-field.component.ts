@@ -6,6 +6,7 @@ import { FormControl } from '@angular/forms';
 	templateUrl: "./projekt-field.component.html"
 })
 export class ProjektFieldComponent {
+	@Input() fieldName: string;
 	@Input() type: string;
 	@Input() label: string;
 	@Input() formControl: FormControl;

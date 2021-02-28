@@ -5,7 +5,10 @@
 	<mat-sidenav-content id="parent">
 		<mat-toolbar [ngClass]="{ 'navbar-shrink': isScrolled }" style="position: fixed; z-index: 1000;" color="primary">
 			<section class="flex no-flex-column" style="width: 100%; justify-content: space-between;">
-				<a href="/" rel="noopener"><img src="assets/img/just-logo.png" height="50px" alt="logo" style="vertical-align: top;"></a>
+				<a href="/" rel="noopener">
+					<img src="assets/img/just-logo.png" height="50px" alt="logo" style="vertical-align: top;">
+					<!-- <span style="text-transform: uppercase; vertical-align: middle;">Diana & Dapper</span> -->
+				</a>
 				<button class="menu-button" style="align-self: center;" mat-icon-button aria-label="Menu" (click)="sidenav.toggle()">
 					<mat-icon>menu</mat-icon>
 				</button>

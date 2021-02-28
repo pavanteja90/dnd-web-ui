@@ -10,8 +10,13 @@ ul.navigation-items {
 	li {
 		display: inline-block;
 		cursor: pointer;
+		padding: 0px 0.7em;
+		&:not(:last-child) {
+			border-right: 1px solid #de8f2e;
+		}
 		a {
 			font-size: 14px;
+			vertical-align: middle;
 			&.active {
 				color: #de8f2e;
 			}
@@ -19,6 +24,7 @@ ul.navigation-items {
 	}
 }
 
-button.active, button.active mat-icon {
+button.active,
+button.active mat-icon {
 	color: #de8f2e;
 }

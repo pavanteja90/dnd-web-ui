@@ -5,4 +5,12 @@ import { ProjektFieldComponent } from '../projekt-field';
 	selector: "pr-number",
 	templateUrl: "./projekt-number.component.html"
 })
-export class ProjektNumberComponent extends ProjektFieldComponent { }
+export class ProjektNumberComponent extends ProjektFieldComponent {
+	ngOnInit(): void {
+		if (this.type === 'mobile') {
+			this.prefix = !this.prefix ? 'mobile' : this.prefix;
+			this.placeholder = !this.placeholder ? 'Enter your mobile number' : this.placeholder;
+			this.label = !this.label ? 'Mobile Number' : this.label;
+		}
+	}
+}

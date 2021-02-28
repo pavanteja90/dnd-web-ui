@@ -482,6 +482,7 @@ mobile-menu {
 
 button.menu-button {
 	display: none;
+	color: $accent-colour;
 }
 
 @media only screen and (max-width: map-get($screen-sizes, largeMobileBreakpoint)) {
@@ -568,19 +569,24 @@ coming-soon .coming-soon-bg {
 		border-radius: 20px;
 		top: -50px;
 		z-index: 0;
-		.iframe-holder iframe {
-			border: 2px solid $accent-colour;
-			border-radius: 25px;
-			min-height: 350px;
-		}
-	}
-	mat-card.mat-card {
 		h1 {
 			line-height: 40px;
 			color: #fff;
 		}
 		background: rgba(0, 0, 0, 0.3);
 	}
+}
+
+mat-card.gradient-card {
+	border-radius: 20px;
+	z-index: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.iframe-holder iframe {
+	border: 2px solid $accent-colour;
+	border-radius: 25px;
+	min-height: 350px;
 }
 
 a {
@@ -621,5 +627,12 @@ store-menu {
 	}
 	mat-ink-bar {
 		background: linear-gradient(to right, #141e30, #243b55);
+	}
+}
+
+mat-sidenav {
+	background-color: $accent-colour !important;
+	.mat-expansion-panel {
+		background-color: $accent-colour;
 	}
 }
