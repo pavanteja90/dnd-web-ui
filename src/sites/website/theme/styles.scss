@@ -631,8 +631,26 @@ store-menu {
 }
 
 mat-sidenav {
-	background-color: $accent-colour !important;
+	background: linear-gradient(to bottom, $accent-colour, #F2C94C) !important;
 	.mat-expansion-panel {
-		background-color: $accent-colour;
+		background-color: transparent;
+	}
+}
+
+.mat-menu-panel {
+	background-color: $accent-colour;
+	button {
+		font-size: 14px;
+		color: $primary-colour !important;
+		&.active {
+			background: linear-gradient(to bottom, #231f20, #3c3b3f) !important;
+			color: white !important;
+			mat-icon {
+				color: white !important;
+			}
+		}
+		mat-icon {
+			color: $primary-colour !important;
+		}
 	}
 }

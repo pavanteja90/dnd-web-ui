@@ -1,38 +1,40 @@
-<section class="container margin-5-vertical">
-	<mat-card class="gradient-card">
-		<section class="two columns">
-			<section style="display: flex; flex-direction: column; justify-content: space-between;">
-				<div class="center">
-					<img src="assets/img/just-logo.png" alt="logo" style="height: 100px;">
-				</div>
-				<p class="font-20">For bookings/general queries, please feel free to call us at
-					<a class="primary-colour underline" href="tel:7674818484" rel="noreferrer noopener">
-						76748 18484
-					</a>
-					or email us at
-					<a class="primary-colour underline" href="mailto: info.dianandapper@gmail.com" rel="noreferrer noopener">
-						info.dianandapper@gmail.com
-					</a>
-				</p>
-				<mat-divider [inset]="true"></mat-divider>
-				<div>
-					<p class="font-18">For latest updates, instant news about our promotions/offers, do follow us on Facebook or Instagram.</p>
-					<a href="https://www.facebook.com/dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-					<a href="https://www.instagram.com/dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram"></a>
-					<a href="tel:7674818484" rel="noreferrer" target="_blank"><img src="assets/icons/phone.png" alt="Phone"></a>
-				</div>
-			</section>
-			<!-- <form>
+<section class="container" style="display: table; height: 100vh;">
+	<section style="display: table-cell; vertical-align: middle;">
+		<mat-card class="gradient-card">
+			<section class="two columns">
+				<section style="display: flex; flex-direction: column; justify-content: space-between;">
+					<div class="center">
+						<img src="assets/img/just-logo.png" alt="logo" style="height: 100px;">
+					</div>
+					<p class="font-20">For bookings/general queries, please feel free to call us at
+						<a class="accent-colour underline" matTooltip="Call us" href="tel:7674818484" rel="noreferrer noopener">
+							76748 18484
+						</a>
+						or email us at
+						<a class="accent-colour underline" matTooltip="Email us" href="mailto: info.dianandapper@gmail.com" rel="noreferrer noopener">
+							info.dianandapper@gmail.com
+						</a>
+					</p>
+					<mat-divider [inset]="true"></mat-divider>
+					<div>
+						<p class="font-18">For latest updates, instant news about our promotions/offers, do follow us on Facebook or Instagram.</p>
+						<a href="https://www.facebook.com/dianandapper" matTooltip="Facebook" rel="noreferrer" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+						<a href="https://www.instagram.com/dianandapper" matTooltip="Instagram" rel="noreferrer" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+						<a href="tel:7674818484" rel="noreferrer" matTooltip="Call us" target="_blank"><img src="assets/icons/phone.png" alt="Phone"></a>
+					</div>
+				</section>
+				<!-- <form>
 				<h3>Email Us</h3>
 				<name [formGroup]="form.controls.name"></name>
 				<pr-text type="email" [formControl]="form.controls.emailAddress" fieldName="email-address"></pr-text>
 				<pr-number type="mobile" [formControl]="form.controls.mobilePhone" fieldName="mobile-phone"></pr-number>
 				<button mat-flat-button color="primary" type="submit" (click)="submit()" [disabled]="!form.valid">Submit</button>
 			</form> -->
-			<div class="iframe-holder">
-				<iframe class="full-width full-height" allowfullscreen frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5ZoNc1pCyjOTSx1OxpAueDqo7ZGQgzgg&q=Diana %26 Dapper Unisex Salon, Bhaskar Nagar Road, Saibaba Officer's Colony, Sri Sai Baba Officer's Colony, Osmania University Teachers Colony, Sainikpuri, Secunderabad, Telangana, India" allowfullscreen>
-				</iframe>
-			</div>
-		</section>
-	</mat-card>
+				<div class="iframe-holder">
+					<iframe class="full-width full-height" allowfullscreen frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5ZoNc1pCyjOTSx1OxpAueDqo7ZGQgzgg&q=Diana %26 Dapper Unisex Salon, Bhaskar Nagar Road, Saibaba Officer's Colony, Sri Sai Baba Officer's Colony, Osmania University Teachers Colony, Sainikpuri, Secunderabad, Telangana, India" allowfullscreen>
+					</iframe>
+				</div>
+			</section>
+		</mat-card>
+	</section>
 </section>

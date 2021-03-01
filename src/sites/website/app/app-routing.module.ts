@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MetaGuard } from '@ngx-meta/core';
-import { AboutUsComponent, CareersComponent, ContactUsComponent, HomeComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
+import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuComponent, HomeComponent, MaleMenuComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
 import { ComingSoonComponent } from './containers';
 
 const routes: Routes = [
@@ -58,7 +58,7 @@ const routes: Routes = [
 	}, {
 		path: 'services/male',
 		canActivate: [MetaGuard],
-		component: OfferedServicesComponent,
+		component: MaleMenuComponent,
 		data: {
 			meta: {
 				title: "Services"
@@ -67,7 +67,7 @@ const routes: Routes = [
 	}, {
 		path: 'services/female',
 		canActivate: [MetaGuard],
-		component: OfferedServicesComponent,
+		component: FemaleMenuComponent,
 		data: {
 			meta: {
 				title: "Services"
