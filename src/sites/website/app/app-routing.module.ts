@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MetaGuard } from '@ngx-meta/core';
-import { AboutUsComponent, CareersComponent, ContactUsComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
+import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuComponent, HomeComponent, MaleMenuComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
 import { ComingSoonComponent } from './containers';
 
 const routes: Routes = [
@@ -9,7 +9,7 @@ const routes: Routes = [
 		path: '',
 		canActivate: [MetaGuard],
 		pathMatch: 'full',
-		redirectTo: 'coming-soon'
+		redirectTo: 'home'
 	}, {
 		path: 'coming-soon',
 		canActivate: [MetaGuard],
@@ -56,6 +56,24 @@ const routes: Routes = [
 			}
 		}
 	}, {
+		path: 'services/male',
+		canActivate: [MetaGuard],
+		component: MaleMenuComponent,
+		data: {
+			meta: {
+				title: "Services"
+			}
+		}
+	}, {
+		path: 'services/female',
+		canActivate: [MetaGuard],
+		component: FemaleMenuComponent,
+		data: {
+			meta: {
+				title: "Services"
+			}
+		}
+	}, {
 		path: 'products',
 		canActivate: [MetaGuard],
 		component: ProductsComponent,
@@ -83,8 +101,17 @@ const routes: Routes = [
 			}
 		}
 	}, {
+		path: 'home',
+		canActivate: [MetaGuard],
+		component: HomeComponent,
+		data: {
+			meta: {
+				title: "Home"
+			}
+		}
+	}, {
 		path: '**',
-		redirectTo: 'coming-soon'
+		redirectTo: 'home'
 	}
 ];
 

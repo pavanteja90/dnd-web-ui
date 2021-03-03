@@ -1,10 +1,23 @@
-<!-- <desktop-menu></desktop-menu> -->
 <mat-sidenav-container>
-	<mat-sidenav mode="side" [(opened)]="opened">
-		Side nav content
+	<mat-sidenav position="end" #sidenav role="navigation">
+		<mobile-menu [links]="links" (sidenavClose)="sidenav.close()"></mobile-menu>
 	</mat-sidenav>
-	<mat-sidenav-content>
-		<router-outlet></router-outlet>
+	<mat-sidenav-content id="parent">
+		<mat-toolbar [ngClass]="{ 'navbar-shrink': isScrolled }" style="position: fixed; z-index: 1000;" color="primary">
+			<section class="flex no-flex-column" style="width: 100%; justify-content: space-between;">
+				<a href="/" rel="noopener">
+					<img src="assets/img/just-logo.png" height="50px" alt="logo" style="vertical-align: top;">
+					<!-- <span style="text-transform: uppercase; vertical-align: middle;">Diana & Dapper</span> -->
+				</a>
+				<button class="menu-button" style="align-self: center;" mat-icon-button aria-label="Menu" (click)="sidenav.toggle()">
+					<mat-icon>menu</mat-icon>
+				</button>
+			</section>
+			<desktop-menu [links]="links" (sidenavToggle)="sidenav.toggle()"></desktop-menu>
+		</mat-toolbar>
+		<section style="min-height: 100vh; padding-top: 80px; background: linear-gradient(to bottom, #dc8e2e 0%, #231f20 100%);" id="target">
+			<router-outlet></router-outlet>
+		</section>
 		<footer></footer>
 	</mat-sidenav-content>
 </mat-sidenav-container>

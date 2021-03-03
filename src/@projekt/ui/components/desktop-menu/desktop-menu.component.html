@@ -1,13 +1,23 @@
-<mat-toolbar color="primary">
-	<!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened = !opened">
-		<mat-icon>menu</mat-icon>
-	</button> -->
-	<a href="/"><img src="assets/img/logo.png" height="44px" alt="logo"></a>
-	<span class="example-spacer"></span>
-	<!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-		<mat-icon>favorite</mat-icon>
-	</button>
-	<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-		<mat-icon>share</mat-icon>
-	</button> -->
-</mat-toolbar>
+<section style="display: flex; flex-direction: row-reverse">
+	<ul class="navigation-items">
+		<ng-container *ngFor="let link of links; let i=index">
+			<li>
+				<ng-template [ngIf]="link.children && link.children.length" [ngIfElse]="singleNavItem">
+					<section>
+						<a [matMenuTriggerFor]="menu" [class.active]="isActive(link.routerLink)">Services</a>
+						<mat-menu #menu="matMenu">
+							<ng-container *ngFor="let childLink of link.children">
+								<button mat-menu-item [routerLink]="childLink.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+									<mat-icon *ngIf="childLink.icon">{{childLink.icon}}</mat-icon>{{childLink.label}}
+								</button>
+							</ng-container>
+						</mat-menu>
+					</section>
+				</ng-template>
+				<ng-template #singleNavItem>
+					<a [routerLink]="link.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{link.label}}</a>
+				</ng-template>
+			</li>
+		</ng-container>
+	</ul>
+</section>

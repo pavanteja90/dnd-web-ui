@@ -1,5 +1,5 @@
 {
-	"appVersion": "1.1.0-alpha",
+	"appVersion": "1.2.0",
 	"name": "Diana & Dapper",
 	"site": {
 		"title": "Diana & Dapper",
@@ -10,6 +10,9 @@
 	"custom": {
 		"comingSoon": {
 			"bitmoji": "peek.png"
+		},
+		"home": {
+			"bitmoji": "celebration.jpg"
 		}
 	}
 }

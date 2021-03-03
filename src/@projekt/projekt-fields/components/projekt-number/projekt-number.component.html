@@ -1,0 +1,10 @@
+<mat-form-field>
+	<mat-label>{{label}}</mat-label>
+	<mat-icon matPrefix>{{prefix}}</mat-icon>
+	<ng-container [ngSwitch]="true">
+		<input *ngSwitchCase="type === 'mobile'" type="text" matInput [placeholder]="placeholder" [formControl]="formControl" name="fieldName" ngDefaultControl>
+		<input *ngSwitchDefault type="number" matInput [placeholder]="placeholder" [formControl]="formControl" name="fieldName" ngDefaultControl>
+	</ng-container>
+	<mat-icon matSuffix>{{suffix}}</mat-icon>
+	<mat-hint>{{hint}}</mat-hint>
+</mat-form-field>

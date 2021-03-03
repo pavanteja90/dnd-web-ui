@@ -1,4 +1,24 @@
-
-<mat-sidenav mode="side" [(opened)]="opened">
-	Side nav content
-</mat-sidenav>
+<mat-nav-list>
+	<ng-container *ngFor="let link of links">
+		<ng-template [ngIf]="link.children && link.children.length > 0" [ngIfElse]="singleNavItem">
+			<mat-expansion-panel style="box-shadow: none;">
+				<mat-expansion-panel-header style="padding: 0px 16px;">
+					<mat-panel-title>
+						<mat-icon *ngIf="link.icon">{{link.icon}}</mat-icon>
+						<a matline class="nav-caption">{{link.label}}</a>
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+				<ng-container *ngFor="let childLink of link.children">
+					<a mat-list-item [routerLink]="childLink.routerLink" (click)="onSidenavClose()">
+						<mat-icon *ngIf="childLink.icon">{{childLink.icon}}</mat-icon><span class="nav-caption">{{childLink.label}}</span>
+					</a>
+				</ng-container>
+			</mat-expansion-panel>
+		</ng-template>
+		<ng-template #singleNavItem>
+			<a mat-list-item [routerLink]="link.routerLink" (click)="onSidenavClose()">
+				<mat-icon *ngIf="link.icon">{{link.icon}}</mat-icon><span class="nav-caption">{{link.label}}</span>
+			</a>
+		</ng-template>
+	</ng-container>
+</mat-nav-list>

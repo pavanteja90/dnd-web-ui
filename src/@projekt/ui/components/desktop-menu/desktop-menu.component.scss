@@ -1,3 +1,25 @@
 .example-spacer {
 	flex: 1 1 auto;
 }
+
+ul.navigation-items {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	li {
+		display: inline-block;
+		cursor: pointer;
+		padding: 0px 0.7em;
+		&:not(:last-child) {
+			border-right: 1px solid #de8f2e;
+		}
+		a {
+			font-size: 14px;
+			vertical-align: middle;
+			&.active {
+				color: #de8f2e;
+			}
+		}
+	}
+}

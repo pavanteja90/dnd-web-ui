@@ -8,3 +8,4 @@ export * from "./products";
 export * from "./promos";
 export * from "./startup-dialog";
 export * from "./store-menu";
+export * from "./home";
