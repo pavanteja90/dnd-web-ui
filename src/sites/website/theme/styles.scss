@@ -452,7 +452,8 @@ button.mat-flat-button.mat-primary {
 			cursor: pointer;
 		}
 	}
-	coming-soon .coming-soon-bg .two.columns {
+	coming-soon,
+	home {
 		.bg-1 {
 			border-radius: 0px !important;
 		}
@@ -536,34 +537,6 @@ coming-soon .coming-soon-bg {
 	.two.columns {
 		grid-column-gap: 0px !important;
 		margin: 0px 50px;
-		.bg-1 {
-			z-index: 100;
-			background-color: $accent-colour;
-			div.coming-soon-text {
-				display: flex;
-				margin: auto;
-				flex-direction: column-reverse;
-				height: 100%;
-				h1 {
-					margin-left: 20px;
-					border-left: 4px solid $primary-colour;
-					background-color: rgba(0, 0, 0, 0.3);
-				}
-			}
-			border-radius: 0px 0px 0px 20px;
-		}
-		.bg-2 {
-			z-index: 100;
-			position: relative;
-			background-color: #ef9a2f;
-			display: flex;
-			flex-direction: row-reverse;
-			img {
-				max-height: 30vh;
-				padding-right: 30px;
-			}
-			border-radius: 0px 0px 20px 0px;
-		}
 	}
 	mat-card.bg-card {
 		border-radius: 20px;
@@ -574,6 +547,40 @@ coming-soon .coming-soon-bg {
 			color: #fff;
 		}
 		background: rgba(0, 0, 0, 0.3);
+	}
+}
+
+coming-soon,
+home {
+	.no-grid-space {
+		grid-column-gap: 0px !important;
+	}
+	.bg-1 {
+		z-index: 100;
+		background-color: $accent-colour;
+		div.coming-soon-text {
+			display: flex;
+			margin: auto;
+			flex-direction: column-reverse;
+			height: 100%;
+			h1 {
+				margin-left: 20px;
+				border-left: 4px solid $primary-colour;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+		}
+		border-radius: 0px 0px 0px 20px;
+	}
+	.bg-2 {
+		z-index: 100;
+		position: relative;
+		background-color: #ef9a2f;
+		display: flex;
+		flex-direction: row-reverse;
+		img {
+			max-height: 30vh;
+		}
+		border-radius: 0px 0px 20px 0px;
 	}
 }
 
@@ -631,7 +638,7 @@ store-menu {
 }
 
 mat-sidenav {
-	background: linear-gradient(to bottom, $accent-colour, #F2C94C) !important;
+	background: linear-gradient(to bottom, $accent-colour, #f2c94c) !important;
 	.mat-expansion-panel {
 		background-color: transparent;
 	}
@@ -652,5 +659,37 @@ mat-sidenav {
 		mat-icon {
 			color: $primary-colour !important;
 		}
+	}
+}
+
+mat-card.info {
+	border-radius: 20px;
+	background-color: transparent;
+	&:hover {
+		transform: scale(1.01);
+		transition: 100ms ease-in-out;
+	}
+}
+
+a.navigate {
+	mat-icon {
+		margin-left: 6px;
+	}
+	&:hover {
+		mat-icon {
+			animation: float-right-left 600ms ease-in-out infinite;
+		}
+	}
+}
+
+@keyframes float-right-left {
+	0% {
+		margin-left: 6px;
+	}
+	50% {
+		margin-left: 12px;
+	}
+	100% {
+		margin-left: 6px;
 	}
 }

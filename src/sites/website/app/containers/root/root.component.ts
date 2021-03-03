@@ -27,23 +27,27 @@ export class RootComponent implements OnInit, OnDestroy {
 			routerLink: "services/female",
 			icon: "female"
 		}]
-	}, {
-		label: "Menu",
-		routerLink: "menu",
-		icon: "list"
-	}, {
-		label: "Products",
-		routerLink: "products",
-		icon: "inventory"
-	}, {
+	},
+	// {
+	// 	label: "Menu",
+	// 	routerLink: "menu",
+	// 	icon: "list"
+	// }, {
+	// 	label: "Products",
+	// 	routerLink: "products",
+	// 	icon: "inventory"
+	// },
+	{
 		label: "Promos",
 		routerLink: "promos",
 		icon: "favorite"
-	}, {
-		label: "About us",
-		routerLink: "about-us",
-		icon: "sentiment_satisfied_alt"
-	}, {
+	},
+	// {
+	// 	label: "About us",
+	// 	routerLink: "about-us",
+	// 	icon: "sentiment_satisfied_alt"
+	// },
+	{
 		label: "Contact us",
 		routerLink: "contact-us",
 		icon: "connect_without_contact"

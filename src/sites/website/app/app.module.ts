@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComingSoonComponent, FooterComponent, RootComponent } from './containers';
 import { ConfigService, CoreModule, FieldsModule } from "@projekt/core";
 import { MetaModule, MetaLoader } from '@ngx-meta/core';
-import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuComponent, MaleMenuComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StartupDialogComponent, StoreMenuComponent } from './components';
+import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuComponent, HomeComponent, MaleMenuComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StartupDialogComponent, StoreMenuComponent } from './components';
 import { appConfig } from './app-config';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
@@ -27,7 +27,8 @@ import { SiteFormBuilder } from './services';
 		StartupDialogComponent,
 		StoreMenuComponent,
 		MaleMenuComponent,
-		FemaleMenuComponent
+		FemaleMenuComponent,
+		HomeComponent
 	],
 	imports: [
 		BrowserModule,
