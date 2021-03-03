@@ -9,7 +9,7 @@ const routes: Routes = [
 		path: '',
 		canActivate: [MetaGuard],
 		pathMatch: 'full',
-		redirectTo: 'coming-soon'
+		redirectTo: 'home'
 	}, {
 		path: 'coming-soon',
 		canActivate: [MetaGuard],
@@ -111,7 +111,7 @@ const routes: Routes = [
 		}
 	}, {
 		path: '**',
-		redirectTo: 'coming-soon'
+		redirectTo: 'home'
 	}
 ];
 
