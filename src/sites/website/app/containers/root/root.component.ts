@@ -1,6 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavLink } from 'src/@projekt/ui/models';
-
+/**
+ * Icons website: https://icons8.com/
+ * Emojis website: https://emojipedia.org/
+*/
 @Component({
 	selector: 'app-root',
 	templateUrl: './root.component.html',
