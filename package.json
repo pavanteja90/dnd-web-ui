@@ -1,6 +1,6 @@
 {
 	"name": "projekt-saloon-web",
-	"version": "1.1.1-alpha",
+	"version": "1.2.2",
 	"scripts": {
 		"ng": "ng",
 		"start": "ng serve",
@@ -8,8 +8,8 @@
 		"test": "ng test",
 		"lint": "ng lint",
 		"e2e": "ng e2e",
-		"website": "ng serve website",
-		"website:prod": "ng build website --prod --optimization --progress",
+		"website": "yarn && ng serve website",
+		"website:prod": "yarn && ng build website --prod --optimization --progress",
 		"internal-portal": "ng serve internal-portal",
 		"internal-portal:prod": "ng build internal-portal --prod --optimization --progress",
 		"server": "cd src/server && npm start"
