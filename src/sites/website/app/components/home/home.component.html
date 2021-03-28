@@ -1,11 +1,16 @@
 <section style="margin: auto; max-width: 1200px;" class="two columns no-grid-space">
 	<div class="bg-1">
 		<div class="coming-soon-text">
-			<h1 class="padding-3-horizontal" style="margin-top: 50px;">We are ready to style you!</h1>
+			<h1 class="padding-3-horizontal" style="margin-top: 150px; margin-bottom: 50px;">We are ready to style you!</h1>
 		</div>
 	</div>
 	<div class="bg-2">
-		<img style="margin: auto;" [src]="bitmoji" alt="yay!">
+		<!-- (indexChange)="onIndexChange($event)"  (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')" -->
+		<swiper class="swiper-container">
+			<div *ngFor="let slide of slides" class="swiper-slide">
+				<img [src]="slide.src" [alt]="slide.alt">
+			</div>
+		</swiper>
 	</div>
 </section>
 <br><br>
@@ -34,7 +39,7 @@
 				and talk to our professionals for an appointment.
 			</p>
 		</div>
-		<div class="iframe-holder padding-5">
+		<div class="iframe-holder padding-15">
 			<iframe class="full-width full-height" allowfullscreen frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5ZoNc1pCyjOTSx1OxpAueDqo7ZGQgzgg&q=Diana %26 Dapper Unisex Salon, Bhaskar Nagar Road, Saibaba Officer's Colony, Sri Sai Baba Officer's Colony, Osmania University Teachers Colony, Sainikpuri, Secunderabad, Telangana, India" allowfullscreen>
 			</iframe>
 		</div>

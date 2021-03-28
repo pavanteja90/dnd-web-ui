@@ -22,4 +22,7 @@
 ## Initial Site with Home, Services, Contact us page creation
 
 ###### Version 1.2.2
+## Adding Images with Swiper to the site home page along with reducing the maps container
+
+###### Version 1.2.3
 ## Adding Promotions (previous and current) to the site

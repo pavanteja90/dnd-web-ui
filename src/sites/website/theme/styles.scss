@@ -577,9 +577,6 @@ home {
 		background-color: #ef9a2f;
 		display: flex;
 		flex-direction: row-reverse;
-		img {
-			max-height: 30vh;
-		}
 		border-radius: 0px 0px 20px 0px;
 	}
 }
@@ -706,4 +703,14 @@ mat-sidenav-content::-webkit-scrollbar {
 
 mat-sidenav-content::-webkit-scrollbar-thumb {
 	background-color: mat-color($accent, lighter);
+}
+
+.swiper-container {
+	@media only screen and (min-width: map-get($screen-sizes, tabletBreakpoint)) {
+		border-radius: 0px 0px 20px 0px;
+	}
+}
+
+.swiper-slide {
+	background-color: $primary-colour;
 }
