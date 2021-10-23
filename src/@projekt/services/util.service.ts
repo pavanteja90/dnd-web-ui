@@ -1,12 +1,12 @@
 
 import { Injectable } from "@angular/core";
-import * as dateFns from "date-fns";
+// import * as dateFns from "date-fns";
 import { AbstractControl } from '@angular/forms';
 
 /**
  * Ensures serialised dates include local timezone
  */
-Date.prototype.toJSON = function () { let that = this; return dateFns.format(that, "YYYY-MM-DDTHH:mm:ss.SSSZ"); };
+// Date.prototype.toJSON = function () { let that = this; return dateFns.format(that, "YYYY-MM-DDTHH:mm:ss.SSSZ"); };
 
 @Injectable()
 export class UtilService {
@@ -72,9 +72,9 @@ export class UtilService {
 		}
 	}
 
-	public getDateMinusYears(years: number) {
-		return dateFns.subYears(this.getMidnightDate(), years);
-	}
+	// public getDateMinusYears(years: number) {
+	// 	return dateFns.subYears(this.getMidnightDate(), years);
+	// }
 
 	static isObject(item) {
 		return (item && typeof item === 'object' && !Array.isArray(item));
@@ -389,9 +389,9 @@ export class UtilService {
 		return years;
 	}
 
-	public static FormatDate(date: Date) {
-		return dateFns.format(date, "DD/MM/YYYY");
-	}
+	// public static FormatDate(date: Date) {
+	// 	return dateFns.format(date, "DD/MM/YYYY");
+	// }
 
 	public static LoanSources = [
 		"Google",

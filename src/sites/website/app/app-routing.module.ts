@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MetaGuard } from '@ngx-meta/core';
 import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuComponent, HomeComponent, MaleMenuComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
 import { ComingSoonComponent } from './containers';
 
 const routes: Routes = [
 	{
 		path: '',
-		canActivate: [MetaGuard],
 		pathMatch: 'full',
 		redirectTo: 'home'
 	}, {
 		path: 'coming-soon',
-		canActivate: [MetaGuard],
 		component: ComingSoonComponent,
 		data: {
 			meta: {
@@ -21,7 +18,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'about-us',
-		canActivate: [MetaGuard],
 		component: AboutUsComponent,
 		data: {
 			meta: {
@@ -30,7 +26,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'careers',
-		canActivate: [MetaGuard],
 		component: CareersComponent,
 		data: {
 			meta: {
@@ -39,7 +34,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'contact-us',
-		canActivate: [MetaGuard],
 		component: ContactUsComponent,
 		data: {
 			meta: {
@@ -48,7 +42,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'services',
-		canActivate: [MetaGuard],
 		component: OfferedServicesComponent,
 		data: {
 			meta: {
@@ -57,7 +50,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'services/male',
-		canActivate: [MetaGuard],
 		component: MaleMenuComponent,
 		data: {
 			meta: {
@@ -66,7 +58,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'services/female',
-		canActivate: [MetaGuard],
 		component: FemaleMenuComponent,
 		data: {
 			meta: {
@@ -75,7 +66,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'products',
-		canActivate: [MetaGuard],
 		component: ProductsComponent,
 		data: {
 			meta: {
@@ -84,7 +74,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'promos',
-		canActivate: [MetaGuard],
 		component: PromosComponent,
 		data: {
 			meta: {
@@ -93,7 +82,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'menu',
-		canActivate: [MetaGuard],
 		component: StoreMenuComponent,
 		data: {
 			meta: {
@@ -102,7 +90,6 @@ const routes: Routes = [
 		}
 	}, {
 		path: 'home',
-		canActivate: [MetaGuard],
 		component: HomeComponent,
 		data: {
 			meta: {
