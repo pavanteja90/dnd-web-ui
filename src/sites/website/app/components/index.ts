@@ -1,5 +1,3 @@
-import { fr } from 'date-fns/locale';
-
 export * from "./about-us";
 export * from "./careers";
 export * from "./contact-us";

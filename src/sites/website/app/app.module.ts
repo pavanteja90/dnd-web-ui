@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { ComingSoonComponent, FooterComponent, RootComponent } from './containers';
 import { ConfigService, CoreModule, FieldsModule } from "@projekt/core";
-import { MetaModule, MetaLoader } from '@ngx-meta/core';
 import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuComponent, HomeComponent, MaleMenuComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StartupDialogComponent, StoreMenuComponent } from './components';
 import { appConfig } from './app-config';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -55,7 +54,6 @@ export const DEFAULT_SWIPER_OPTIONS: SwiperConfigInterface = {
 		FormsModule,
 		ReactiveFormsModule,
 		AppRoutingModule,
-		MetaModule.forRoot({ provide: MetaLoader, useFactory: ConfigService.metaFactory, deps: [ConfigService] }),
 		CoreModule.forRoot(appConfig),
 		FieldsModule,
 		SwiperModule
