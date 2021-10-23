@@ -1,19 +1,7 @@
-<section style="margin: auto; max-width: 1200px;" class="two columns no-grid-space">
-	<div class="bg-1">
-		<div class="coming-soon-text">
-			<h1 class="padding-3-horizontal" style="margin-top: 150px; margin-bottom: 50px;">We are ready to style you!</h1>
-		</div>
-	</div>
-	<div class="bg-2">
-		<!-- (indexChange)="onIndexChange($event)"  (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')" -->
-		<swiper class="swiper-container">
-			<div *ngFor="let slide of slides" class="swiper-slide">
-				<img [src]="slide.src" [alt]="slide.alt">
-			</div>
-		</swiper>
-	</div>
+<section style="margin: auto; max-width: 1070px; padding: 20px;">
+	<!-- <carousel [images]="promotions" [height]="535" cellWidth="100%" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" [dots]="true" [arrows]="false" [borderRadius]="10" style="z-index: 1;"></carousel> -->
+	<img style="border-radius: 20px;" src="assets/img/promotions/current/1.gif" alt="30% off promotion">
 </section>
-<br><br>
 
 <section style="background: rgba(0, 0, 0, 0.3);">
 	<div class="two columns" style="max-width: 1200px; margin: auto;">
@@ -44,6 +32,17 @@
 			</iframe>
 		</div>
 	</div>
+</section>
+
+<section style="margin: auto; max-width: 1070px; padding: 20px;">
+	<carousel [images]="images" [height]="300" [cellWidth]="350" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" arrowsTheme="dark" [borderRadius]="20" style="z-index: 1;">
+	</carousel>
+
+	<!-- <ng-container *ngFor="let image of images">
+			<div class="carousel-cell">
+				<img lightbox [src]="image.path" [alt]="image.alt">
+			</div>
+		</ng-container> -->
 </section>
 
 <section class="padding-5" style="max-width: 1200px; margin: auto;">

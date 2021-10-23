@@ -1,4 +1,4 @@
-@use '~@angular/material' as mat;
+@use "~@angular/material" as mat;
 @import "~@angular/material/theming";
 @import "core";
 @import "palette";
@@ -706,12 +706,20 @@ mat-sidenav-content::-webkit-scrollbar-thumb {
 	background-color: mat.get-color-from-palette($accent, lighter);
 }
 
-.swiper-container {
-	@media only screen and (min-width: map-get($screen-sizes, tabletBreakpoint)) {
-		border-radius: 0px 0px 20px 0px;
-	}
-}
+// .carousel-container {
+// 	cursor: pointer !important;
+// 	.carousel-cells .carousel-cell img {
+// 		border-radius: 5px !important;
+// 		object-fit: cover !important;
+// 	}
+// }
 
-.swiper-slide {
-	background-color: $primary-colour;
-}
+// .swiper-container {
+// 	@media only screen and (min-width: map-get($screen-sizes, tabletBreakpoint)) {
+// 		border-radius: 0px 0px 20px 0px;
+// 	}
+// }
+
+// .swiper-slide {
+// 	background-color: $primary-colour;
+// }

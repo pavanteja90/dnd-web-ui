@@ -7,11 +7,19 @@ import { ConfigService } from '@projekt/core';
 
 export class HomeComponent {
 	bitmoji: string = `assets/img/bitmoji/` + this.configService.config.custom.home.bitmoji;
-	public slides = [
-		{ src: "assets/img/swiper/1.jpeg", alt: "Women's Section" },
-		{ src: "assets/img/swiper/2.jpeg", alt: "Entrance" },
-		{ src: "assets/img/swiper/3.jpeg", alt: "Men's Section" },
-		{ src: "assets/img/swiper/4.jpeg", alt: "Men's Pedicure" }
+	public images = [
+		{ path: "assets/img/carousel/1.jpg" },
+		{ path: "assets/img/carousel/2.jpg" },
+		{ path: "assets/img/carousel/3.jpg" },
+		{ path: "assets/img/carousel/4.jpg" },
+		{ path: "assets/img/carousel/5.jpg" },
+		{ path: "assets/img/carousel/6.jpg" },
+		{ path: "assets/img/carousel/7.jpg" },
+		{ path: "assets/img/carousel/8.jpg" }
+	];
+
+	public promotions = [
+		{ path: "assets/img/promotions/current/1.gif", alt: "30% off promotion" }
 	];
 
 	constructor(private configService: ConfigService) { }
