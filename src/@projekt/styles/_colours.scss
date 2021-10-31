@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin opacity-gradations($palette) {
 	// &-50 {
 	// 	background-color: mat-color($palette, 50) !important;
@@ -6,7 +8,7 @@
 	@for $i from 1 to 9 {
 		$num: $i * 10; //10, 20, 30...
 		&-#{$num} {
-			background-color: rgba(mat-color($palette, 100), $num / 100) !important;
+			background-color: rgba(mat-color($palette, 100), math.div($num, 100)) !important;
 		}
 		$num: $i * 100; //100, 200, 300...
 		&-#{$num} {

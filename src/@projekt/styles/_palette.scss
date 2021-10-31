@@ -1,25 +1,16 @@
 // Acknowledgement to Pure SCSS Material Palette Generator by Mojtaba Seyedi https://codepen.io/seyedi/pen/vYYamww
-
-@function tetrad($color) {
-	$hue: hue($color);
-	$saturation: saturation($color);
-	$lightness: lightness($color);
-	$tetrad: [ hsl($hue, $saturation, $lightness), hsl($hue + 90 % 360, $saturation, $lightness),
-		hsl($hue + 180 % 360, $saturation, $lightness), hsl($hue + 270 % 360, $saturation, $lightness), ];
-	@return $tetrad;
-}
+@use 'sass:math';
 
 @function multiply($fore, $back) {
-	$red: red($back) * red($fore) / 255;
-	$green: green($back) * green($fore) / 255;
-	$blue: blue($back) * blue($fore) / 255;
+	$red: red($back) * math.div(red($fore), 255);
+	$green: green($back) * math.div(green($fore), 255);
+	$blue: blue($back) * math.div(blue($fore), 255);
 	@return rgb($red, $green, $blue);
 }
 
 @function generate-palette($color) {
 	$light: #fff;
 	$dark: multiply($color, $color);
-	$tetrad: tetrad($color);
 	$palette: (
 		50: mix($light, $color, 88%),
 		100: mix($light, $color, 70%),

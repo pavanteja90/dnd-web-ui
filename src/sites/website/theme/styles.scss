@@ -706,20 +706,20 @@ mat-sidenav-content::-webkit-scrollbar-thumb {
 	background-color: mat.get-color-from-palette($accent, lighter);
 }
 
-// .carousel-container {
-// 	cursor: pointer !important;
-// 	.carousel-cells .carousel-cell img {
-// 		border-radius: 5px !important;
-// 		object-fit: cover !important;
-// 	}
-// }
+$green-color: #48a14d;
 
-// .swiper-container {
-// 	@media only screen and (min-width: map-get($screen-sizes, tabletBreakpoint)) {
-// 		border-radius: 0px 0px 20px 0px;
-// 	}
-// }
-
-// .swiper-slide {
-// 	background-color: $primary-colour;
-// }
+.mat-raised-button.book-now {
+	position: fixed;
+	z-index: 1000;
+	right: 30px;
+	bottom: 20px;
+	padding: 5px 26px;
+	max-width: 250px;
+	font-weight: bold;
+	transition: all 300ms ease-in-out;
+	&:hover {
+		transform: scale(1.01);
+		transition: all 100ms ease-in-out;
+		box-shadow: 0.5rem 0.5rem black;
+	}
+}

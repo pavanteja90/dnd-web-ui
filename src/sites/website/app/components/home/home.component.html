@@ -3,7 +3,18 @@
 	<img style="border-radius: 20px;" src="assets/img/promotions/current/1.gif" alt="30% off promotion">
 </section>
 
-<section style="background: rgba(0, 0, 0, 0.3);">
+<section style="margin: auto; max-width: 1070px; padding: 20px;">
+	<carousel [images]="images" [height]="300" [cellWidth]="350" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" arrowsTheme="dark" [borderRadius]="20" style="z-index: 1;">
+	</carousel>
+
+	<!-- <ng-container *ngFor="let image of images">
+			<div class="carousel-cell">
+				<img lightbox [src]="image.path" [alt]="image.alt">
+			</div>
+		</ng-container> -->
+</section>
+
+<section>
 	<div class="two columns" style="max-width: 1200px; margin: auto;">
 		<div class="white padding-5" style="text-align: center;">
 			<h3><span class="underline">Our Location</span> 📍</h3>
@@ -18,7 +29,7 @@
 					<mat-icon style="height: 14px; width: 14px; font-size: 14px;">east</mat-icon>
 				</a>
 			</p>
-			<mat-divider></mat-divider>
+			<!-- <mat-divider></mat-divider> -->
 			<h3 class="underline">Don't love waiting?</h3>
 			<p class="font-20">
 				Please feel free to book an appointment with us beforehand to avoid any hassle. Simply contact us at 📞
@@ -32,17 +43,6 @@
 			</iframe>
 		</div>
 	</div>
-</section>
-
-<section style="margin: auto; max-width: 1070px; padding: 20px;">
-	<carousel [images]="images" [height]="300" [cellWidth]="350" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" arrowsTheme="dark" [borderRadius]="20" style="z-index: 1;">
-	</carousel>
-
-	<!-- <ng-container *ngFor="let image of images">
-			<div class="carousel-cell">
-				<img lightbox [src]="image.path" [alt]="image.alt">
-			</div>
-		</ng-container> -->
 </section>
 
 <section class="padding-5" style="max-width: 1200px; margin: auto;">
