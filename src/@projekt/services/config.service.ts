@@ -6,7 +6,7 @@ import { of } from 'rxjs';
 import { UtilService } from './util.service';
 
 
-@Injectable()
+@Injectable({ providedIn: 'root'})
 export class ConfigService {
 	config: Config;
 
