@@ -33,9 +33,6 @@ export class CoreModule {
 		return {
 			ngModule: CoreModule,
 			providers: [
-				ApiService,
-				UtilService,
-				ConfigService,
 				{
 					provide: Config,
 					useValue: appConfig

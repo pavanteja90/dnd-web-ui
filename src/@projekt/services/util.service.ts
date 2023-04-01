@@ -8,7 +8,7 @@ import { AbstractControl } from '@angular/forms';
  */
 // Date.prototype.toJSON = function () { let that = this; return dateFns.format(that, "YYYY-MM-DDTHH:mm:ss.SSSZ"); };
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class UtilService {
 	public static MaritalStatuses: string[] = ["Married", "Single", "Divorced", "Separated", "Widowed", "Defacto"];
 	public static PersonalRelationships: string[] = ["Spouse", "Friend", "Landlord", "Relative", "Colleague"];

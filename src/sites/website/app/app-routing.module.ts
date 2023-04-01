@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MetaGuard } from '@projekt/core';
 import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuComponent, HomeComponent, MaleMenuComponent, OfferedServicesComponent, ProductsComponent, PromosComponent, StoreMenuComponent } from './components';
 import { ComingSoonComponent } from './containers';
 
@@ -11,6 +12,7 @@ const routes: Routes = [
 	}, {
 		path: 'coming-soon',
 		component: ComingSoonComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Coming Soon"
@@ -19,6 +21,7 @@ const routes: Routes = [
 	}, {
 		path: 'about-us',
 		component: AboutUsComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "About us"
@@ -27,6 +30,7 @@ const routes: Routes = [
 	}, {
 		path: 'careers',
 		component: CareersComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Careers"
@@ -35,6 +39,7 @@ const routes: Routes = [
 	}, {
 		path: 'contact-us',
 		component: ContactUsComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Contact us"
@@ -43,6 +48,7 @@ const routes: Routes = [
 	}, {
 		path: 'services',
 		component: OfferedServicesComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Services"
@@ -51,22 +57,25 @@ const routes: Routes = [
 	}, {
 		path: 'services/male',
 		component: MaleMenuComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
-				title: "Services"
+				title: "Male Services"
 			}
 		}
 	}, {
 		path: 'services/female',
 		component: FemaleMenuComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
-				title: "Services"
+				title: "Female Services"
 			}
 		}
 	}, {
 		path: 'products',
 		component: ProductsComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Products"
@@ -75,6 +84,7 @@ const routes: Routes = [
 	}, {
 		path: 'promos',
 		component: PromosComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Promotions"
@@ -83,6 +93,7 @@ const routes: Routes = [
 	}, {
 		path: 'menu',
 		component: StoreMenuComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Menu"
@@ -91,6 +102,7 @@ const routes: Routes = [
 	}, {
 		path: 'home',
 		component: HomeComponent,
+		canActivate: [MetaGuard],
 		data: {
 			meta: {
 				title: "Home"
