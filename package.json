@@ -27,7 +27,6 @@
 		"@angular/platform-browser": "~13.0.2",
 		"@angular/platform-browser-dynamic": "~13.0.2",
 		"@angular/router": "~13.0.2",
-		"@crystalui/angular-lightbox": "^1.1.8",
 		"angular-responsive-carousel": "^2.1.2",
 		"rxjs": "~6.6.0",
 		"zone.js": "~0.11.4"
