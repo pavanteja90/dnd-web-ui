@@ -22,8 +22,7 @@
 				"@schematics/angular:guard": {
 					"skipTests": true
 				},
-				"@schematics/angular:module": {
-				},
+				"@schematics/angular:module": {},
 				"@schematics/angular:pipe": {
 					"skipTests": true
 				},
@@ -124,8 +123,7 @@
 				"@schematics/angular:guard": {
 					"skipTests": true
 				},
-				"@schematics/angular:module": {
-				},
+				"@schematics/angular:module": {},
 				"@schematics/angular:pipe": {
 					"skipTests": true
 				},
@@ -202,7 +200,6 @@
 			}
 		}
 	},
-	"defaultProject": "website",
 	"cli": {
 		"analytics": false
 	}
