@@ -8,7 +8,6 @@ import { AboutUsComponent, CareersComponent, ContactUsComponent, FemaleMenuCompo
 import { appConfig } from './app-config';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
-import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { SiteFormBuilder } from './services';
 
 @NgModule({
@@ -38,7 +37,6 @@ import { SiteFormBuilder } from './services';
 		AppRoutingModule,
 		CoreModule.forRoot(appConfig),
 		FieldsModule,
-		IvyCarouselModule,
 	],
 	providers: [
 		SiteFormBuilder,
