@@ -32,3 +32,6 @@
 
 ###### Version 1.4.0
 ## Updating offers page
+
+###### Version 1.4.1
+## Updating robots.txt and adding sitemap
