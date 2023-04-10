@@ -1,8 +1,17 @@
-.example-card {
-	max-width: 400px;
-}
-
-.example-header-image {
-	background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-	background-size: cover;
+.columns {
+	column-gap: 20px;
+	.gradient-card {
+		padding: 0;
+		.image {
+			display: flex;
+			justify-content: center;
+			img {
+				border-radius: 20px;
+			}
+		}
+		.content {
+			font-size: 16px;
+			padding: 20px;
+		}
+	}
 }

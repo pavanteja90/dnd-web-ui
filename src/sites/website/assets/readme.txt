@@ -26,3 +26,9 @@
 
 ###### Version 1.2.3
 ## Adding Promotions (previous and current) to the site
+
+###### Version 1.3.0
+## Updating the new menu for male and female services
+
+###### Version 1.4.0
+## Updating offers page

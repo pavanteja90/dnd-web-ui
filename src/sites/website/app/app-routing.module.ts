@@ -9,16 +9,18 @@ const routes: Routes = [
 		path: '',
 		pathMatch: 'full',
 		redirectTo: 'home'
-	}, {
-		path: 'coming-soon',
-		component: ComingSoonComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: "Coming Soon"
-			}
-		}
-	}, {
+	}, 
+	// {
+	// 	path: 'coming-soon',
+	// 	component: ComingSoonComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: "Coming Soon"
+	// 		}
+	// 	}
+	// }, 
+	{
 		path: 'about-us',
 		component: AboutUsComponent,
 		canActivate: [MetaGuard],
@@ -27,16 +29,18 @@ const routes: Routes = [
 				title: "About us"
 			}
 		}
-	}, {
-		path: 'careers',
-		component: CareersComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: "Careers"
-			}
-		}
-	}, {
+	}, 
+	// {
+	// 	path: 'careers',
+	// 	component: CareersComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: "Careers"
+	// 		}
+	// 	}
+	// }, 
+	{
 		path: 'contact-us',
 		component: ContactUsComponent,
 		canActivate: [MetaGuard],
@@ -72,22 +76,24 @@ const routes: Routes = [
 				title: "Female Services"
 			}
 		}
-	}, {
-		path: 'products',
-		component: ProductsComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: "Products"
-			}
-		}
-	}, {
-		path: 'promos',
+	}, 
+	// {
+	// 	path: 'products',
+	// 	component: ProductsComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: "Products"
+	// 		}
+	// 	}
+	// }, 
+	{
+		path: 'offers',
 		component: PromosComponent,
 		canActivate: [MetaGuard],
 		data: {
 			meta: {
-				title: "Promotions"
+				title: "Offers"
 			}
 		}
 	}, {

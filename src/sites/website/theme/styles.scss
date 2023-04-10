@@ -710,6 +710,9 @@ $green-color: #48a14d;
 
 .mat-raised-button.book-now {
 	position: fixed;
+	&.relative {
+		position: relative;
+	}
 	z-index: 1000;
 	right: 30px;
 	bottom: 20px;
