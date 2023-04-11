@@ -4,7 +4,7 @@
 			<li>
 				<ng-template [ngIf]="link.children && link.children.length" [ngIfElse]="singleNavItem">
 					<section>
-						<a [matMenuTriggerFor]="menu" [class.active]="isActive(link.routerLink)">Services</a>
+						<p class="font-14" [matMenuTriggerFor]="menu" [class.active]="isActive(link.routerLink)">Services</p>
 						<mat-menu #menu="matMenu">
 							<ng-container *ngFor="let childLink of link.children">
 								<a mat-menu-item [href]="childLink.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">

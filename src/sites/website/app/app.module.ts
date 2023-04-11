@@ -9,7 +9,6 @@ import { appConfig } from './app-config';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
-import { CrystalLightboxModule } from '@crystalui/angular-lightbox';
 import { SiteFormBuilder } from './services';
 
 @NgModule({
@@ -40,7 +39,6 @@ import { SiteFormBuilder } from './services';
 		CoreModule.forRoot(appConfig),
 		FieldsModule,
 		IvyCarouselModule,
-		CrystalLightboxModule,
 	],
 	providers: [
 		SiteFormBuilder,
