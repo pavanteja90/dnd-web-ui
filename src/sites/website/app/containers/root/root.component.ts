@@ -26,12 +26,12 @@ export class RootComponent implements OnInit, OnDestroy {
 			children: [
 				{
 					label: 'Male Services',
-					routerLink: 'services/male',
+					routerLink: '/services/male',
 					icon: 'male',
 				},
 				{
 					label: 'Female Services',
-					routerLink: 'services/female',
+					routerLink: '/services/female',
 					icon: 'female',
 				},
 			],

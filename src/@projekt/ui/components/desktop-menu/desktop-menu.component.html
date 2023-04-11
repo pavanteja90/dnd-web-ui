@@ -7,15 +7,15 @@
 						<a [matMenuTriggerFor]="menu" [class.active]="isActive(link.routerLink)">Services</a>
 						<mat-menu #menu="matMenu">
 							<ng-container *ngFor="let childLink of link.children">
-								<button mat-menu-item [routerLink]="childLink.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+								<a mat-menu-item [href]="childLink.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
 									<mat-icon *ngIf="childLink.icon">{{childLink.icon}}</mat-icon>{{childLink.label}}
-								</button>
+								</a>
 							</ng-container>
 						</mat-menu>
 					</section>
 				</ng-template>
 				<ng-template #singleNavItem>
-					<a [routerLink]="link.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{link.label}}</a>
+					<a [href]="link.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{link.label}}</a>
 				</ng-template>
 			</li>
 		</ng-container>

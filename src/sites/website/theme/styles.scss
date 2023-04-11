@@ -540,7 +540,6 @@ coming-soon .coming-soon-bg {
 		margin: 0px 50px;
 	}
 	mat-card.bg-card {
-		border-radius: 20px;
 		top: -50px;
 		z-index: 0;
 		h1 {
@@ -582,10 +581,10 @@ home {
 	}
 }
 
-mat-card.gradient-card {
+mat-card.mat-card {
 	border-radius: 20px;
 	z-index: 0;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(155, 155, 155, 0.1);
 }
 
 .iframe-holder iframe {
@@ -643,7 +642,6 @@ mat-sidenav {
 }
 
 .mat-menu-panel {
-	background-color: $accent-colour;
 	button {
 		font-size: 14px;
 		color: $primary-colour !important;
@@ -661,8 +659,7 @@ mat-sidenav {
 }
 
 mat-card.info {
-	border-radius: 20px;
-	background-color: transparent;
+	border-radius: 20px;	
 	&:hover {
 		transform: scale(1.01);
 		transition: 100ms ease-in-out;

@@ -35,3 +35,6 @@
 
 ###### Version 1.4.1
 ## Updating robots.txt and adding sitemap
+
+###### Version 1.4.2
+## Adding google site verification, and changing links to href
