@@ -101,7 +101,7 @@ const routes: Routes = [
 			meta: {
 				title: 'Upcoming Salon',
 				description:
-					'Yes, you heard it right! We are opening a new salon in Malkajgiri. Our list of services at Malkajgiri include, but are not limited to, makeup, facials, hair dressing, manicure, pedicure, and bridal services. Swing by and let us work our magic to bring the inner beauty in you to life.',
+					'Yes, you heard it right! We are opening a new salon in Malkajgiri. Our list of services at Malkajgiri include, but not limited to, makeup, facials, hair dressing, manicure, pedicure, and bridal services. Swing by and let us work our magic to bring the inner beauty in you to life.',
 			},
 		},
 	},

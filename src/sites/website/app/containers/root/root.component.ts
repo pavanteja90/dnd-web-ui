@@ -36,29 +36,20 @@ export class RootComponent implements OnInit, OnDestroy {
 				},
 			],
 		},
-		// {
-		// 	label: "Menu",
-		// 	routerLink: "menu",
-		// 	icon: "list"
-		// }, {
-		// 	label: "Products",
-		// 	routerLink: "products",
-		// 	icon: "inventory"
-		// },
 		{
 			label: 'Offers',
 			routerLink: 'offers',
 			icon: 'favorite',
 		},
-		// {
-		// 	label: "About us",
-		// 	routerLink: "about-us",
-		// 	icon: "sentiment_satisfied_alt"
-		// },
 		{
 			label: 'Contact us',
 			routerLink: 'contact-us',
 			icon: 'connect_without_contact',
+		},
+		{
+			label: 'Coming soon',
+			routerLink: 'coming-soon',
+			icon: 'info',
 		},
 	];
 

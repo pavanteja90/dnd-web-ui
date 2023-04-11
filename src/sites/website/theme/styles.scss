@@ -33,7 +33,12 @@ $button: fin-button-config(
 $theme: theme($fin-primary, $fin-accent);
 $mat-toggle-size: 40px !default;
 
-@include fin-core($theme, $typography, $button, $headerFontFamily: $headerFontFamily);
+@include fin-core(
+	$theme,
+	$typography,
+	$button,
+	$headerFontFamily: $headerFontFamily
+);
 $primary: map-get($theme, primary);
 $accent: map-get($theme, accent);
 $banner-image: banner-image-theme(map-get($primary, default), white);
@@ -293,10 +298,16 @@ div:not(.ng-star-inserted) > div > mat-form-field {
 }
 
 .mat-stepper-horizontal-line,
-.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,
-.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,
-[dir="rtl"] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after,
-[dir="rtl"] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before {
+.mat-stepper-label-position-bottom
+	.mat-horizontal-stepper-header:not(:first-child)::before,
+.mat-stepper-label-position-bottom
+	.mat-horizontal-stepper-header:not(:last-child)::after,
+[dir="rtl"]
+	.mat-stepper-label-position-bottom
+	.mat-horizontal-stepper-header:not(:first-child)::after,
+[dir="rtl"]
+	.mat-stepper-label-position-bottom
+	.mat-horizontal-stepper-header:not(:last-child)::before {
 	border-top-width: 0 !important;
 }
 
@@ -460,6 +471,9 @@ button.mat-flat-button.mat-primary {
 		}
 		.bg-2 {
 			border-radius: 0px 0px 20px 20px !important;
+			.coming-soon-image {
+				border-radius: 0px 0px 20px 20px !important;
+			}
 		}
 	}
 
@@ -534,7 +548,6 @@ footer {
 }
 
 coming-soon .coming-soon-bg {
-	background: linear-gradient(to bottom, #dc8e2e 0%, #231f20 100%);
 	.two.columns {
 		grid-column-gap: 0px !important;
 		margin: 0px 50px;
@@ -578,6 +591,9 @@ home {
 		display: flex;
 		flex-direction: row-reverse;
 		border-radius: 0px 0px 20px 0px;
+		.coming-soon-image {
+			border-radius: 0px 0px 20px 0px;
+		}
 	}
 }
 
@@ -659,11 +675,15 @@ mat-sidenav {
 }
 
 mat-card.info {
-	border-radius: 20px;	
+	border-radius: 20px;
 	&:hover {
 		transform: scale(1.01);
 		transition: 100ms ease-in-out;
 	}
+}
+
+mat-card.coming-soon {
+	background-color: $primary-colour;
 }
 
 a.navigate {

@@ -38,3 +38,6 @@
 
 ###### Version 1.4.2
 ## Adding google site verification, and changing links to href
+
+###### Version 1.5.0
+## Adding coming soon section and a banner for new salon in malkajgiri
