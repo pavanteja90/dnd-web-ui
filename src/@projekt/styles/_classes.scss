@@ -153,6 +153,12 @@
 			margin-right: auto !important;
 			display: flex !important;
 		}
+		&-end,
+		&.end,
+		.end {
+			display: flex;
+			justify-content: end;
+		}
 		@media only screen and (max-width: map-get($screen-sizes, tabletBreakpoint)) {
 			&:not(.no-flex-column):not(.panel) {
 				flex-direction: column;

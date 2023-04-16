@@ -41,3 +41,6 @@
 
 ###### Version 1.5.0
 ## Adding coming soon section and a banner for new salon in malkajgiri
+
+###### Version 1.5.1
+## Removing emojis and updating services list
