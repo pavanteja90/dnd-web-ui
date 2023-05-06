@@ -14,8 +14,15 @@ import { ComingSoonComponent } from './containers';
 const routes: Routes = [
 	{
 		path: '',
-		pathMatch: 'full',
-		redirectTo: 'home',
+		component: HomeComponent,
+		canActivate: [MetaGuard],
+		data: {
+			meta: {
+				title: 'Home',
+				description:
+					'Diana & Dapper is a group of unisex salon and spas located in Hyderabad. We provide makeup, facials, hair dressing, manicure, pedicure, and bridal services. We currently have a store in Sainikpuri and are planning to open a new salon in Malkajgiri. Swing by and let us work our magic to bring the inner beauty in you to life.',
+			},
+		},
 	},
 	{
 		path: 'contact-us',
@@ -81,33 +88,21 @@ const routes: Routes = [
 			},
 		},
 	},
-	{
-		path: 'home',
-		component: HomeComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: 'Home',
-				description:
-					'Diana & Dapper is a group of unisex salon and spas located in Hyderabad. We provide makeup, facials, hair dressing, manicure, pedicure, and bridal services. We currently have a store in Sainikpuri and are planning to open a new salon in Malkajgiri. Swing by and let us work our magic to bring the inner beauty in you to life.',
-			},
-		},
-	},
-	{
-		path: 'coming-soon',
-		component: ComingSoonComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: 'Upcoming Salon',
-				description:
-					'Yes, you heard it right! We are opening a new salon in Malkajgiri. Our list of services at Malkajgiri include, but not limited to, makeup, facials, hair dressing, manicure, pedicure, and bridal services. Swing by and let us work our magic to bring the inner beauty in you to life.',
-			},
-		},
-	},
+	// {
+	// 	path: 'coming-soon',
+	// 	component: ComingSoonComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: 'Upcoming Salon',
+	// 			description:
+	// 				'Yes, you heard it right! We are opening a new salon in Malkajgiri. Our list of services at Malkajgiri include, but not limited to, makeup, facials, hair dressing, manicure, pedicure, and bridal services. Swing by and let us work our magic to bring the inner beauty in you to life.',
+	// 		},
+	// 	},
+	// },
 	{
 		path: '**',
-		redirectTo: 'home',
+		redirectTo: '/',
 	},
 ];
 

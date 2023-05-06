@@ -16,7 +16,7 @@ export class RootComponent implements OnInit, OnDestroy {
 	links: NavLink[] = [
 		{
 			label: 'Home',
-			routerLink: 'home',
+			routerLink: '/',
 			icon: 'home',
 		},
 		{
@@ -46,11 +46,11 @@ export class RootComponent implements OnInit, OnDestroy {
 			routerLink: 'contact-us',
 			icon: 'connect_without_contact',
 		},
-		{
-			label: 'Coming soon',
-			routerLink: 'coming-soon',
-			icon: 'info',
-		},
+		// {
+		// 	label: 'Coming soon',
+		// 	routerLink: 'coming-soon',
+		// 	icon: 'info',
+		// },
 	];
 
 	ngOnInit(): void {

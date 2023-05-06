@@ -44,3 +44,9 @@
 
 ###### Version 1.5.1
 ## Removing emojis and updating services list
+
+###### Version 1.6.0
+## Adding Malkajgiri branch information on home page, contact page
+## Adding new offer in Offers page
+## Updating Book an appointment button to show both branch options
+## Asset updates

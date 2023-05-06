@@ -17,7 +17,15 @@
 		</mat-toolbar>
 		<section style="min-height: 100vh; padding-top: 80px; background: linear-gradient(to bottom, #dc8e2e 0%, #231f20 100%);" id="target">
 			<router-outlet></router-outlet>
-			<a class="book-now" href="https://www.fresha.com/book-now/diana-dapper-bzkgavsd/services?lid=455260&pId=424872" target="_blank" mat-raised-button color="warn">Book an appointment <mat-icon style="font-size: 18px; height: 20px;">event</mat-icon></a>
+			<button class="book-now" [matMenuTriggerFor]="menu" mat-raised-button color="warn"><mat-icon style="font-size: 18px; height: 20px;">event</mat-icon> Book an appointment</button>
+			<mat-menu #menu="matMenu">
+				<a class="font-16" mat-menu-item href="https://www.fresha.com/book-now/diana-dapper-bzkgavsd/all-offer?id=880127&pId=424872" target="_blank">
+					<mat-icon style="margin: 0;">location_on</mat-icon> Malkajgiri Branch &nbsp;
+				</a>
+				<a class="font-16" mat-menu-item href="https://www.fresha.com/book-now/diana-dapper-bzkgavsd/services?lid=455260&pId=424872" target="_blank">
+					<mat-icon style="margin: 0;">location_on</mat-icon> Sainikpuri Branch &nbsp;
+				</a>
+			</mat-menu>
 		</section>
 		<footer></footer>
 	</mat-sidenav-content>
