@@ -6,8 +6,13 @@
 		<mat-toolbar [ngClass]="{ 'navbar-shrink': isScrolled }" style="position: fixed; z-index: 1000;" color="primary">
 			<section class="flex no-flex-column" style="width: 100%; justify-content: space-between;">
 				<a href="/" rel="noopener">
-					<img src="assets/img/just-logo.png" height="50px" alt="logo" style="vertical-align: top;">
-					<span class="accent-color" style="font-family: calibri; text-transform: uppercase; vertical-align: sub;">&nbsp;&nbsp;Diana & Dapper</span>
+					<div style="display: grid; grid-template-columns: 50px 1fr; align-items: center;">
+						<img src="assets/img/just-logo.png" height="50px" alt="logo" style="vertical-align: top;">
+						<div class="margin-2-horizontal accent-color flex" style="font-family: calibri; text-transform: uppercase; flex-direction: column;">
+							<span class="font-24" style="line-height: 24px !important; letter-spacing: 2px;">Diana & Dapper</span>
+							<span class="font-14" style="text-align: center; line-height: 16px !important; letter-spacing: 8px;">Unisex salon</span>
+						</div>
+					</div>
 				</a>
 				<button class="menu-button" style="align-self: center;" mat-icon-button aria-label="Menu" (click)="sidenav.toggle()">
 					<mat-icon>menu</mat-icon>
@@ -15,7 +20,7 @@
 			</section>
 			<desktop-menu [links]="links" (sidenavToggle)="sidenav.toggle()"></desktop-menu>
 		</mat-toolbar>
-		<section style="min-height: 100vh; padding-top: 80px; background: linear-gradient(to bottom, #dc8e2e 0%, #231f20 100%);" id="target">
+		<section style="min-height: 100vh; padding-top: 80px; background: #dc8e2e;" id="target">
 			<router-outlet></router-outlet>
 			<button class="book-now" [matMenuTriggerFor]="menu" mat-raised-button color="warn"><mat-icon style="font-size: 18px; height: 20px;">event</mat-icon> Book an appointment</button>
 			<mat-menu #menu="matMenu">
