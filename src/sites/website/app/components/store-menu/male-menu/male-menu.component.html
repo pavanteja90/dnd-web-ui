@@ -1,4 +1,54 @@
-<section class="container padding-5-vertical center">
+<div class="concept concept-five primary-background" style="height: 45rem; width: 100%; position: absolute; top: 0;">
+	<h1 class="word">
+		<ng-container *ngFor="let item of ['m', 'a', 'l', 'e', '&nbsp;', '', 's', 'e', 'r', 'v', 'i', 'c', 'e', 's']">
+			<span class="char accent-colour">{{item | uppercase}}</span>
+		</ng-container>
+	</h1>
+</div>
+
+<!-- <div class="primary-background align-center" style="height: 45rem; width: 100%; position: absolute; top: 0;">
+	<h2 class="white" style="margin: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;">Male services</h2>
+</div> -->
+
+<section class="container padding-5-vertical center" style="margin-top: 40rem;">
+	<!-- <mat-form-field appearance="standard">
+		<mat-label>I am looking for...</mat-label>
+		<input matInput (keyup)="applyFilter($event)" placeholder="Ex. Facial" #input>
+	</mat-form-field> -->
+
+	<ng-container *ngFor="let serviceSection of maleServices">
+		<mat-card class="margin-2 coming-soon white">
+			<h3>{{serviceSection.title}}</h3>
+			<table mat-table [dataSource]="serviceSection.list" class="font-16">
+
+				<!-- Service Column -->
+				<ng-container matColumnDef="title">
+					<th mat-header-cell *matHeaderCellDef class="primary-colour"> Service </th>
+					<td mat-cell *matCellDef="let element"> {{element.title}} </td>
+				</ng-container>
+
+				<!-- Price Column -->
+				<ng-container matColumnDef="price">
+					<th mat-header-cell *matHeaderCellDef class="primary-colour"> Price </th>
+					<td mat-cell *matCellDef="let element"> ₹ {{element.price[0].default}} </td>
+				</ng-container>
+
+				<tr mat-header-row *matHeaderRowDef="servicesDisplayedColumns"></tr>
+				<tr mat-row *matRowDef="let row; columns: servicesDisplayedColumns;"></tr>
+
+				<!-- Row shown when there is no matching data. -->
+				<tr class="mat-row" *matNoDataRow>
+					<td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+				</tr>
+			</table>
+		</mat-card>
+	</ng-container>
+	<br>
+	<br>
 	<picture>
 		<source srcset="assets/img/male_menu/3.webp" type="image/webp">
 		<source srcset="assets/img/male_menu/3.jpg" type="image/jpeg">

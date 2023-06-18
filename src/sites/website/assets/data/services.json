@@ -1,0 +1,2661 @@
+{
+    "maleServices": [
+        {
+            "id": "hair-services",
+            "title": "Hair services",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "haircut",
+                    "title": "Hair cut",
+                    "price": [
+                        {
+                            "default": 200,
+                            "member": 160
+                        }
+                    ]
+                },
+                {
+                    "id": "advance-haircut",
+                    "title": "Advance hair cut",
+                    "price": [
+                        {
+                            "default": 299,
+                            "member": 239
+                        }
+                    ]
+                },
+                {
+                    "id": "shave",
+                    "title": "Shave",
+                    "price": [
+                        {
+                            "default": 150,
+                            "member": 120
+                        }
+                    ]
+                },
+                {
+                    "id": "head-shave",
+                    "title": "Head shave",
+                    "price": [
+                        {
+                            "default": 250,
+                            "member": 200
+                        }
+                    ]
+                },
+                {
+                    "id": "beard-trim",
+                    "title": "Beard trim",
+                    "price": [
+                        {
+                            "default": 160,
+                            "member": 128
+                        }
+                    ]
+                },
+                {
+                    "id": "beard-styling",
+                    "title": "Beard styling",
+                    "price": [
+                        {
+                            "default": 200,
+                            "member": 160
+                        }
+                    ]
+                },
+                {
+                    "id": "hair-setting",
+                    "title": "Hair setting",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "hair-wash-loreal",
+                    "title": "Hair wash (L'Oréal)",
+                    "price": [
+                        {
+                            "default": 150,
+                            "member": 120
+                        }
+                    ]
+                },
+                {
+                    "id": "hair-wash-wella",
+                    "title": "Hair wash (Wella)",
+                    "price": [
+                        {
+                            "default": 250,
+                            "member": 200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "colour-services",
+            "title": "Colour services",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "pro-10",
+                    "title": "Pro 10",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "loreal-with-ammonia",
+                    "title": "L'Oréal with ammonia",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "loreal-ammonia-free",
+                    "title": "L'Oréal ammonia free",
+                    "price": [
+                        {
+                            "default": 1200,
+                            "member": 960
+                        }
+                    ]
+                },
+                {
+                    "id": "fashion-colour",
+                    "title": "Fashion colour",
+                    "price": [
+                        {
+                            "default": 1600,
+                            "member": 1280
+                        }
+                    ]
+                },
+                {
+                    "id": "advance-fashion-colour",
+                    "title": "Advance fashion colour",
+                    "price": [
+                        {
+                            "default": 2200,
+                            "member": 1760
+                        }
+                    ]
+                },
+                {
+                    "id": "moustache-colour",
+                    "title": "Moustache colour",
+                    "price": [
+                        {
+                            "default": 150,
+                            "member": 120
+                        }
+                    ]
+                },
+                {
+                    "id": "beard-colour",
+                    "title": "Beard colour",
+                    "price": [
+                        {
+                            "default": 400,
+                            "member": 320
+                        }
+                    ]
+                },
+                {
+                    "id": "streaks",
+                    "title": "Streaks",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "keratin-and-straightening",
+            "title": "Keratin and straightening",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "straightening",
+                    "title": "Straightening",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 4500,
+                            "member": 3600
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 5500,
+                            "member": 4400
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 6500,
+                            "member": 5200
+                        }
+                    ]
+                },
+                {
+                    "id": "keratin-treatment",
+                    "title": "Keratin treatment",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 6000,
+                            "member": 4800
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 8000,
+                            "member": 6400
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 12000,
+                            "member": 9600
+                        }
+                    ]
+                },
+                {
+                    "id": "pro-boto.x",
+                    "title": "Pro boto.x",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 6500,
+                            "member": 5200
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 8500,
+                            "member": 6800
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 12000,
+                            "member": 9600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "head-massage",
+            "title": "Head massage",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "coconut-oil",
+                    "title": "Coconut oil",
+                    "price": [
+                        {
+                            "default": 350,
+                            "member": 280
+                        }
+                    ]
+                },
+                {
+                    "id": "almond-oil",
+                    "title": "Almond oil",
+                    "price": [
+                        {
+                            "default": 400,
+                            "member": 320
+                        }
+                    ]
+                },
+                {
+                    "id": "olive-oil",
+                    "title": "Olive oil",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "deep-conditioning",
+                    "title": "Deep conditioning",
+                    "price": [
+                        {
+                            "default": 550,
+                            "member": 440
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hair-spa-loreal",
+            "title": "Hair spa (L'Oréal)",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "moisturising-hair-spa",
+                    "title": "Moisturising hair spa",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 1000,
+                            "member": 800
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 1200,
+                            "member": 960
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "repairing-hair-spa",
+                    "title": "Repairing hair spa",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 1100,
+                            "member": 880
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 1300,
+                            "member": 1040
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 1600,
+                            "member": 1280
+                        }
+                    ]
+                },
+                {
+                    "id": "colour-protect-spa",
+                    "title": "Colour protect spa",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 1100,
+                            "member": 880
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 1300,
+                            "member": 1040
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 1600,
+                            "member": 1280
+                        }
+                    ]
+                },
+                {
+                    "id": "mythic-hair-spa-premium",
+                    "title": "Mythic hair spa premium",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 2000,
+                            "member": 1600
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 2200,
+                            "member": 1760
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 2500,
+                            "member": 2000
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-hair-fall",
+                    "title": "Anti hair fall",
+                    "price": [
+                        {
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-dandruff",
+                    "title": "Anti dandruff",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hair-spa-wella",
+            "title": "Hair spa (Wella)",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "express-alchemy",
+                    "title": "Express alchemy",
+                    "price": [
+                        {
+                            "default": 1700,
+                            "member": 1360
+                        }
+                    ]
+                },
+                {
+                    "id": "intense-alchemy",
+                    "title": "Intense alchemy",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                },
+                {
+                    "id": "keratin-restore",
+                    "title": "Keratin restore",
+                    "price": [
+                        {
+                            "default": 2700,
+                            "member": 2160
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-hair-fall",
+                    "title": "Anti hair fall",
+                    "price": [
+                        {
+                            "default": 2600,
+                            "member": 2080
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-dandruff",
+                    "title": "Anti dandruff",
+                    "price": [
+                        {
+                            "default": 2600,
+                            "member": 2080
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "d-tan",
+            "title": "D-tan",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "face",
+                    "title": "Face",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "neck",
+                    "title": "Neck",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "half-arms",
+                    "title": "Half arms",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "full-arms",
+                    "title": "Full arms",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "half-legs",
+                    "title": "Half legs",
+                    "price": [
+                        {
+                            "default": 600,
+                            "member": 480
+                        }
+                    ]
+                },
+                {
+                    "id": "full-legs",
+                    "title": "Full legs",
+                    "price": [
+                        {
+                            "default": 1200,
+                            "member": 960
+                        }
+                    ]
+                },
+                {
+                    "id": "feet",
+                    "title": "Feet",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "full-body",
+                    "title": "Full body",
+                    "price": [
+                        {
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "body-polishing",
+            "title": "Body polishing",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "half-arms",
+                    "title": "Half arms",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "full-arms",
+                    "title": "Full arms",
+                    "price": [
+                        {
+                            "default": 1800,
+                            "member": 1440
+                        }
+                    ]
+                },
+                {
+                    "id": "half-legs",
+                    "title": "Half legs",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "full-legs",
+                    "title": "Full legs",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                },
+                {
+                    "id": "full-body",
+                    "title": "Full body",
+                    "price": [
+                        {
+                            "default": 6000,
+                            "member": 4800
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cleanup",
+            "title": "Cleanup",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "fruit-cleanup",
+                    "title": "Fruit cleanup",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "advanced-cleanup",
+                    "title": "Advanced cleanup",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "cleanup-oily",
+                    "title": "Cleanup (oily)",
+                    "price": [
+                        {
+                            "default": 1400,
+                            "member": 1120
+                        }
+                    ]
+                },
+                {
+                    "id": "cleanup-dry",
+                    "title": "Cleanup (dry)",
+                    "price": [
+                        {
+                            "default": 1400,
+                            "member": 1120
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "facials",
+            "title": "Facials",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "d-tan-facial",
+                    "title": "D-tan facial",
+                    "price": [
+                        {
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "aroma-facial",
+                    "title": "Aroma facial",
+                    "price": [
+                        {
+                            "default": 1700,
+                            "member": 1360
+                        }
+                    ]
+                },
+                {
+                    "id": "charcoal-facial",
+                    "title": "Charcoal facial",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                },
+                {
+                    "id": "perfect-whitening-facial",
+                    "title": "Perfect whitening facial",
+                    "price": [
+                        {
+                            "default": 2500,
+                            "member": 2000
+                        }
+                    ]
+                },
+                {
+                    "id": "shahnaz-gold-diamond-facial",
+                    "title": "Shahnaz Gold/Diamond facial",
+                    "price": [
+                        {
+                            "default": 3000,
+                            "member": 2400
+                        }
+                    ]
+                },
+                {
+                    "id": "skin-lightening-facial",
+                    "title": "Skin lightening facial",
+                    "price": [
+                        {
+                            "default": 3500,
+                            "member": 2800
+                        }
+                    ]
+                },
+                {
+                    "id": "bio-whitening-facial",
+                    "title": "Bio whitening facial",
+                    "price": [
+                        {
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                },
+                {
+                    "id": "oxygen-facial-with-under-eye",
+                    "title": "Oxygen facial with under eye",
+                    "price": [
+                        {
+                            "default": 4500,
+                            "member": 3600
+                        }
+                    ]
+                },
+                {
+                    "id": "o3+-whitening-facial",
+                    "title": "O3+ whitening facial",
+                    "price": [
+                        {
+                            "default": 5000,
+                            "member": 4000
+                        }
+                    ]
+                },
+                {
+                    "id": "o3+-luxury-diamond",
+                    "title": "O3+ luxury diamond",
+                    "price": [
+                        {
+                            "default": 5500,
+                            "member": 4400
+                        }
+                    ]
+                },
+                {
+                    "id": "bridal-glow-facial",
+                    "title": "Bridal glow facial",
+                    "price": [
+                        {
+                            "default": 6000,
+                            "member": 4800
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "add-on-mask",
+            "title": "Add on mask",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "reaffirming-mask",
+                    "title": "Reaffirming mask",
+                    "price": [
+                        {
+                            "default": 1800,
+                            "member": 1440
+                        }
+                    ]
+                },
+                {
+                    "id": "goji-mask",
+                    "title": "Goji mask",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                },
+                {
+                    "id": "vegetable-mask",
+                    "title": "Vegetable mask",
+                    "price": [
+                        {
+                            "default": 2200,
+                            "member": 1760
+                        }
+                    ]
+                },
+                {
+                    "id": "gold-mask",
+                    "title": "Gold mask",
+                    "price": [
+                        {
+                            "default": 2500,
+                            "member": 2000
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "pedicure",
+            "title": "Pedicure",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "mint-pedicure",
+                    "title": "Mint pedicure",
+                    "price": [
+                        {
+                            "default": 650,
+                            "member": 520
+                        }
+                    ]
+                },
+                {
+                    "id": "coco-butter-pedicure",
+                    "title": "Coco butter pedicure",
+                    "price": [
+                        {
+                            "default": 700,
+                            "member": 560
+                        }
+                    ]
+                },
+                {
+                    "id": "paraffin-pedicure",
+                    "title": "Paraffin pedicure",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "crystal-pedicure",
+                    "title": "Crystal pedicure",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "ice-cream-pedicure",
+                    "title": "Ice cream pedicure",
+                    "price": [
+                        {
+                            "default": 1600,
+                            "member": 1200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "manicure",
+            "title": "Manicure",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "mint-manicure",
+                    "title": "Mint manicure",
+                    "price": [
+                        {
+                            "default": 550,
+                            "member": 440
+                        }
+                    ]
+                },
+                {
+                    "id": "coco-butter-manicure",
+                    "title": "Mint manicure",
+                    "price": [
+                        {
+                            "default": 600,
+                            "member": 480
+                        }
+                    ]
+                },
+                {
+                    "id": "paraffin-manicure",
+                    "title": "Paraffin manicure",
+                    "price": [
+                        {
+                            "default": 700,
+                            "member": 560
+                        }
+                    ]
+                },
+                {
+                    "id": "crystal-manicure",
+                    "title": "Crystal manicure",
+                    "price": [
+                        {
+                            "default": 900,
+                            "member": 720
+                        }
+                    ]
+                },
+                {
+                    "id": "ice-cream-manicure",
+                    "title": "Ice cream manicure",
+                    "price": [
+                        {
+                            "default": 1400,
+                            "member": 1120
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nailcut-and-file",
+            "title": "Nailcut and file",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "nailcut-and-filing",
+                    "title": "Nailcut and filing",
+                    "price": [
+                        {
+                            "default": 250,
+                            "member": 200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "makeup",
+            "title": "Makeup",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "kryolan-makeup",
+                    "title": "Kryolan makeup",
+                    "price": [
+                        {
+                            "default": 3000,
+                            "member": 3000
+                        }
+                    ]
+                },
+                {
+                    "id": "mac-makeup",
+                    "title": "Mac makeup",
+                    "price": [
+                        {
+                            "default": 5000,
+                            "member": 5000
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "femaleServices": [
+        {
+            "id": "hair-services",
+            "title": "Hair services",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "princess-haircut",
+                    "title": "Princess hair cut",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "basic-haircut",
+                    "title": "Basic hair cut",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "layer-trim",
+                    "title": "Layer trim",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "advanced-haircut",
+                    "title": "Advanced hair cut",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "creative-haircut",
+                    "title": "Creative hair cut",
+                    "price": [
+                        {
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "shampoo-and-conditioning-loreal",
+                    "title": "Shampoo and conditioning (L'Oréal)",
+                    "price": [
+                        {
+                            "default": 400,
+                            "member": 320
+                        }
+                    ]
+                },
+                {
+                    "id": "shampoo-and-conditioning-wella",
+                    "title": "Shampoo and conditioning (Wella)",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "hair-setting-blowdry",
+                    "title": "Hair setting blow dry",
+                    "price": [
+                        {
+                            "default": 700,
+                            "member": 560
+                        }
+                    ]
+                },
+                {
+                    "id": "tong-curls",
+                    "title": "Tong curls",
+                    "price": [
+                        {
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "fringe-cut",
+                    "title": "Fringe cut",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "colour-services",
+            "title": "Colour services",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "pro-10-root-touchup",
+                    "title": "Pro 10 root touchup",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "pro-10-global",
+                    "title": "Pro 10 global",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 2500,
+                            "member": 2000
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 3000,
+                            "member": 2400
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 3500,
+                            "member": 2800
+                        }
+                    ]
+                },
+                {
+                    "id": "majirel-root-touchup",
+                    "title": "Majirel root touchup",
+                    "price": [
+                        {
+                            "default": 1200,
+                            "member": 960
+                        }
+                    ]
+                },
+                {
+                    "id": "majirel-global",
+                    "title": "Majirel global",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 3000,
+                            "member": 2400
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 3500,
+                            "member": 2800
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                },
+                {
+                    "id": "ammonia-free-root-touchup",
+                    "title": "Ammonia free root touchup",
+                    "price": [
+                        {
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "ammonia-free-global",
+                    "title": "Ammonia free global",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 3500,
+                            "member": 2800
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 4000,
+                            "member": 3200
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 4500,
+                            "member": 3600
+                        }
+                    ]
+                },
+                {
+                    "id": "fasion-colour-root-touchup",
+                    "title": "Fashion colour root touchup",
+                    "price": [
+                        {
+                            "default": 1600,
+                            "member": 1280
+                        }
+                    ]
+                },
+                {
+                    "id": "fashion-colour-global",
+                    "title": "Fashion colour global",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 4000,
+                            "member": 3200
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 4500,
+                            "member": 3600
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 5000,
+                            "member": 4000
+                        }
+                    ]
+                },
+                {
+                    "id": "advance-colour-global",
+                    "title": "Advance colour global",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 5000,
+                            "member": 4000
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 5500,
+                            "member": 4400
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 6000,
+                            "member": 4800
+                        }
+                    ]
+                },
+                {
+                    "id": "global-highlights",
+                    "title": "Global highlights",
+                    "price": [
+                        {
+                            "default": 8000,
+                            "member": 6400
+                        }
+                    ]
+                },
+                {
+                    "id": "streaks-per-streak",
+                    "title": "Streaks (per streak)",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "straightening-and-smoothening",
+            "title": "Straightening and smoothening",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "straightening",
+                    "title": "Straightening",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 5000,
+                            "member": 4000
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 8000,
+                            "member": 6400
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 10000,
+                            "member": 8000
+                        }
+                    ]
+                },
+                {
+                    "id": "rebonding",
+                    "title": "Rebonding",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 6000,
+                            "member": 4800
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 9000,
+                            "member": 7200
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 12000,
+                            "member": 9600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "keratin-treatment",
+            "title": "Keratin treatment",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "keratin-treatment",
+                    "title": "Keratin treatment",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 6000,
+                            "member": 4800
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 8000,
+                            "member": 6400
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 10000,
+                            "member": 8000
+                        }
+                    ]
+                },
+                {
+                    "id": "pro-boto.x",
+                    "title": "Pro boto.x",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 8000,
+                            "member": 6400
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 10000,
+                            "member": 8000
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 12000,
+                            "member": 9600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "head-massage",
+            "title": "Head massage",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "coconut-oil",
+                    "title": "Coconut oil",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "mint-oil",
+                    "title": "Mint oil",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "almond-oil",
+                    "title": "Almond oil",
+                    "price": [
+                        {
+                            "default": 600,
+                            "member": 480
+                        }
+                    ]
+                },
+                {
+                    "id": "olive-oil",
+                    "title": "Olive oil",
+                    "price": [
+                        {
+                            "default": 700,
+                            "member": 560
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hair-spa-loreal",
+            "title": "Hair spa (L'Oréal)",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "moisturising-hair-spa",
+                    "title": "Moisturising hair spa",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 1200,
+                            "member": 960
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 1500,
+                            "member": 1200
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 1800,
+                            "member": 1440
+                        }
+                    ]
+                },
+                {
+                    "id": "colour-protect-spa",
+                    "title": "Colour protect spa",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 1300,
+                            "member": 1040
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 1600,
+                            "member": 1280
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 2000,
+                            "member": 1760
+                        }
+                    ]
+                },
+                {
+                    "id": "repairing-hair-spa",
+                    "title": "Repairing hair spa",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 1400,
+                            "member": 1120
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 1700,
+                            "member": 1360
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 2200,
+                            "member": 1760
+                        }
+                    ]
+                },
+                {
+                    "id": "mythic-hair-spa-premium",
+                    "title": "Mythic hair spa premium",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 2500,
+                            "member": 2000
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 2800,
+                            "member": 2240
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 3000,
+                            "member": 2400
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-dandruff-scalp",
+                    "title": "Anti dandruff (scalp)",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-hair-fall-scalp",
+                    "title": "Anti hair fall (scalp)",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hair-spa-wella",
+            "title": "Hair spa (Wella)",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "express-alchemy",
+                    "title": "Express alchemy",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 2000,
+                            "member": 1600
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 3000,
+                            "member": 2400
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                },
+                {
+                    "id": "intense-alchemy",
+                    "title": "Intense alchemy",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 2500,
+                            "member": 2000
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 3500,
+                            "member": 2800
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 4500,
+                            "member": 3600
+                        }
+                    ]
+                },
+                {
+                    "id": "keratin-restore",
+                    "title": "Keratin restore",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 3000,
+                            "member": 2400
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 4000,
+                            "member": 3200
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 5000,
+                            "member": 4000
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-dandruff",
+                    "title": "Anti dandruff",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 2600,
+                            "member": 2080
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 3200,
+                            "member": 2560
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-hair-fall",
+                    "title": "Anti hair fall",
+                    "price": [
+                        {
+                            "hairSize": "short",
+                            "default": 2600,
+                            "member": 2080
+                        },
+                        {
+                            "hairSize": "medium",
+                            "default": 3200,
+                            "member": 2560
+                        },
+                        {
+                            "hairSize": "long",
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "threading",
+            "title": "Threading",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "eye-brows",
+                    "title": "Eye brows",
+                    "price": [
+                        {
+                            "default": 50,
+                            "member": 40
+                        }
+                    ]
+                },
+                {
+                    "id": "upper-lip",
+                    "title": "Upper lip",
+                    "price": [
+                        {
+                            "default": 30,
+                            "member": 24
+                        }
+                    ]
+                },
+                {
+                    "id": "chin",
+                    "title": "Chin",
+                    "price": [
+                        {
+                            "default": 40,
+                            "member": 32
+                        }
+                    ]
+                },
+                {
+                    "id": "forehead",
+                    "title": "Forehead",
+                    "price": [
+                        {
+                            "default": 40,
+                            "member": 32
+                        }
+                    ]
+                },
+                {
+                    "id": "full-face",
+                    "title": "Full face",
+                    "price": [
+                        {
+                            "default": 200,
+                            "member": 160
+                        }
+                    ]
+                },
+                {
+                    "id": "lower-lip",
+                    "title": "Lower lip",
+                    "price": [
+                        {
+                            "default": 30,
+                            "member": 24
+                        }
+                    ]
+                },
+                {
+                    "id": "side-locks",
+                    "title": "Side locks",
+                    "price": [
+                        {
+                            "default": 40,
+                            "member": 32
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "waxing-basic",
+            "title": "Waxing (basic)",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "half-arms",
+                    "title": "Half arms",
+                    "price": [
+                        {
+                            "default": 250,
+                            "member": 200
+                        }
+                    ]
+                },
+                {
+                    "id": "full-arms",
+                    "title": "Full arms",
+                    "price": [
+                        {
+                            "default": 350,
+                            "member": 280
+                        }
+                    ]
+                },
+                {
+                    "id": "half-legs",
+                    "title": "Half legs",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "full-legs",
+                    "title": "Full legs",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "under-arms",
+                    "title": "Under arms",
+                    "price": [
+                        {
+                            "default": 150,
+                            "member": 120
+                        }
+                    ]
+                },
+                {
+                    "id": "full-body",
+                    "title": "Full body",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "waxing-brazilian",
+            "title": "Waxing (brazilian)",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "upper-lip",
+                    "title": "Upper lip",
+                    "price": [
+                        {
+                            "default": 80,
+                            "member": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "chin",
+                    "title": "Chin",
+                    "price": [
+                        {
+                            "default": 80,
+                            "member": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "sides",
+                    "title": "Sides",
+                    "price": [
+                        {
+                            "default": 150,
+                            "member": 120
+                        }
+                    ]
+                },
+                {
+                    "id": "full-face",
+                    "title": "Full face",
+                    "price": [
+                        {
+                            "default": 350,
+                            "member": 280
+                        }
+                    ]
+                },
+                {
+                    "id": "under-arms",
+                    "title": "Under arms",
+                    "price": [
+                        {
+                            "default": 250,
+                            "member": 200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "flavoured-wax",
+            "title": "Flavoured wax",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "half-arms",
+                    "title": "Half arms",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "full-arms",
+                    "title": "Full arms",
+                    "price": [
+                        {
+                            "default": 700,
+                            "member": 560
+                        }
+                    ]
+                },
+                {
+                    "id": "half-legs",
+                    "title": "Half legs",
+                    "price": [
+                        {
+                            "default": 600,
+                            "member": 480
+                        }
+                    ]
+                },
+                {
+                    "id": "full-legs",
+                    "title": "Full arms",
+                    "price": [
+                        {
+                            "default": 1200,
+                            "member": 960
+                        }
+                    ]
+                },
+                {
+                    "id": "full-body",
+                    "title": "Full body",
+                    "price": [
+                        {
+                            "default": 3000,
+                            "member": 2400
+                        }
+                    ]
+                },
+                {
+                    "id": "b-wax",
+                    "title": "B.wax",
+                    "price": [
+                        {
+                            "default": 3000,
+                            "member": 2400
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "d-tan",
+            "title": "D-tan",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "face",
+                    "title": "Face",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "neck",
+                    "title": "Neck",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "half-arms",
+                    "title": "Half arms",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "full-arms",
+                    "title": "Full arms",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "feet",
+                    "title": "Feet",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "under-arms",
+                    "title": "Under arms",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                },
+                {
+                    "id": "blouse-line",
+                    "title": "Blouse line",
+                    "price": [
+                        {
+                            "default": 350,
+                            "member": 280
+                        }
+                    ]
+                },
+                {
+                    "id": "midriff",
+                    "title": "Midriff",
+                    "price": [
+                        {
+                            "default": 500,
+                            "member": 400
+                        }
+                    ]
+                },
+                {
+                    "id": "full-back",
+                    "title": "Full back",
+                    "price": [
+                        {
+                            "default": 650,
+                            "member": 520
+                        }
+                    ]
+                },
+                {
+                    "id": "half-legs",
+                    "title": "Half legs",
+                    "price": [
+                        {
+                            "default": 600,
+                            "member": 480
+                        }
+                    ]
+                },
+                {
+                    "id": "full-legs",
+                    "title": "Full legs",
+                    "price": [
+                        {
+                            "default": 1200,
+                            "member": 960
+                        }
+                    ]
+                },
+                {
+                    "id": "full-body",
+                    "title": "Full body",
+                    "price": [
+                        {
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "body-polishing",
+            "title": "Body polishing",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "full-arms",
+                    "title": "Full arms",
+                    "price": [
+                        {
+                            "default": 1800,
+                            "member": 1440
+                        }
+                    ]
+                },
+                {
+                    "id": "under-arms",
+                    "title": "Under arms",
+                    "price": [
+                        {
+                            "default": 600,
+                            "member": 480
+                        }
+                    ]
+                },
+                {
+                    "id": "full-back",
+                    "title": "Full back",
+                    "price": [
+                        {
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "blouse-line",
+                    "title": "Blouse line",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "full-body",
+                    "title": "Full body",
+                    "price": [
+                        {
+                            "default": 6000,
+                            "member": 4800
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cleanup",
+            "title": "Cleanup",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "fruit-cleanup",
+                    "title": "Fruit cleanup",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "advanced-cleanup",
+                    "title": "Advanced cleanup",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "cleanup-oily",
+                    "title": "Cleanup (oily)",
+                    "price": [
+                        {
+                            "default": 1400,
+                            "member": 1120
+                        }
+                    ]
+                },
+                {
+                    "id": "cleanup-dry",
+                    "title": "Cleanup (dry)",
+                    "price": [
+                        {
+                            "default": 1400,
+                            "member": 1120
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "facials",
+            "title": "Facials",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "d-tan-facial",
+                    "title": "D-tan facial",
+                    "price": [
+                        {
+                            "default": 1500,
+                            "member": 1200
+                        }
+                    ]
+                },
+                {
+                    "id": "aroma-facial",
+                    "title": "Aroma facial",
+                    "price": [
+                        {
+                            "default": 1700,
+                            "member": 1360
+                        }
+                    ]
+                },
+                {
+                    "id": "charcoal-facial",
+                    "title": "Charcoal facial",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                },
+                {
+                    "id": "perfect-whitening-facial",
+                    "title": "Perfect whitening facial",
+                    "price": [
+                        {
+                            "default": 2500,
+                            "member": 2000
+                        }
+                    ]
+                },
+                {
+                    "id": "shahnaz-gold-diamond-facial",
+                    "title": "Shahnaz Gold/Diamond facial",
+                    "price": [
+                        {
+                            "default": 3000,
+                            "member": 2400
+                        }
+                    ]
+                },
+                {
+                    "id": "skin-lightening-facial",
+                    "title": "Skin lightening facial",
+                    "price": [
+                        {
+                            "default": 3500,
+                            "member": 2800
+                        }
+                    ]
+                },
+                {
+                    "id": "bio-whitening-facial",
+                    "title": "Bio whitening facial",
+                    "price": [
+                        {
+                            "default": 4000,
+                            "member": 3200
+                        }
+                    ]
+                },
+                {
+                    "id": "oxygen-facial-with-under-eye",
+                    "title": "Oxygen facial with under eye",
+                    "price": [
+                        {
+                            "default": 4500,
+                            "member": 3600
+                        }
+                    ]
+                },
+                {
+                    "id": "o3+-whitening-facial",
+                    "title": "O3+ whitening facial",
+                    "price": [
+                        {
+                            "default": 5000,
+                            "member": 4000
+                        }
+                    ]
+                },
+                {
+                    "id": "o3+-luxury-diamond",
+                    "title": "O3+ luxury diamond",
+                    "price": [
+                        {
+                            "default": 5500,
+                            "member": 4400
+                        }
+                    ]
+                },
+                {
+                    "id": "bridal-glow-facial",
+                    "title": "Bridal glow facial",
+                    "price": [
+                        {
+                            "default": 6000,
+                            "member": 4800
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "add-on-mask",
+            "title": "Add on mask",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "reaffirming-mask",
+                    "title": "Reaffirming mask",
+                    "price": [
+                        {
+                            "default": 1800,
+                            "member": 1440
+                        }
+                    ]
+                },
+                {
+                    "id": "goji-mask",
+                    "title": "Goji mask",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 1600
+                        }
+                    ]
+                },
+                {
+                    "id": "vegetable-mask",
+                    "title": "Vegetable mask",
+                    "price": [
+                        {
+                            "default": 2200,
+                            "member": 1760
+                        }
+                    ]
+                },
+                {
+                    "id": "gold-mask",
+                    "title": "Gold mask",
+                    "price": [
+                        {
+                            "default": 2500,
+                            "member": 2000
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "pedicure",
+            "title": "Pedicure",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "mint-pedicure",
+                    "title": "Mint pedicure",
+                    "price": [
+                        {
+                            "default": 650,
+                            "member": 520
+                        }
+                    ]
+                },
+                {
+                    "id": "coco-butter-pedicure",
+                    "title": "Coco butter pedicure",
+                    "price": [
+                        {
+                            "default": 700,
+                            "member": 560
+                        }
+                    ]
+                },
+                {
+                    "id": "paraffin-pedicure",
+                    "title": "Paraffin pedicure",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "crystal-pedicure",
+                    "title": "Crystal pedicure",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "ice-cream-pedicure",
+                    "title": "Ice cream pedicure",
+                    "price": [
+                        {
+                            "default": 1600,
+                            "member": 1200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "manicure",
+            "title": "Manicure",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "mint-manicure",
+                    "title": "Mint manicure",
+                    "price": [
+                        {
+                            "default": 650,
+                            "member": 520
+                        }
+                    ]
+                },
+                {
+                    "id": "coco-butter-manicure",
+                    "title": "Mint manicure",
+                    "price": [
+                        {
+                            "default": 700,
+                            "member": 560
+                        }
+                    ]
+                },
+                {
+                    "id": "paraffin-manicure",
+                    "title": "Paraffin manicure",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 640
+                        }
+                    ]
+                },
+                {
+                    "id": "crystal-manicure",
+                    "title": "Crystal manicure",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 800
+                        }
+                    ]
+                },
+                {
+                    "id": "ice-cream-manicure",
+                    "title": "Ice cream manicure",
+                    "price": [
+                        {
+                            "default": 1600,
+                            "member": 1200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nailcut-and-file",
+            "title": "Nailcut and file",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "nailcut",
+                    "title": "Nail cut",
+                    "price": [
+                        {
+                            "default": 250,
+                            "member": 200
+                        }
+                    ]
+                },
+                {
+                    "id": "nail-polish",
+                    "title": "Nail polish",
+                    "price": [
+                        {
+                            "default": 300,
+                            "member": 240
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "makeup",
+            "title": "Makeup",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "light-makeup-kryolan",
+                    "title": "Light makeup (Kryolan)",
+                    "price": [
+                        {
+                            "default": 2500,
+                            "member": 2500
+                        }
+                    ]
+                },
+                {
+                    "id": "bridal-makeup-kryolan",
+                    "title": "Bridal makeup (Kryolan)",
+                    "price": [
+                        {
+                            "default": 6000,
+                            "member": 6000
+                        }
+                    ]
+                },
+                {
+                    "id": "light-makeup-mac",
+                    "title": "Light makeup (Mac)",
+                    "price": [
+                        {
+                            "default": 4000,
+                            "member": 4000
+                        }
+                    ]
+                },
+                {
+                    "id": "bridal-makeup-mac",
+                    "title": "Bridal makeup (Mac)",
+                    "price": [
+                        {
+                            "default": 12000,
+                            "member": 12000
+                        }
+                    ]
+                },
+                {
+                    "id": "eye-makeup",
+                    "title": "Eye makeup",
+                    "price": [
+                        {
+                            "default": 2000,
+                            "member": 2000
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hairdos",
+            "title": "Hair do's",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "classic-hairdo",
+                    "title": "Classic hair do",
+                    "price": [
+                        {
+                            "default": 1000,
+                            "member": 1000
+                        }
+                    ]
+                },
+                {
+                    "id": "elite-hairdo",
+                    "title": "Elite hair do",
+                    "price": [
+                        {
+                            "default": 1650,
+                            "member": 1650
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "saree-dropping",
+            "title": "Saree dropping",
+            "locations": [
+                "sainikpuri",
+                "malkajgiri"
+            ],
+            "list": [
+                {
+                    "id": "classic",
+                    "title": "Classic",
+                    "price": [
+                        {
+                            "default": 550,
+                            "member": 550
+                        }
+                    ]
+                },
+                {
+                    "id": "elite",
+                    "title": "Elite",
+                    "price": [
+                        {
+                            "default": 800,
+                            "member": 800
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

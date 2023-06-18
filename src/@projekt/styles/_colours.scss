@@ -139,18 +139,10 @@
 		// border: 2px solid #555555;
 	}
 
-	.mat-table thead {
-		background-color: mat-color($primary, 50);
-	}
-
 	.mat-tab-label-active {
 		// background-color: mat-color($accent, 100);
 		.mat-tab-label-content {
 			color: mat-color($accent);
 		}
 	}
-
-	// .mat-tab-label {
-	// 	background-color: mat-color($accent, 50);
-	// }
 }

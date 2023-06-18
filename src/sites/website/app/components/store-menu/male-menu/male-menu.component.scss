@@ -1,0 +1,50 @@
+.concept-five {
+	display: flex;
+	align-items: center;
+	.word {
+		font-size: 4rem;
+		text-shadow: 0 10px 25px rgba(222, 143, 46, 0.1);
+		min-width: 80vw;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 80%;
+		&:hover {
+			.char:nth-child(even) {
+				top: 1rem;
+			}
+			.char:nth-child(odd) {
+				top: -1rem;
+			}
+		}
+	}
+	.char {
+		flex: 1;
+		position: relative;
+		display: inline-block;
+		top: 0;
+		transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+		text-align: center;
+	}
+}
+
+.mat-table {
+	width: 100%;
+	background: transparent;
+	border-radius: 20px;
+    .mat-header-cell {
+        background-color: white;
+        font-size: 24px;
+        text-align: center;
+        &:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        &:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+	.mat-cell {
+		font-size: 20px;
+	}
+}
