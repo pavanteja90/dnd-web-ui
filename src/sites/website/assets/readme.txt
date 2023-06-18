@@ -50,3 +50,6 @@
 ## Adding new offer in Offers page
 ## Updating Book an appointment button to show both branch options
 ## Asset updates
+
+###### Version 1.7.0
+## Adding packages

@@ -37,6 +37,11 @@ export class RootComponent implements OnInit, OnDestroy {
 			],
 		},
 		{
+			label: 'Packages',
+			routerLink: 'packages',
+			icon: 'box_add',
+		},
+		{
 			label: 'Offers',
 			routerLink: 'offers',
 			icon: 'favorite',

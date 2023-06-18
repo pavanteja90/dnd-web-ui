@@ -10,6 +10,7 @@ import {
 	StoreMenuComponent,
 } from './components';
 import { ComingSoonComponent } from './containers';
+import { PackagesComponent } from './components/packages';
 
 const routes: Routes = [
 	{
@@ -61,6 +62,18 @@ const routes: Routes = [
 				title: 'Female Services',
 				description:
 					'List of services we offer for our female patrons. You can make an appointment online from our website or contact the store.',
+			},
+		},
+	},
+	{
+		path: 'packages',
+		component: PackagesComponent,
+		canActivate: [MetaGuard],
+		data: {
+			meta: {
+				title: 'Packages',
+				description:
+					'List of packages we offer for all our patrons. You can make an appointment online from our website or contact the store.',
 			},
 		},
 	},
