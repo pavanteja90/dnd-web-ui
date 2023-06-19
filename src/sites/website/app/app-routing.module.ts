@@ -21,7 +21,7 @@ const routes: Routes = [
 			meta: {
 				title: 'Home',
 				description:
-					'Diana & Dapper is a group of unisex salon and spas located in Hyderabad. We provide makeup, facials, hair dressing, manicure, pedicure, and bridal services. We currently have a store in Sainikpuri and are planning to open a new salon in Malkajgiri. Swing by and let us work our magic to bring the inner beauty in you to life.',
+					'Diana & Dapper is a group of unisex salon and spas located in Hyderabad. We provide makeup, facials, hair dressing, manicure, pedicure, and bridal services. We currently have our stores in Sainikpuri and Malkajgiri, Hyderabad. Swing by and let us work our magic to bring the inner beauty in you to life.',
 			},
 		},
 	},
