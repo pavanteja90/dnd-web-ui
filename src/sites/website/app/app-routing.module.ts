@@ -37,34 +37,34 @@ const routes: Routes = [
 			},
 		},
 	},
-	{
-		path: 'services',
-		redirectTo: 'menu',
-	},
-	{
-		path: 'services/male',
-		component: MaleMenuComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: 'Male Services',
-				description:
-					'List of services we offer for our male patrons. You can make an appointment online from our website or contact the store.',
-			},
-		},
-	},
-	{
-		path: 'services/female',
-		component: FemaleMenuComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: 'Female Services',
-				description:
-					'List of services we offer for our female patrons. You can make an appointment online from our website or contact the store.',
-			},
-		},
-	},
+	// {
+	// 	path: 'services',
+	// 	redirectTo: 'menu',
+	// },
+	// {
+	// 	path: 'services/male',
+	// 	component: MaleMenuComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: 'Male Services',
+	// 			description:
+	// 				'List of services we offer for our male patrons. You can make an appointment online from our website or contact the store.',
+	// 		},
+	// 	},
+	// },
+	// {
+	// 	path: 'services/female',
+	// 	component: FemaleMenuComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: 'Female Services',
+	// 			description:
+	// 				'List of services we offer for our female patrons. You can make an appointment online from our website or contact the store.',
+	// 		},
+	// 	},
+	// },
 	{
 		path: 'packages',
 		component: PackagesComponent,
@@ -89,18 +89,18 @@ const routes: Routes = [
 			},
 		},
 	},
-	{
-		path: 'menu',
-		component: StoreMenuComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: 'Menu',
-				description:
-					'List of services we offer for all our patrons. You can make an appointment online from our website or contact the store.',
-			},
-		},
-	},
+	// {
+	// 	path: 'menu',
+	// 	component: StoreMenuComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: 'Menu',
+	// 			description:
+	// 				'List of services we offer for all our patrons. You can make an appointment online from our website or contact the store.',
+	// 		},
+	// 	},
+	// },
 	// {
 	// 	path: 'coming-soon',
 	// 	component: ComingSoonComponent,

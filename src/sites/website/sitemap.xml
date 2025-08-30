@@ -3,14 +3,12 @@
 	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-	<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 	<url>
 		<loc>https://dianandapper.com/</loc>
 		<lastmod>2023-06-18T06:30:00+10:00</lastmod>
 		<priority>1.00</priority>
 	</url>
-	<url>
+	<!-- <url>
 		<loc>https://dianandapper.com/services/male</loc>
 		<lastmod>2023-06-18T06:30:00+10:00</lastmod>
 		<priority>0.80</priority>
@@ -19,7 +17,7 @@
 		<loc>https://dianandapper.com/services/female</loc>
 		<lastmod>2023-06-18T06:30:00+10:00</lastmod>
 		<priority>0.80</priority>
-	</url>
+	</url> -->
 	<url>
 		<loc>https://dianandapper.com/offers</loc>
 		<lastmod>2023-06-18T06:30:00+10:00</lastmod>
@@ -30,14 +28,14 @@
 		<lastmod>2023-06-18T06:30:00+10:00</lastmod>
 		<priority>0.80</priority>
 	</url>
-	<url>
+	<!-- <url>
 		<loc>https://dianandapper.com/menu</loc>
 		<lastmod>2023-06-18T06:30:00+10:00</lastmod>
 		<priority>0.60</priority>
-	</url>
+	</url> -->
 	<url>
 		<loc>https://dianandapper.com/contact-us</loc>
 		<lastmod>2023-06-18T06:30:00+10:00</lastmod>
-		<priority>0.60</priority>
+		<priority>0.80</priority>
 	</url>
 </urlset>

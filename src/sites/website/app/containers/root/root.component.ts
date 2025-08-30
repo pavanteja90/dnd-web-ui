@@ -19,23 +19,23 @@ export class RootComponent implements OnInit, OnDestroy {
 			routerLink: '/',
 			icon: 'home',
 		},
-		{
-			label: 'Services',
-			routerLink: 'services',
-			icon: 'miscellaneous_services',
-			children: [
-				{
-					label: 'Male Services',
-					routerLink: '/services/male',
-					icon: 'male',
-				},
-				{
-					label: 'Female Services',
-					routerLink: '/services/female',
-					icon: 'female',
-				},
-			],
-		},
+		// {
+		// 	label: 'Services',
+		// 	routerLink: 'services',
+		// 	icon: 'miscellaneous_services',
+		// 	children: [
+		// 		{
+		// 			label: 'Male Services',
+		// 			routerLink: '/services/male',
+		// 			icon: 'male',
+		// 		},
+		// 		{
+		// 			label: 'Female Services',
+		// 			routerLink: '/services/female',
+		// 			icon: 'female',
+		// 		},
+		// 	],
+		// },
 		{
 			label: 'Packages',
 			routerLink: 'packages',
