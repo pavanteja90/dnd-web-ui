@@ -1,8 +1,55 @@
 <section class="container">
 	<mat-card class="margin-2 coming-soon white">
-		<p class="accent-colour font-20">With new beginnings comes a new offer!</p>
-		<p class="font-16">We opened a new branch in Anandbagh, Malkajgiri and started serving our customers from <i class="accent-colour">"May the 4th"</i> (yes, that's a star wars reference). To celebrate this and make it a much sweeter deal for our customers, we have an inauguration offer running at the new salon. We would love for you to visit and get 30% off and a free membership on us.</p>
+		<p class="accent-colour font-20">We are upgrading our website!</p>
+		<p class="font-16">To provide better experiences for our customers, we are working hard to improve our website's functionality and design. Stay tuned for the launch!</p>
 	</mat-card>
+
+	<br>
+	<mat-divider></mat-divider>
+	<br>
+
+	<mat-card class="margin-2 coming-soon">
+		<h3>Popular Services</h3>
+	</mat-card>
+
+	<section class="three columns">
+		<mat-card class="margin-2 coming-soon white padding-5">
+			<p class="font-18 center">Haircut</p>
+			<p class="font-16">
+				A stylish haircut that suits your personality and enhances your overall look. Our skilled stylists will work with you to create a haircut that complements your facial features and lifestyle.
+			</p>
+		</mat-card>
+		<mat-card class="margin-2 coming-soon white padding-5">
+			<p class="font-18 center">Hair Colouring</p>
+			<p class="font-16">
+				Transform your look with our professional hair colouring services. Whether you want a subtle change or a bold new look, our colour experts will help you choose the perfect shade to enhance your natural beauty.
+			</p>
+		</mat-card>
+		<mat-card class="margin-2 coming-soon white padding-5">
+			<p class="font-18 center">Facial Treatments</p>
+			<p class="font-16">
+				Indulge in our rejuvenating facial treatments designed to cleanse, exfoliate, and nourish your skin. Our experienced estheticians will customize the treatment to address your specific skin concerns, leaving you with a radiant complexion.
+			</p>
+		</mat-card>
+		<mat-card class="margin-2 coming-soon white padding-5">
+			<p class="font-18 center">Straightening</p>
+			<p class="font-16">
+				Transform your look with our professional hair straightening services. Whether you want a sleek, polished style or beachy waves, our skilled stylists will help you achieve the perfect look for any occasion.
+			</p>
+		</mat-card>
+		<mat-card class="margin-2 coming-soon white padding-5">
+			<p class="font-18 center">Bridal Makeup</p>
+			<p class="font-16">
+				Look and feel your best on your special day with our expert bridal makeup services. Our talented makeup artists will work with you to create a personalized look that enhances your natural beauty and complements your wedding style.
+			</p>
+		</mat-card>
+		<mat-card class="margin-2 coming-soon white padding-5">
+			<p class="font-18 center">Manicure & Pedicure</p>
+			<p class="font-16">
+				Pamper yourself with our luxurious manicure and pedicure services. Our skilled technicians will shape and polish your nails, while also providing a relaxing hand and foot massage to leave you feeling refreshed and rejuvenated.
+			</p>
+		</mat-card>
+	</section>
 
 	<br>
 	<mat-divider></mat-divider>
@@ -15,12 +62,8 @@
 	<h4 class="margin-4 primary-colour">1. Malkajgiri Branch</h4>
 
 	<section class="margin-2">
-		<!-- <video width="320" height="240" autoplay loop muted alt="20% off promotion">
-			<source src="assets/img/promotions/current/1.webp" type="video/webp" />
-			<source src="assets/img/promotions/current/1.gif" type="video/gif" />
-			Your browser does not support the video tag.
-		</video> -->
-		<img style="border-radius: 20px;" src="assets/img/promotions/current/3.gif" alt="30% off promotion">
+		<carousel [images]="imagesMalkajgiri" [height]="300" [cellWidth]="350" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" arrowsTheme="light" [borderRadius]="20" style="z-index: 1;">
+		</carousel>
 	</section>
 
 	<section class="margin-2 two columns">
@@ -45,7 +88,6 @@
 				<a href="https://www.instagram.com/malkajgiri.dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram"></a>
 				<a href="https://youtube.com/@DianaDapper" rel="noreferrer" target="_blank"><img src="assets/icons/youtube.png" alt="YouTube"></a>
 				<a href="https://www.facebook.com/dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-				<a href="mailto: malkajgiri.dianandapper@gmail.com" rel="noreferrer noopener"><img src="assets/icons/email.png" alt="Gmail"></a>
 			</div>
 		</mat-card>
 		<div class="margin-2-vertical iframe-holder">
@@ -59,15 +101,6 @@
 	<br>
 
 	<h4 class="margin-4 primary-colour">2. Sainikpuri Branch</h4>
-
-	<section class="margin-2">
-		<!-- <video width="320" height="240" autoplay loop muted alt="20% off promotion">
-			<source src="assets/img/promotions/current/1.webp" type="video/webp" />
-			<source src="assets/img/promotions/current/1.gif" type="video/gif" />
-			Your browser does not support the video tag.
-		</video> -->
-		<img style="border-radius: 20px;" src="assets/img/promotions/current/1.gif" alt="20% off promotion">
-	</section>
 
 	<section class="margin-2">
 		<carousel [images]="images" [height]="300" [cellWidth]="350" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" arrowsTheme="light" [borderRadius]="20" style="z-index: 1;">
@@ -96,7 +129,6 @@
 				<a href="https://www.instagram.com/sainikpuri.dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram"></a>
 				<a href="https://youtube.com/@DianaDapper" rel="noreferrer" target="_blank"><img src="assets/icons/youtube.png" alt="YouTube"></a>
 				<a href="https://www.facebook.com/dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-				<a href="mailto: sainikpuri.dianandapper@gmail.com" rel="noreferrer noopener"><img src="assets/icons/email.png" alt="Gmail"></a>
 			</div>
 		</mat-card>
 		<div class="margin-2-vertical iframe-holder">

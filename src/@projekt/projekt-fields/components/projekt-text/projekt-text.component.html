@@ -1,10 +1,46 @@
-<mat-form-field>
-	<mat-label>{{label}}</mat-label>
-	<mat-icon matPrefix>{{prefix}}</mat-icon>
+<mat-form-field appearance="outline" style="margin: 0">
+	<mat-label>{{ label }}</mat-label>
+	<mat-icon matPrefix>{{ prefix }}</mat-icon>
 	<ng-container [ngSwitch]="true">
-		<input *ngSwitchCase="type === 'email'" type="email" matInput [placeholder]="placeholder" [formControl]="formControl" name="fieldName" ngDefaultControl>
-		<input *ngSwitchDefault type="text" matInput [placeholder]="placeholder" [formControl]="formControl" name="fieldName" ngDefaultControl>
+		<input
+			*ngSwitchCase="type === 'email'"
+			type="email"
+			[name]="fieldName"
+			matInput
+			[placeholder]="placeholder"
+			[formControl]="formControl"
+			ngDefaultControl
+		/>
+		<textarea
+			*ngSwitchCase="type === 'textarea'"
+			matInput
+			[placeholder]="placeholder"
+			[name]="fieldName"
+			rows="5"
+			[formControl]="formControl"
+			ngDefaultControl
+		></textarea>
+		<input
+			*ngSwitchDefault
+			type="text"
+			matInput
+			[name]="fieldName"
+			[placeholder]="placeholder"
+			[formControl]="formControl"
+			ngDefaultControl
+		/>
 	</ng-container>
-	<mat-icon matSuffix>{{suffix}}</mat-icon>
-	<mat-hint>{{hint}}</mat-hint>
+	<mat-icon matSuffix>{{ suffix }}</mat-icon>
+	<ng-container *ngIf="hint">
+		<mat-hint>{{ hint }}</mat-hint>
+	</ng-container>
 </mat-form-field>
+<ng-container
+	*ngIf="
+		errorMessage &&
+		formControl.invalid &&
+		(formControl.dirty || formControl.touched)
+	"
+>
+	<mat-error>{{ errorMessage }}</mat-error>
+</ng-container>

@@ -1,65 +1,158 @@
-<section class="container" style="display: table; height: 100vh;">
-	<section style="display: table-cell; vertical-align: middle;">
+<section class="container" style="display: table; height: 100vh">
+	<section style="display: table-cell; vertical-align: middle">
 		<mat-card class="coming-soon white padding-5 margin-5">
-			<div class="font-20 center">
-				We ❤️ to hear from you.
-			</div>
-			<br>
-			<p class="font-16">Do you want to make a booking with us? Do you want to check what service will suit your skin type or hair type? Or do you want to have a chat about something else? Irrespective of what your query is, we love to hear from you!</p>
-			<p class="font-16 white">As a team that strives for utmost customer satisfaction and excellence, we want to know how we did. We consider your suggestions seriously as it helps us to improve the quality of our services.</p>
-			<p class="font-16"><mat-icon style="font-size: 16px; height: 20px;">info</mat-icon> For any generic queries, or grievances, please email us at <a class="accent-colour underline" matTooltip="Email us" href="mailto: info.dianandapper@gmail.com" rel="noreferrer noopener">info.dianandapper@gmail.com</a>. </p>
-			<p class="font-16"><mat-icon style="font-size: 16px; height: 20px;">info</mat-icon> To know about what offers we are running currently, please go to our <a class="accent-colour underline" matTooltip="Offers" href="/offers">offers page</a>.</p>
-			<br>
-			<p class="font-20 center underline">Malkajgiri branch</p>
-			<section class="two columns">
-				<section class="padding-5" style="display: flex; flex-direction: column; justify-content: space-between;">
+			<div class="font-20 center">We ❤️ to hear from you.</div>
+			<br />
+			<p class="font-16">
+				Do you want to make a booking with us? Do you want to check what
+				service will suit your skin type or hair type? Or do you want to
+				have a chat about something else? Irrespective of what your
+				query is, we love to hear from you!
+			</p>
+			<p class="font-16 white">
+				As a team that strives for utmost customer satisfaction and
+				excellence, we want to know how we did. We consider your
+				suggestions seriously as it helps us to improve the quality of
+				our services.
+			</p>
+		</mat-card>
+		<!-- <ng-container *ngIf="form">
+			<mat-card
+				style="background-color: white"
+				class="background-white padding-5 margin-5"
+			>
+				<form (ngSubmit)="submit()" [formGroup]="form">
+					<section class="two columns">
+						<pr-text
+							label="First name"
+							name="firstName"
+							[fieldName]="'firstName'"
+							[formControl]="form.controls.firstName"
+							[type]="'text'"
+							[placeholder]="'Enter your first name'"
+							prefix="person"
+							[errorMessage]="'First name is required'"
+						></pr-text>
+						<pr-text
+							label="Last name"
+							name="lastName"
+							[fieldName]="'lastName'"
+							[formControl]="form.controls.lastName"
+							[type]="'text'"
+							[placeholder]="'Enter your last name'"
+							prefix="person"
+							[errorMessage]="'Last name is required'"
+						></pr-text>
+						<pr-text
+							label="Email address"
+							name="emailAddress"
+							[fieldName]="'emailAddress'"
+							[formControl]="form.controls.emailAddress"
+							[type]="'email'"
+							[placeholder]="'Enter your email address'"
+							[errorMessage]="'Enter a valid email address'"
+						></pr-text>
+						<pr-text
+							label="Mobile"
+							name="mobilePhone"
+							[fieldName]="'mobilePhone'"
+							[formControl]="form.controls.mobilePhone"
+							[type]="'tel'"
+							[placeholder]="'Enter your mobile number'"
+							prefix="phone"
+							[errorMessage]="'Enter a valid mobile number'"
+						></pr-text>
+					</section>
+					<pr-text
+						label="Message"
+						name="message"
+						[fieldName]="'message'"
+						[formControl]="form.controls.message"
+						[type]="'textarea'"
+						[placeholder]="'Enter your message'"
+						prefix="chat"
+						[errorMessage]="'Message is required'"
+					></pr-text>
+					<br />
+					<section
+						class="container flex"
+						style="justify-content: right"
+					>
+						<button
+							type="submit"
+							[disabled]="!form.valid"
+							mat-raised-button
+							color="warn"
+						>
+							Submit enquiry
+						</button>
+					</section>
+				</form>
+			</mat-card>
+		</ng-container> -->
+		<mat-card class="coming-soon white padding-5 margin-5">
+			<p class="font-20 center">Our branches.</p>
+			<section class="two columns" style="column-gap: 20px">
+				<section
+					style="
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+					"
+				>
+					<p class="font-18 center">Malkajgiri</p>
 					<p class="font-16">
-						If you have any queries about our malkajgiri branch, please contact us at <a class="accent-colour underline" matTooltip="Mobile" href="tel:88850 40540" rel="noreferrer noopener">88850 40540</a> or email us at <a class="accent-colour underline" matTooltip="Email us" href="mailto: malkajgiri.dianandapper@gmail.com" rel="noreferrer noopener">malkajgiri.dianandapper@gmail.com</a>.
+						If you have any queries about our malkajgiri branch,
+						please contact us at
+						<a
+							class="accent-colour underline"
+							matTooltip="Mobile"
+							href="tel:88850 40540"
+							rel="noreferrer noopener"
+							>88850 40540</a
+						>.
 					</p>
-					<br>
-					<mat-divider [inset]="true"></mat-divider>
-					<div>
-						<p class="font-16">For any latest updates about our malkajgiri branch, or information on how we are doing, do follow us on Instagram, Youtube, or Facebook. If you want to have a chat about anything, send an email to us.</p>
-						<p style="display: flex; gap: 10px">
-							<a href="https://www.instagram.com/malkajgiri.dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram"></a>
-							<a href="https://youtube.com/@DianaDapper" rel="noreferrer" target="_blank"><img src="assets/icons/youtube.png" alt="YouTube"></a>
-							<a href="https://www.facebook.com/dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-							<a href="mailto: malkajgiri.dianandapper@gmail.com" rel="noreferrer noopener"><img src="assets/icons/email.png" alt="Gmail"></a>
-						</p>
+					<div class="iframe-holder">
+						<iframe
+							title="Malkajgiri salon location"
+							allowfullscreen
+							class="full-width full-height"
+							frameborder="0"
+							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5ZoNc1pCyjOTSx1OxpAueDqo7ZGQgzgg&q=Diana %26 Dapper Unisex Salon, Malkajgiri, First Floor, Street Number 3, Vishnupuri Colony, Malkajgiri, Hyderabad, Telangana 500047, India"
+						>
+						</iframe>
 					</div>
-					<br>
-					<mat-divider [inset]="true"></mat-divider>
 				</section>
-				<div class="iframe-holder padding-5">
-					<iframe title="Malkajgiri salon location" allowfullscreen class="full-width full-height" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5ZoNc1pCyjOTSx1OxpAueDqo7ZGQgzgg&q=Diana %26 Dapper Unisex Salon, Malkajgiri, First Floor, Street Number 3, Vishnupuri Colony, Malkajgiri, Hyderabad, Telangana 500047, India">
-					</iframe>
-				</div>
-			</section>
-			<br>
-			<p class="font-20 center underline">Sainikpuri branch</p>
-			<section class="two columns">
-				<section class="padding-5" style="display: flex; flex-direction: column; justify-content: space-between;">
+				<section
+					style="
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+					"
+				>
+					<p class="font-18 center">Sainikpuri</p>
 					<p class="font-16">
-						If you have any queries about our sainikpuri branch, please contact us at <a class="accent-colour underline" matTooltip="Mobile" href="tel:76748 18484" rel="noreferrer noopener">76748 18484</a> or email us at <a class="accent-colour underline" matTooltip="Email us" href="mailto: sainikpuri.dianandapper@gmail.com" rel="noreferrer noopener">sainikpuri.dianandapper@gmail.com</a>.
+						If you have any queries about our sainikpuri branch,
+						please contact us at
+						<a
+							class="accent-colour underline"
+							matTooltip="Mobile"
+							href="tel:76748 18484"
+							rel="noreferrer noopener"
+							>76748 18484</a
+						>.
 					</p>
-					<br>
-					<mat-divider [inset]="true"></mat-divider>
-					<div>
-						<p class="font-16">For any latest updates about our sainikpuri branch, or information on how we are doing, do follow us on Instagram, Youtube, or Facebook. If you want to have a chat about anything, send an email to us.</p>
-						<p style="display: flex; gap: 10px">
-							<a href="https://www.instagram.com/sainikpuri.dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram"></a>
-							<a href="https://youtube.com/@DianaDapper" rel="noreferrer" target="_blank"><img src="assets/icons/youtube.png" alt="YouTube"></a>
-							<a href="https://www.facebook.com/dianandapper" rel="noreferrer" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-							<a href="mailto: sainikpuri.dianandapper@gmail.com" rel="noreferrer noopener"><img src="assets/icons/email.png" alt="Gmail"></a>
-						</p>
+					<div class="iframe-holder">
+						<iframe
+							title="Sainikpuri salon location"
+							class="full-width full-height"
+							allowfullscreen
+							frameborder="0"
+							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5ZoNc1pCyjOTSx1OxpAueDqo7ZGQgzgg&q=Diana %26 Dapper Unisex Salon, Sainikpuri, Bhaskar Nagar Road, Saibaba Officer's Colony, Sri Sai Baba Officer's Colony, Osmania University Teachers Colony, Sainikpuri, Secunderabad, Telangana, India"
+						>
+						</iframe>
 					</div>
-					<br>
-					<mat-divider [inset]="true"></mat-divider>
 				</section>
-				<div class="iframe-holder padding-5">
-					<iframe title="Sainikpuri salon location" class="full-width full-height" allowfullscreen frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5ZoNc1pCyjOTSx1OxpAueDqo7ZGQgzgg&q=Diana %26 Dapper Unisex Salon, Sainikpuri, Bhaskar Nagar Road, Saibaba Officer's Colony, Sri Sai Baba Officer's Colony, Osmania University Teachers Colony, Sainikpuri, Secunderabad, Telangana, India">
-					</iframe>
-				</div>
 			</section>
 		</mat-card>
 	</section>

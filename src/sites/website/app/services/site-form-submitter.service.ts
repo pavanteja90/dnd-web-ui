@@ -12,16 +12,17 @@ export class SiteFormBuilder extends FormBuilder {
 
 	createContactForm = (): FormGroup => {
 		return this.group({
-			name: this.createName(),
-			mobilePhone: [undefined, Validators.compose([SiteFormBuilder.mobile])],
-			emailAddress: [undefined, Validators.email],
-			message: [undefined, Validators.required]
+			firstName: ['', Validators.required],
+			lastName: ['', Validators.required],
+			mobilePhone: ['', Validators.compose([SiteFormBuilder.mobile])],
+			emailAddress: ['', Validators.email],
+			message: ['', Validators.required]
 		});
 	}
 
 	createName = (): FormGroup => this.group({
-		firstName: [undefined, Validators.required],
-		middleNames: [undefined],
-		lastName: [undefined, Validators.required]
+		firstName: ['', Validators.required],
+		middleNames: [''],
+		lastName: ['', Validators.required]
 	})
 }

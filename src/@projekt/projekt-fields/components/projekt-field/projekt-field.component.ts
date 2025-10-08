@@ -14,4 +14,5 @@ export class ProjektFieldComponent {
 	@Input() prefix: string;
 	@Input() suffix: string;
 	@Input() hint: string;
+	@Input() errorMessage: string;
 }
