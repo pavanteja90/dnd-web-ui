@@ -3,14 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { MetaGuard } from '@projekt/core';
 import {
 	ContactUsComponent,
-	FemaleMenuComponent,
+	// FemaleMenuComponent,
 	HomeComponent,
-	MaleMenuComponent,
-	PromosComponent,
-	StoreMenuComponent,
+	// MaleMenuComponent,
+	// PromosComponent,
+	// StoreMenuComponent,
 } from './components';
-import { ComingSoonComponent } from './containers';
-import { PackagesComponent } from './components/packages';
+// import { ComingSoonComponent } from './containers';
+// import { PackagesComponent } from './components/packages';
 
 const routes: Routes = [
 	{
@@ -65,30 +65,30 @@ const routes: Routes = [
 	// 		},
 	// 	},
 	// },
-	{
-		path: 'packages',
-		component: PackagesComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: 'Packages',
-				description:
-					'List of packages we offer for all our patrons. You can make an appointment online from our website or contact the store.',
-			},
-		},
-	},
-	{
-		path: 'offers',
-		component: PromosComponent,
-		canActivate: [MetaGuard],
-		data: {
-			meta: {
-				title: 'Offers',
-				description:
-					'We know you love discounts. We love them too! Checkout the offers that we have currently for our customers here.',
-			},
-		},
-	},
+	// {
+	// 	path: 'packages',
+	// 	component: PackagesComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: 'Packages',
+	// 			description:
+	// 				'List of packages we offer for all our patrons. You can make an appointment online from our website or contact the store.',
+	// 		},
+	// 	},
+	// },
+	// {
+	// 	path: 'offers',
+	// 	component: PromosComponent,
+	// 	canActivate: [MetaGuard],
+	// 	data: {
+	// 		meta: {
+	// 			title: 'Offers',
+	// 			description:
+	// 				'We know you love discounts. We love them too! Checkout the offers that we have currently for our customers here.',
+	// 		},
+	// 	},
+	// },
 	// {
 	// 	path: 'menu',
 	// 	component: StoreMenuComponent,

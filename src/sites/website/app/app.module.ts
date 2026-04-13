@@ -26,7 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { SiteFormBuilder } from './services';
-import { PackagesComponent } from './components/packages';
+// import { PackagesComponent } from './components/packages';
 
 @NgModule({
 	declarations: [
@@ -39,7 +39,7 @@ import { PackagesComponent } from './components/packages';
 		CareersComponent,
 		ContactUsComponent,
 		OfferedServicesComponent,
-		PackagesComponent,
+		// PackagesComponent,
 		ProductsComponent,
 		PromosComponent,
 		StartupDialogComponent,
